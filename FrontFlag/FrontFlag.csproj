@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40E5D6D3-0ACC-46D1-9A4A-8818DF3756CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontFlag</RootNamespace>
+    <AssemblyName>FrontFlag</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\..\dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.0.0.0\lib\net35\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.92.0\lib\net20\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.92.0\lib\net20\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCode\Code39.cs" />
+    <Compile Include="Control\Button\FindButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Button\FindButton.Designer.cs">
+      <DependentUpon>FindButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Button\XFlatBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Button\XFlatBtn.Designer.cs">
+      <DependentUpon>XFlatBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Button\XButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Button\XButton.designer.cs">
+      <DependentUpon>XButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Button\XCrystalButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Button\XCrystalButton.designer.cs">
+      <DependentUpon>XCrystalButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Button\XImgButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Button\XImgButton.designer.cs">
+      <DependentUpon>XImgButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ComboBox\XComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ComboBox\XComboBox.Designer.cs">
+      <DependentUpon>XComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Comm\Popedom.cs" />
+    <Compile Include="Control\CtrlFun.cs" />
+    <Compile Include="Control\DataGridView\DatagridViewCheckBoxHeader.cs" />
+    <Compile Include="Control\DataGridView\Grd2Excel.cs" />
+    <Compile Include="Control\DataGridView\XDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\DataGridView\XDataGridView.designer.cs">
+      <DependentUpon>XDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\DataGridView\XEditView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\DataGridView\XEditView.Designer.cs">
+      <DependentUpon>XEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Form\XRoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Form\XRoundForm.designer.cs">
+      <DependentUpon>XRoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\GroupBox\XGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\GroupBox\XGroupBox.Designer.cs">
+      <DependentUpon>XGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Label\XLable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Label\XLable.designer.cs">
+      <DependentUpon>XLable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ListCtrl\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ListCtrl\XListView2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Menu\MenuItemUnit.cs" />
+    <Compile Include="Control\ParamListView\XParamListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ParamListView\XParamListView.Designer.cs">
+      <DependentUpon>XParamListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ListCtrl\XEditListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ListCtrl\XEditListView.designer.cs">
+      <DependentUpon>XEditListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ListCtrl\XListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Menu\XContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Menu\XContextMenuStrip.Designer.cs">
+      <DependentUpon>XContextMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Menu\XToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Menu\XToolStripMenuItem.Designer.cs">
+      <DependentUpon>XToolStripMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Panel\NaviPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Panel\NaviPage.designer.cs">
+      <DependentUpon>NaviPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Panel\XPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Panel\XPanel.designer.cs">
+      <DependentUpon>XPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Permission.cs" />
+    <Compile Include="Control\PickerDate\DatePickInListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PickerDate\DatePickInListItem.designer.cs">
+      <DependentUpon>DatePickInListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PickerDate\XDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PickerDate\XDatePicker.Designer.cs">
+      <DependentUpon>XDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TabCtrl\XTableCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\TabCtrl\XTableCtrl.designer.cs">
+      <DependentUpon>XTableCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TextBox\XTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\TextBox\XTextBox.Designer.cs">
+      <DependentUpon>XTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TextBox\XTextBox2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\TextBox\XTextBox2.Designer.cs">
+      <DependentUpon>XTextBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TreeCtrl\XTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\FindList2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\FindList2.designer.cs">
+      <DependentUpon>FindList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserCtrl\FindList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\FindList.designer.cs">
+      <DependentUpon>FindList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserCtrl\InfoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\InfoList.Designer.cs">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserCtrl\NaviPageEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\NaviPageEx.designer.cs">
+      <DependentUpon>NaviPageEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserCtrl\SelectTwoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\SelectTwoList.Designer.cs">
+      <DependentUpon>SelectTwoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserCtrl\XUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserCtrl\XUserControl.Designer.cs">
+      <DependentUpon>XUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\XCtrol.cs" />
+    <Compile Include="DB\OleDb.cs" />
+    <Compile Include="DB\Sql.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DB\Sqlite.cs" />
+    <Compile Include="Debug\Debug.cs" />
+    <Compile Include="Draw\Drwa.cs" />
+    <Compile Include="Email\Email.cs" />
+    <Compile Include="File\Excel2.cs" />
+    <Compile Include="File\Dir.cs" />
+    <Compile Include="File\Excel.cs" />
+    <Compile Include="File\File.cs" />
+    <Compile Include="File\Xml.cs" />
+    <Compile Include="Control\Form\XFloatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Form\XFloatForm.Designer.cs">
+      <DependentUpon>XFloatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontFlag.cs" />
+    <Compile Include="FUN\Json.cs" />
+    <Compile Include="Popedom\Popedom.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RdlcXML.cs" />
+    <Compile Include="Report\Report.cs" />
+    <Compile Include="Sys\CheckEnv.cs" />
+    <Compile Include="Sys\ShellImage.cs" />
+    <Compile Include="Test\Bll.cs" />
+    <Compile Include="Test\BLL\Test_Log.cs" />
+    <Compile Include="Test\Def.cs" />
+    <Compile Include="Test\ORM\Test_Log.cs" />
+    <Compile Include="Test\Stru\Test_Log.cs" />
+    <Compile Include="Test\Tab\Test_Log.cs" />
+    <Compile Include="Test\Test.cs" />
+    <Compile Include="Tools\Dictionary.cs" />
+    <Compile Include="FUN\Fun.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String\String.cs" />
+    <Compile Include="Sys\API.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sys\SystemInfo.cs" />
+    <Compile Include="Version.cs" />
+    <Compile Include="Control\Form\XForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Form\XForm.Designer.cs">
+      <DependentUpon>XForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\Button\FindButton.resx">
+      <DependentUpon>FindButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\DataGridView\XDataGridView.resx">
+      <DependentUpon>XDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Panel\NaviPage.resx">
+      <DependentUpon>NaviPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PickerDate\DatePickInListItem.resx">
+      <DependentUpon>DatePickInListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PickerDate\XDatePicker.resx">
+      <DependentUpon>XDatePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\TreeCtrl\XTree.resx">
+      <DependentUpon>XTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\FindList2.resx">
+      <DependentUpon>FindList2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\FindList.resx">
+      <DependentUpon>FindList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\InfoList.resx">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\NaviPageEx.resx">
+      <DependentUpon>NaviPageEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Form\XFloatForm.resx">
+      <DependentUpon>XFloatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\SelectTwoList.resx">
+      <DependentUpon>SelectTwoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserCtrl\XUserControl.resx">
+      <DependentUpon>XUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="NLog.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\Icon_Find.ico" />
+    <None Include="香港账户.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\显示查找.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\显示查找1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\显示查找2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

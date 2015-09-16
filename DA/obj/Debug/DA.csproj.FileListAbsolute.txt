@@ -1,0 +1,4 @@
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\DA\bin\Debug\DA.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\DA\bin\Debug\DA.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\DA\obj\Debug\DA.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\DA\obj\Debug\DA.pdb

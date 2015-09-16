@@ -1,0 +1,5 @@
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Core\bin\Debug\Core.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Core\bin\Debug\Core.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Core\obj\Debug\Core.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Core\obj\Debug\Core.pdb

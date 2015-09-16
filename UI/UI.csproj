@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E15E556-3B6C-461D-9A76-5341CEC3A652}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Ctrl\Btn\btnFind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Btn\btnFind.Designer.cs">
+      <DependentUpon>btnFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Btn\LeftMenuBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Btn\LeftMenuBtn.Designer.cs">
+      <DependentUpon>LeftMenuBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Btn\TopMenuBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Btn\TopMenuBtn.Designer.cs">
+      <DependentUpon>TopMenuBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Btn\IconBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Btn\IconBtn.Designer.cs">
+      <DependentUpon>IconBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Btn\SmallIconBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Btn\SmallIconBtn.Designer.cs">
+      <DependentUpon>SmallIconBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\科室.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\优抚对象.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\优抚对象.Designer.cs">
+      <DependentUpon>优抚对象.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\角色.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\性别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ctrl\TextBox\Age.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Tree\LeftMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Tree\LeftMenu.Designer.cs">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefCtrl\CmbList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\伤残等级.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\伤残属别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\伤残性质.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\户口类别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\生活能力.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\婚姻状况.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\Comm\性别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\民族.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\户口簿住址类别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\就业情况.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\优抚科\劳动能力.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\老龄办\优待证类别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\CmbDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefCtrl\Cmb\老龄办\发放津贴类别.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dlg\Comm\CommDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Comm\CommDlg.Designer.cs">
+      <DependentUpon>CommDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Comm\WarnDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Comm\WarnDlg.Designer.cs">
+      <DependentUpon>WarnDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Comm\EditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Comm\EditDlg.Designer.cs">
+      <DependentUpon>EditDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\人员\人员.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dlg\人员\人员.Designer.cs">
+      <DependentUpon>人员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg\Comm\AskDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg\Comm\AskDlg.Designer.cs">
+      <DependentUpon>AskDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Comm\ListTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Comm\ListTool.Designer.cs">
+      <DependentUpon>ListTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\街道办.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\Cmb\街道办.Designer.cs">
+      <DependentUpon>街道办.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\低保边缘户.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\低保边缘户.Designer.cs">
+      <DependentUpon>低保边缘户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\疾病救助.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\疾病救助.Designer.cs">
+      <DependentUpon>疾病救助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\意外救助.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\专项救助\意外救助.Designer.cs">
+      <DependentUpon>意外救助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民_发放记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民_发放记录.Designer.cs">
+      <DependentUpon>低收入居民_发放记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民_成员信息.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民_成员信息.Designer.cs">
+      <DependentUpon>低收入居民_成员信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\低收入居民\低收入居民.Designer.cs">
+      <DependentUpon>低收入居民.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\事务科\居家养老\居家养老.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\事务科\居家养老\居家养老.Designer.cs">
+      <DependentUpon>居家养老.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\优抚资金发放\Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\优抚资金发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_基本信息.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_基本信息.Designer.cs">
+      <DependentUpon>伤残人员_基本信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\CaptionBar\CaptionBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\CaptionBar\CaptionBar.Designer.cs">
+      <DependentUpon>CaptionBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Home\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Home\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\LeftMenu\LeftMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\LeftMenu\LeftMenu.Designer.cs">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Login\LoginUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Login\LoginUserInfo.Designer.cs">
+      <DependentUpon>LoginUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Status\StatusPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Status\StatusPnl.Designer.cs">
+      <DependentUpon>StatusPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Top\TopCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Top\TopCompany.Designer.cs">
+      <DependentUpon>TopCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Top\主菜单.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Top\主菜单.Designer.cs">
+      <DependentUpon>主菜单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pnl\Top\TopPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pnl\Top\TopPnl.Designer.cs">
+      <DependentUpon>TopPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_生活费.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_生活费.Designer.cs">
+      <DependentUpon>伤残人员_生活费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_类别信息.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残人员\伤残人员_类别信息.Designer.cs">
+      <DependentUpon>伤残人员_类别信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残物品_发放\Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残物品_发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残物品_登记\Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\优抚科\伤残物品_登记\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\社区建设.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\社区建设.Designer.cs">
+      <DependentUpon>社区建设.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务_社区公益服务.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务_社区公益服务.Designer.cs">
+      <DependentUpon>社区服务_社区公益服务.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务_社工岗位.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务_社工岗位.Designer.cs">
+      <DependentUpon>社区服务_社工岗位.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\社区服务.Designer.cs">
+      <DependentUpon>社区服务.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\民主管理_选举结果.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\民主管理_选举结果.Designer.cs">
+      <DependentUpon>民主管理_选举结果.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\基层科\民主管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\基层科\民主管理.Designer.cs">
+      <DependentUpon>民主管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\Left.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\Left.Designer.cs">
+      <DependentUpon>Left.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\Right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\Right.Designer.cs">
+      <DependentUpon>Right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构章程.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构章程.Designer.cs">
+      <DependentUpon>机构章程.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构负责人.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构负责人.Designer.cs">
+      <DependentUpon>机构负责人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构负责人Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构负责人Edit.Designer.cs">
+      <DependentUpon>机构负责人Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\民管局登记_民非.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\民管局登记_民非.Designer.cs">
+      <DependentUpon>民管局登记_民非.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\法定代表人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\法定代表人.Designer.cs">
+      <DependentUpon>法定代表人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\组织管理架构.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\组织管理架构.Designer.cs">
+      <DependentUpon>组织管理架构.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\联系信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\联系信息.Designer.cs">
+      <DependentUpon>联系信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况.Designer.cs">
+      <DependentUpon>财务状况.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_净资产.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_净资产.Designer.cs">
+      <DependentUpon>财务状况_净资产.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_净资产_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_净资产_Edit.Designer.cs">
+      <DependentUpon>财务状况_净资产_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_收入.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_收入.Designer.cs">
+      <DependentUpon>财务状况_收入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_收入_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_收入_Edit.Designer.cs">
+      <DependentUpon>财务状况_收入_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_负债.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_负债.Designer.cs">
+      <DependentUpon>财务状况_负债.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_负债_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_负债_Edit.Designer.cs">
+      <DependentUpon>财务状况_负债_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_费用.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_费用.Designer.cs">
+      <DependentUpon>财务状况_费用.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_费用_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_费用_Edit.Designer.cs">
+      <DependentUpon>财务状况_费用_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_资产.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_资产.Designer.cs">
+      <DependentUpon>财务状况_资产.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_资产_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\财务状况_资产_Edit.Designer.cs">
+      <DependentUpon>财务状况_资产_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\Left.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\Left.Designer.cs">
+      <DependentUpon>Left.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\Right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\Right.Designer.cs">
+      <DependentUpon>Right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\会员情况.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\会员情况.Designer.cs">
+      <DependentUpon>会员情况.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\民管局登记_社团.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_社团\民管局登记_社团.Designer.cs">
+      <DependentUpon>民管局登记_社团.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\老龄办\优待证.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\老龄办\优待证.Designer.cs">
+      <DependentUpon>优待证.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\老龄办\停发老龄津贴.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\老龄办\停发老龄津贴.Designer.cs">
+      <DependentUpon>停发老龄津贴.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\老龄办\发放老龄津贴.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\老龄办\发放老龄津贴.Designer.cs">
+      <DependentUpon>发放老龄津贴.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ctrl\Btn\btnFind.resx">
+      <DependentUpon>btnFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Btn\LeftMenuBtn.resx">
+      <DependentUpon>LeftMenuBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Btn\TopMenuBtn.resx">
+      <DependentUpon>TopMenuBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Btn\IconBtn.resx">
+      <DependentUpon>IconBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Btn\SmallIconBtn.resx">
+      <DependentUpon>SmallIconBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Cmb\优抚对象.resx">
+      <DependentUpon>优抚对象.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Tree\LeftMenu.resx">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Comm\CommDlg.resx">
+      <DependentUpon>CommDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Comm\WarnDlg.resx">
+      <DependentUpon>WarnDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Comm\EditDlg.resx">
+      <DependentUpon>EditDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\人员\人员.resx">
+      <DependentUpon>人员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg\Comm\AskDlg.resx">
+      <DependentUpon>AskDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Comm\ListTool.resx">
+      <DependentUpon>ListTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\Cmb\街道办.resx">
+      <DependentUpon>街道办.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\专项救助\低保边缘户.resx">
+      <DependentUpon>低保边缘户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\专项救助\疾病救助.resx">
+      <DependentUpon>疾病救助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\专项救助\意外救助.resx">
+      <DependentUpon>意外救助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\低收入居民\低收入居民_发放记录.resx">
+      <DependentUpon>低收入居民_发放记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\低收入居民\低收入居民_成员信息.resx">
+      <DependentUpon>低收入居民_成员信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\低收入居民\低收入居民.resx">
+      <DependentUpon>低收入居民.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\事务科\居家养老\居家养老.resx">
+      <DependentUpon>居家养老.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\优抚资金发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\伤残人员\伤残人员_基本信息.resx">
+      <DependentUpon>伤残人员_基本信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\CaptionBar\CaptionBar.resx">
+      <DependentUpon>CaptionBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Home\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\LeftMenu\LeftMenu.resx">
+      <DependentUpon>LeftMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Login\LoginUserInfo.resx">
+      <DependentUpon>LoginUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Status\StatusPnl.resx">
+      <DependentUpon>StatusPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Top\TopCompany.resx">
+      <DependentUpon>TopCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Top\主菜单.resx">
+      <DependentUpon>主菜单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnl\Top\TopPnl.resx">
+      <DependentUpon>TopPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\伤残人员\伤残人员_生活费.resx">
+      <DependentUpon>伤残人员_生活费.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\伤残人员\伤残人员_类别信息.resx">
+      <DependentUpon>伤残人员_类别信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\伤残物品_发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\优抚科\伤残物品_登记\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\社区建设.resx">
+      <DependentUpon>社区建设.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\社区服务_社区公益服务.resx">
+      <DependentUpon>社区服务_社区公益服务.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\社区服务_社工岗位.resx">
+      <DependentUpon>社区服务_社工岗位.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\社区服务.resx">
+      <DependentUpon>社区服务.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\民主管理_选举结果.resx">
+      <DependentUpon>民主管理_选举结果.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\基层科\民主管理.resx">
+      <DependentUpon>民主管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\Left.resx">
+      <DependentUpon>Left.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\Right.resx">
+      <DependentUpon>Right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\机构章程.resx">
+      <DependentUpon>机构章程.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\机构负责人.resx">
+      <DependentUpon>机构负责人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\机构负责人Edit.resx">
+      <DependentUpon>机构负责人Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\民管局登记_民非.resx">
+      <DependentUpon>民管局登记_民非.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\法定代表人.resx">
+      <DependentUpon>法定代表人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\组织管理架构.resx">
+      <DependentUpon>组织管理架构.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\联系信息.resx">
+      <DependentUpon>联系信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况.resx">
+      <DependentUpon>财务状况.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_净资产.resx">
+      <DependentUpon>财务状况_净资产.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_净资产_Edit.resx">
+      <DependentUpon>财务状况_净资产_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_收入.resx">
+      <DependentUpon>财务状况_收入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_收入_Edit.resx">
+      <DependentUpon>财务状况_收入_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_负债.resx">
+      <DependentUpon>财务状况_负债.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_负债_Edit.resx">
+      <DependentUpon>财务状况_负债_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_费用.resx">
+      <DependentUpon>财务状况_费用.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_费用_Edit.resx">
+      <DependentUpon>财务状况_费用_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_资产.resx">
+      <DependentUpon>财务状况_资产.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\财务状况_资产_Edit.resx">
+      <DependentUpon>财务状况_资产_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_社团\Left.resx">
+      <DependentUpon>Left.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_社团\Right.resx">
+      <DependentUpon>Right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_社团\会员情况.resx">
+      <DependentUpon>会员情况.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_社团\民管局登记_社团.resx">
+      <DependentUpon>民管局登记_社团.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\老龄办\优待证.resx">
+      <DependentUpon>优待证.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\老龄办\停发老龄津贴.resx">
+      <DependentUpon>停发老龄津贴.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\老龄办\发放老龄津贴.resx">
+      <DependentUpon>发放老龄津贴.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\Buss.csproj">
+      <Project>{b02cedad-e4f7-401d-b4a1-4dfb690d3df8}</Project>
+      <Name>Buss</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DB\DB.csproj">
+      <Project>{a1d2e725-22e7-4723-9a97-58acaf920f6f}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Def\Def.csproj">
+      <Project>{e86a10e0-6a28-4cbe-b767-1e6d7dbe44f1}</Project>
+      <Name>Def</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontFlag\FrontFlag.csproj">
+      <Project>{40e5d6d3-0acc-46d1-9a4a-8818df3756ce}</Project>
+      <Name>FrontFlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{ef3f1aad-c34e-4b52-8ba6-927298120d3f}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Style\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

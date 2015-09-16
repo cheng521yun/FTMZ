@@ -1,0 +1,2007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C56EE551-43AF-481E-9587-2457F4260ADA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>福田民政</RootNamespace>
+    <AssemblyName>福田民政</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Exe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Publish\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Command.cs" />
+    <Compile Include="Core\Menu.cs" />
+    <Compile Include="Forms\Comm\ExcelIn2.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Comm\ExcelIn2.cs.designer.cs">
+      <DependentUpon>ExcelIn2.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\查找人员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\查找人员.Designer.cs">
+      <DependentUpon>查找人员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\查找人员_Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\查找人员_Find.Designer.cs">
+      <DependentUpon>查找人员_Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\添加人员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Comm\人员\添加人员.Designer.cs">
+      <DependentUpon>添加人员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogIn\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogIn\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\WorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\WorkForm.Designer.cs">
+      <DependentUpon>WorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\ContentWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\ContentWnd.Designer.cs">
+      <DependentUpon>ContentWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\版本更新\版本更新.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\版本更新\版本更新.Designer.cs">
+      <DependentUpon>版本更新.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\问题反馈\问题反馈.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\技术支持\问题反馈\问题反馈.Designer.cs">
+      <DependentUpon>问题反馈.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\Excel\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\Excel\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\前置机\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据交换\前置机\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\事务科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\事务科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\优抚科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\优抚科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\基层科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\基层科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\民管局\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\民管局\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\福利中心\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\福利中心\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\老龄办\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据分析\老龄办\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\低保边缘户.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\低保边缘户.Designer.cs">
+      <DependentUpon>低保边缘户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\疾病救助.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\疾病救助.Designer.cs">
+      <DependentUpon>疾病救助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\意外或其他救助.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\意外或其他救助.Designer.cs">
+      <DependentUpon>意外或其他救助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\专项救助数据\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\救助统计\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\救助统计\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\救助统计\救助统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\救助统计\救助统计.Designer.cs">
+      <DependentUpon>救助统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\居家养老服务补贴.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\居家养老服务补贴\居家养老服务补贴.Designer.cs">
+      <DependentUpon>居家养老服务补贴.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\发放记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\发放记录.Designer.cs">
+      <DependentUpon>发放记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\家庭成员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\家庭成员.Designer.cs">
+      <DependentUpon>家庭成员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\事务科\低收入居民数据\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\All对象.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\All对象.Designer.cs">
+      <DependentUpon>All对象.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\I优抚对象.cs" />
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\优抚对象_登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\优抚对象_登记.Designer.cs">
+      <DependentUpon>优抚对象_登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_查询.Designer.cs">
+      <DependentUpon>优抚对象_查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\伤残人员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\伤残人员.Designer.cs">
+      <DependentUpon>伤残人员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\三属.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\三属.Designer.cs">
+      <DependentUpon>三属.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\伤残物品_登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_登记\伤残物品_登记.Designer.cs">
+      <DependentUpon>伤残物品_登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\伤残物品_发放.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\伤残物品_发放\伤残物品_发放.Designer.cs">
+      <DependentUpon>伤残物品_发放.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\优抚资金发放.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\优抚资金发放\优抚资金发放.Designer.cs">
+      <DependentUpon>优抚资金发放.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\抚恤标准管理\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\抚恤标准管理\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\抚恤标准管理\抚恤标准管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\优抚科\抚恤标准管理\抚恤标准管理.Designer.cs">
+      <DependentUpon>抚恤标准管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\福田区社工岗位社会工作.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\福田区社工岗位社会工作.Designer.cs">
+      <DependentUpon>福田区社工岗位社会工作.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\社区基础服务设施情况.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\社区基础服务设施情况.Designer.cs">
+      <DependentUpon>社区基础服务设施情况.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\民主管理信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\Tab\民主管理信息管理.Designer.cs">
+      <DependentUpon>民主管理信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\数据统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\数据统计\数据统计.Designer.cs">
+      <DependentUpon>数据统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果_Edit.Designer.cs">
+      <DependentUpon>选举结果_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果.Designer.cs">
+      <DependentUpon>选举结果.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务_Edit.Designer.cs">
+      <DependentUpon>社区公益服务_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位_Edit.Designer.cs">
+      <DependentUpon>社工岗位_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务.Designer.cs">
+      <DependentUpon>社区公益服务.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位.Designer.cs">
+      <DependentUpon>社工岗位.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\社区服务.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区服务\社区服务.Designer.cs">
+      <DependentUpon>社区服务.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\社区建设.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\社区建设\社区建设.Designer.cs">
+      <DependentUpon>社区建设.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\民主管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\基层科\民主管理\民主管理.Designer.cs">
+      <DependentUpon>民主管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Edit\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Edit\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\副本 备案.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\副本 备案.Designer.cs">
+      <DependentUpon>副本 备案.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\评估.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\评估.Designer.cs">
+      <DependentUpon>评估.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Edit\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Edit\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\变更记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\变更记录.Designer.cs">
+      <DependentUpon>变更记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\备案.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\备案.Designer.cs">
+      <DependentUpon>备案.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\年检记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\年检记录.Designer.cs">
+      <DependentUpon>年检记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\成员信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\成员信息.Designer.cs">
+      <DependentUpon>成员信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\换证记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\换证记录.Designer.cs">
+      <DependentUpon>换证记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\行政执法记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\行政执法记录.Designer.cs">
+      <DependentUpon>行政执法记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\评估.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\评估.Designer.cs">
+      <DependentUpon>评估.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_社团\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\人员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\人员管理.Designer.cs">
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\会员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\会员管理.Designer.cs">
+      <DependentUpon>会员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\其他管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\其他管理.Designer.cs">
+      <DependentUpon>其他管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\资产管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\Tab\资产管理.Designer.cs">
+      <DependentUpon>资产管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\人员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\人员管理.Designer.cs">
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\会员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\会员管理.Designer.cs">
+      <DependentUpon>会员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\其他管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\其他管理.Designer.cs">
+      <DependentUpon>其他管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\资产管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\资产管理.Designer.cs">
+      <DependentUpon>资产管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\台账统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账统计\台账统计.Designer.cs">
+      <DependentUpon>台账统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\台账列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\台账列表\台账列表.Designer.cs">
+      <DependentUpon>台账列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\行政执法记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\行政执法记录.Designer.cs">
+      <DependentUpon>行政执法记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\换证记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\换证记录.Designer.cs">
+      <DependentUpon>换证记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\年检记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\年检记录.Designer.cs">
+      <DependentUpon>年检记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\变更记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\变更记录.Designer.cs">
+      <DependentUpon>变更记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\成员信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\成员信息.Designer.cs">
+      <DependentUpon>成员信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\民管局\登记备案_民非\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\ButnTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\ButnTool.Designer.cs">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\担保人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\担保人.Designer.cs">
+      <DependentUpon>担保人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\监护人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Tab\监护人.Designer.cs">
+      <DependentUpon>监护人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.Designer.cs">
+      <DependentUpon>老人费用管理_退费登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.Designer.cs">
+      <DependentUpon>老人费用管理_费用登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\TabWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\TabWnd.Designer.cs">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\养老服务费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\养老服务费.Designer.cs">
+      <DependentUpon>养老服务费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\应收金额.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\应收金额.Designer.cs">
+      <DependentUpon>应收金额.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人电费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人电费.Designer.cs">
+      <DependentUpon>老人电费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人药费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人药费.Designer.cs">
+      <DependentUpon>老人药费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人伙食费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人伙食费.Designer.cs">
+      <DependentUpon>老人伙食费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\老人费用统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\费用统计\老人费用统计.Designer.cs">
+      <DependentUpon>老人费用统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\老人退住管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\老人退住管理.Designer.cs">
+      <DependentUpon>老人退住管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\老人入住.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\老人入住.Designer.cs">
+      <DependentUpon>老人入住.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\SelectType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\SelectType.Designer.cs">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人.Designer.cs">
+      <DependentUpon>已发老龄津贴老人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人_Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人_Find.Designer.cs">
+      <DependentUpon>已发老龄津贴老人_Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Tool.Designer.cs">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\列表.Designer.cs">
+      <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\操作日志.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\操作日志.Designer.cs">
+      <DependentUpon>操作日志.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\登录日志.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\日志管理\登录日志.Designer.cs">
+      <DependentUpon>登录日志.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\参数管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\参数管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\权限管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\权限管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\系统配置\用户管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\首页\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\首页\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun\Comm.cs" />
+    <Compile Include="Fun\List.cs" />
+    <Compile Include="Fun\StartApp.cs" />
+    <Compile Include="Layout\LeftPnl\LeftWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\LeftWnd.Designer.cs">
+      <DependentUpon>LeftWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\XLeftPnl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\XLeftPnl.Designer.cs">
+      <DependentUpon>XLeftPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\技术支持\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\技术支持\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\事务科.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\事务科.Designer.cs">
+      <DependentUpon>事务科.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\优抚科.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\优抚科.Designer.cs">
+      <DependentUpon>优抚科.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\福利中心.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\福利中心.Designer.cs">
+      <DependentUpon>福利中心.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\基层科.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\基层科.Designer.cs">
+      <DependentUpon>基层科.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\民管局.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\民管局.Designer.cs">
+      <DependentUpon>民管局.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\日志管理\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\日志管理\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\系统配置\Wnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\系统配置\Wnd.Designer.cs">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据分析.Designer.cs">
+      <DependentUpon>数据分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\老龄办.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LeftPnl\数据管理\老龄办.Designer.cs">
+      <DependentUpon>老龄办.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\TopBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\TopBar.Designer.cs">
+      <DependentUpon>TopBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Comm\ExcelIn2.cs.resx" />
+    <EmbeddedResource Include="Forms\Comm\人员\查找人员.resx">
+      <DependentUpon>查找人员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Comm\人员\查找人员_Find.resx">
+      <DependentUpon>查找人员_Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Comm\人员\添加人员.resx">
+      <DependentUpon>添加人员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogIn\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\ContentWnd.resx">
+      <DependentUpon>ContentWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\WorkForm.resx">
+      <DependentUpon>WorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\技术支持\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\技术支持\版本更新\版本更新.resx">
+      <DependentUpon>版本更新.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\技术支持\问题反馈\问题反馈.resx">
+      <DependentUpon>问题反馈.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据交换\Excel\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据交换\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据交换\前置机\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\事务科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\优抚科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\基层科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\民管局\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\福利中心\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据分析\老龄办\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\低保边缘户\低保边缘户.resx">
+      <DependentUpon>低保边缘户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\疾病救助\疾病救助.resx">
+      <DependentUpon>疾病救助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Tab\意外救助\意外或其他救助.resx">
+      <DependentUpon>意外或其他救助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\专项救助数据\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\居家养老服务补贴\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\居家养老服务补贴\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\救助统计\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\救助统计\救助统计.resx">
+      <DependentUpon>救助统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\居家养老服务补贴\居家养老服务补贴.resx">
+      <DependentUpon>居家养老服务补贴.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\发放记录\发放记录.resx">
+      <DependentUpon>发放记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Tab\家庭成员\家庭成员.resx">
+      <DependentUpon>家庭成员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\事务科\低收入居民数据\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_登记\All对象.resx">
+      <DependentUpon>All对象.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_登记\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_登记\优抚对象_登记.resx">
+      <DependentUpon>优抚对象_登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_查询.resx">
+      <DependentUpon>优抚对象_查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\伤残人员.resx">
+      <DependentUpon>伤残人员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚对象_登记\对象类别\三属.resx">
+      <DependentUpon>三属.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚资金发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚资金发放\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_发放\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_登记\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_登记\伤残物品_登记.resx">
+      <DependentUpon>伤残物品_登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\伤残物品_发放\伤残物品_发放.resx">
+      <DependentUpon>伤残物品_发放.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\优抚资金发放\优抚资金发放.resx">
+      <DependentUpon>优抚资金发放.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\抚恤标准管理\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\优抚科\抚恤标准管理\抚恤标准管理.resx">
+      <DependentUpon>抚恤标准管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\数据统计\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\数据统计\Tab\福田区社工岗位社会工作.resx">
+      <DependentUpon>福田区社工岗位社会工作.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\数据统计\Tab\社区基础服务设施情况.resx">
+      <DependentUpon>社区基础服务设施情况.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\数据统计\Tab\民主管理信息管理.resx">
+      <DependentUpon>民主管理信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\数据统计\数据统计.resx">
+      <DependentUpon>数据统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Tab\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果_Edit.resx">
+      <DependentUpon>选举结果_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\Tab\选举结果.resx">
+      <DependentUpon>选举结果.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区建设\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区建设\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务_Edit.resx">
+      <DependentUpon>社区公益服务_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位_Edit.resx">
+      <DependentUpon>社工岗位_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\社区公益服务.resx">
+      <DependentUpon>社区公益服务.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\Tab\社工岗位.resx">
+      <DependentUpon>社工岗位.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区服务\社区服务.resx">
+      <DependentUpon>社区服务.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区建设\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\社区建设\社区建设.resx">
+      <DependentUpon>社区建设.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\基层科\民主管理\民主管理.resx">
+      <DependentUpon>民主管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Edit\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\副本 备案.resx">
+      <DependentUpon>副本 备案.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\评估.resx">
+      <DependentUpon>评估.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Edit\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\变更记录.resx">
+      <DependentUpon>变更记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\备案.resx">
+      <DependentUpon>备案.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\年检记录.resx">
+      <DependentUpon>年检记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\成员信息.resx">
+      <DependentUpon>成员信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\换证记录.resx">
+      <DependentUpon>换证记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\行政执法记录.resx">
+      <DependentUpon>行政执法记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Tab\评估.resx">
+      <DependentUpon>评估.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_社团\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\人员管理.resx">
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\会员管理.resx">
+      <DependentUpon>会员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\其他管理.resx">
+      <DependentUpon>其他管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\Tab\资产管理.resx">
+      <DependentUpon>资产管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账统计\人员管理.resx">
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账统计\会员管理.resx">
+      <DependentUpon>会员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账统计\其他管理.resx">
+      <DependentUpon>其他管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账统计\资产管理.resx">
+      <DependentUpon>资产管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账统计\台账统计.resx">
+      <DependentUpon>台账统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\台账列表\台账列表.resx">
+      <DependentUpon>台账列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\行政执法记录.resx">
+      <DependentUpon>行政执法记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\换证记录.resx">
+      <DependentUpon>换证记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\年检记录.resx">
+      <DependentUpon>年检记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\变更记录.resx">
+      <DependentUpon>变更记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Tab\成员信息.resx">
+      <DependentUpon>成员信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\民管局\登记备案_民非\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Tab\ButnTool.resx">
+      <DependentUpon>ButnTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Tab\担保人.resx">
+      <DependentUpon>担保人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Tab\监护人.resx">
+      <DependentUpon>监护人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.resx">
+      <DependentUpon>老人费用管理_退费登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.resx">
+      <DependentUpon>老人费用管理_费用登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\TabWnd.resx">
+      <DependentUpon>TabWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\养老服务费.resx">
+      <DependentUpon>养老服务费.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\应收金额.resx">
+      <DependentUpon>应收金额.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人电费.resx">
+      <DependentUpon>老人电费.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人药费.resx">
+      <DependentUpon>老人药费.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\老人伙食费.resx">
+      <DependentUpon>老人伙食费.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\老人费用统计.resx">
+      <DependentUpon>老人费用统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人退住\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人退住\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人退住\老人退住管理.resx">
+      <DependentUpon>老人退住管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\老人入住.resx">
+      <DependentUpon>老人入住.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\Comm\SelectType.resx">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人.resx">
+      <DependentUpon>已发老龄津贴老人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\Comm\查找\已发老龄津贴老人_Find.resx">
+      <DependentUpon>已发老龄津贴老人_Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_统计\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄优待证_发放\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Tool.resx">
+      <DependentUpon>Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_停发\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_发放\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\老龄办\老龄津贴_统计\列表.resx">
+      <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\日志管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\日志管理\操作日志.resx">
+      <DependentUpon>操作日志.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\日志管理\登录日志.resx">
+      <DependentUpon>登录日志.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\参数管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\权限管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\用户管理\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\用户管理\List.resx">
+      <DependentUpon>List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\系统配置\用户管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\首页\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\LeftWnd.resx">
+      <DependentUpon>LeftWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\XLeftPnl.resx">
+      <DependentUpon>XLeftPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\技术支持\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\事务科.resx">
+      <DependentUpon>事务科.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\优抚科.resx">
+      <DependentUpon>优抚科.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\福利中心.resx">
+      <DependentUpon>福利中心.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\基层科.resx">
+      <DependentUpon>基层科.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\民管局.resx">
+      <DependentUpon>民管局.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\日志管理\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\系统配置\Wnd.resx">
+      <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据分析.resx">
+      <DependentUpon>数据分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LeftPnl\数据管理\老龄办.resx">
+      <DependentUpon>老龄办.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\TopBar.resx">
+      <DependentUpon>TopBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\Buss.csproj">
+      <Project>{b02cedad-e4f7-401d-b4a1-4dfb690d3df8}</Project>
+      <Name>Buss</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DB\DB.csproj">
+      <Project>{a1d2e725-22e7-4723-9a97-58acaf920f6f}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Def\Def.csproj">
+      <Project>{e86a10e0-6a28-4cbe-b767-1e6d7dbe44f1}</Project>
+      <Name>Def</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontFlag\FrontFlag.csproj">
+      <Project>{40e5d6d3-0acc-46d1-9a4a-8818df3756ce}</Project>
+      <Name>FrontFlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{ef3f1aad-c34e-4b52-8ba6-927298120d3f}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\UI.csproj">
+      <Project>{3e15e556-3b6c-461d-9a76-5341cec3a652}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{bb633b36-607f-4343-8174-fb5ec45791eb}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layout\LeftPnl\数据分析\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Exe.ico" />
+    <Content Include="说明.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

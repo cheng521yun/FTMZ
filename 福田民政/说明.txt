@@ -1,0 +1,33 @@
+﻿login 界面
+文件：福田民政\Fun\StartApp.cs
+函数：Ready()
+
+
+主菜单：
+UI\Pnl\Top\主菜单.cs
+由SetBtn()设置MenuItem
+
+
+主菜单定义：
+def\menu\topmenu.cs
+(E:\DoWork\FTMZ\Project\Def\Menu\TopMenu.cs)
+
+
+html 导航界面
+E:\DoWork\FTMZ\Project\福田民政\Forms\Work\首页\Wnd.cs
+
+
+Find中导入导出按钮
+文件：UI\UC\Comm\ListTool.cs
+
+
+//更新科室-------------------------------------------------
+
+屏蔽菜单 
+修改菜单定义
+E:\MyWork\FTMZ\Project\Def\Menu\TopMenu.cs
+new XToolStripMenuItem() 添加 true 参数表示显示此菜单 （临时设定，正式版本改为False表示屏蔽）
+
+屏蔽首页html
+E:\DoWork\FTMZ\Project\福田民政\Forms\Work\首页\Wnd.cs
+

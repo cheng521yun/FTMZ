@@ -1,0 +1,5 @@
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Present\bin\Debug\Present.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Present\bin\Debug\Present.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Present\obj\Debug\Present.csprojResolveAssemblyReference.cache
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Present\obj\Debug\Present.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\Present\obj\Debug\Present.pdb

@@ -1,0 +1,90 @@
+﻿namespace UI.Ctrl.Btn
+{
+    partial class TopMenuBtn
+    {
+        /// <summary> 
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose( bool disposing )
+        {
+            if ( disposing && ( components != null ) )
+            {
+                components.Dispose();
+            }
+            base.Dispose( disposing );
+        }
+
+        #region 组件设计器生成的代码
+
+        /// <summary> 
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.labCaption = new System.Windows.Forms.Label();
+            this.picbox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // labCaption
+            // 
+            this.labCaption.AutoSize = true;
+            this.labCaption.BackColor = System.Drawing.Color.Transparent;
+            this.labCaption.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labCaption.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labCaption.Location = new System.Drawing.Point(5, 43);
+            this.labCaption.Name = "labCaption";
+            this.labCaption.Size = new System.Drawing.Size(53, 17);
+            this.labCaption.TabIndex = 0;
+            this.labCaption.Text = "Caption";
+            this.labCaption.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labCaption_MouseDown);
+            this.labCaption.MouseEnter += new System.EventHandler(this.labCaption_MouseEnter);
+            this.labCaption.MouseLeave += new System.EventHandler(this.labCaption_MouseLeave);
+            // 
+            // picbox
+            // 
+            this.picbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbox.Location = new System.Drawing.Point(10, 2);
+            this.picbox.Name = "picbox";
+            this.picbox.Size = new System.Drawing.Size(40, 40);
+            this.picbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbox.TabIndex = 1;
+            this.picbox.TabStop = false;
+            this.picbox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picbox_MouseDown);
+            this.picbox.MouseEnter += new System.EventHandler(this.picbox_MouseEnter);
+            this.picbox.MouseLeave += new System.EventHandler(this.picbox_MouseLeave);
+            // 
+            // TopMenuBtn
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.picbox);
+            this.Controls.Add(this.labCaption);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name = "TopMenuBtn";
+            this.Size = new System.Drawing.Size(60, 60);
+            this.Load += new System.EventHandler(this.TopMenuBtn_Load);
+            this.SizeChanged += new System.EventHandler(this.TopMenuBtn_SizeChanged);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopMenuBtn_MouseDown);
+            this.MouseEnter += new System.EventHandler(this.TopMenuBtn_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.TopMenuBtn_MouseLeave);
+            ((System.ComponentModel.ISupportInitialize)(this.picbox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label labCaption;
+        private System.Windows.Forms.PictureBox picbox;
+    }
+}

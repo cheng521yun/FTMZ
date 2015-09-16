@@ -1,0 +1,4 @@
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\PacK\bin\Debug\PacK.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\PacK\bin\Debug\PacK.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\PacK\obj\Debug\PacK.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\PacK\obj\Debug\PacK.pdb

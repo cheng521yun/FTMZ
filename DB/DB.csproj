@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1D2E725-22E7-4723-9A97-58ACAF920F6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DB</RootNamespace>
+    <AssemblyName>DB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DA\事务科\专项救助_低保边缘户.cs" />
+    <Compile Include="DA\事务科\专项救助_意外救助.cs" />
+    <Compile Include="DA\事务科\专项救助_疾病救助.cs" />
+    <Compile Include="DA\事务科\低收入居民.cs" />
+    <Compile Include="DA\事务科\低收入居民_发放记录.cs" />
+    <Compile Include="DA\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\三属\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\三属\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\三属\类别信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\三红\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\三红\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\五老人员\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\五老人员\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\伤残人员\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\伤残人员\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\伤残人员\类别信息.cs" />
+    <Compile Include="DA\优抚科\优抚资金发放.cs" />
+    <Compile Include="DA\优抚科\伤残物品发放.cs" />
+    <Compile Include="DA\优抚科\优抚对象\六十周岁以上农村籍退役人员\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\六十周岁以上农村籍退役人员\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\参战涉核人员\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\参战涉核人员\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\参战涉核人员\类别信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\在乡复员军人\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\在乡复员军人\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\带病回乡退伍军人\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\带病回乡退伍军人\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\港澳老战士和烈属\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\港澳老战士和烈属\生活费来源.cs" />
+    <Compile Include="DA\优抚科\优抚对象\部分烈士错杀被平反人员子女\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\铀矿开采军队退役人员\基本信息.cs" />
+    <Compile Include="DA\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
+    <Compile Include="DA\优抚科\伤残物品登记.cs" />
+    <Compile Include="DA\优抚科\抚恤标准.cs" />
+    <Compile Include="DA\系统\SysParam.cs" />
+    <Compile Include="DA\老龄办\敬老优待证.cs" />
+    <Compile Include="DA\老龄办\停发老龄津贴.cs" />
+    <Compile Include="DA\老龄办\发放老龄津贴.cs" />
+    <Compile Include="DA\老龄办\敬老优待证统计.cs" />
+    <Compile Include="DA\老龄办\敬老优待证统计2.cs" />
+    <Compile Include="DA\老龄办\老龄津贴统计.cs" />
+    <Compile Include="DA\老龄办\老龄津贴统计2.cs" />
+    <Compile Include="DA\职员\Role.cs" />
+    <Compile Include="DA\职员\UserRole.cs" />
+    <Compile Include="DA\职员\vewUser.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="ORM\事务科\专项救助_低保边缘户.cs" />
+    <Compile Include="ORM\事务科\专项救助_意外救助.cs" />
+    <Compile Include="ORM\事务科\专项救助_疾病救助.cs" />
+    <Compile Include="ORM\事务科\低收入居民.cs" />
+    <Compile Include="ORM\事务科\低收入居民_发放记录.cs" />
+    <Compile Include="ORM\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\三属\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\三属\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\三属\类别信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\三红\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\三红\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\五老人员\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\五老人员\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\伤残人员\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\伤残人员\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\伤残人员\类别信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\六十周岁以上农村籍退役人员\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\六十周岁以上农村籍退役人员\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\参战涉核人员\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\参战涉核人员\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\参战涉核人员\类别信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\在乡复员军人\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\在乡复员军人\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\带病回乡退伍军人\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\带病回乡退伍军人\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\港澳老战士和烈属\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\港澳老战士和烈属\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\部分烈士错杀被平反人员子女\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\铀矿开采军队退役人员\基本信息.cs" />
+    <Compile Include="ORM\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
+    <Compile Include="ORM\优抚科\优抚资金发放.cs" />
+    <Compile Include="ORM\优抚科\伤残物品发放.cs" />
+    <Compile Include="ORM\优抚科\伤残物品登记.cs" />
+    <Compile Include="ORM\优抚科\抚恤标准.cs" />
+    <Compile Include="ORM\系统\SysParam.cs" />
+    <Compile Include="ORM\老龄办\敬老优待证.cs" />
+    <Compile Include="ORM\老龄办\停发老龄津贴.cs" />
+    <Compile Include="ORM\老龄办\发放老龄津贴.cs" />
+    <Compile Include="ORM\老龄办\敬老优待证统计.cs" />
+    <Compile Include="ORM\老龄办\敬老优待证统计2.cs" />
+    <Compile Include="ORM\老龄办\老龄津贴统计.cs" />
+    <Compile Include="ORM\老龄办\老龄津贴统计2.cs" />
+    <Compile Include="ORM\职员\Role.cs" />
+    <Compile Include="ORM\职员\UserRole.cs" />
+    <Compile Include="ORM\职员\User_.cs" />
+    <Compile Include="ORM\职员\vewUser.cs" />
+    <Compile Include="Param.cs" />
+    <Compile Include="DA\Log.cs" />
+    <Compile Include="DA\职员\User.cs" />
+    <Compile Include="DA\人员\人员.cs" />
+    <Compile Include="ORM\Log.cs" />
+    <Compile Include="ORM\职员\User.cs" />
+    <Compile Include="ORM\人员\人员.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stru\Log.cs" />
+    <Compile Include="Stru\事务科\专项救助_低保边缘户.cs" />
+    <Compile Include="Stru\事务科\专项救助_意外救助.cs" />
+    <Compile Include="Stru\事务科\专项救助_疾病救助.cs" />
+    <Compile Include="Stru\事务科\低收入居民.cs" />
+    <Compile Include="Stru\事务科\低收入居民_发放记录.cs" />
+    <Compile Include="Stru\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\三属\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\三属\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\三属\类别信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\三红\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\三红\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\五老人员\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\五老人员\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\伤残人员\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\伤残人员\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\伤残人员\类别信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\六十周岁以上农村籍退役人员\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\六十周岁以上农村籍退役人员\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\参战涉核人员\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\参战涉核人员\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\参战涉核人员\类别信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\在乡复员军人\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\在乡复员军人\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\带病回乡退伍军人\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\带病回乡退伍军人\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\港澳老战士和烈属\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\港澳老战士和烈属\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\部分烈士错杀被平反人员子女\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\铀矿开采军队退役人员\基本信息.cs" />
+    <Compile Include="Stru\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
+    <Compile Include="Stru\优抚科\优抚资金发放.cs" />
+    <Compile Include="Stru\优抚科\伤残物品发放.cs" />
+    <Compile Include="Stru\优抚科\伤残物品登记.cs" />
+    <Compile Include="Stru\优抚科\抚恤标准.cs" />
+    <Compile Include="Stru\系统\SysParam.cs" />
+    <Compile Include="Stru\老龄办\发放老龄津贴2.cs" />
+    <Compile Include="Stru\老龄办\敬老优待证.cs" />
+    <Compile Include="Stru\老龄办\停发老龄津贴.cs" />
+    <Compile Include="Stru\老龄办\发放老龄津贴.cs" />
+    <Compile Include="Stru\老龄办\敬老优待证统计.cs" />
+    <Compile Include="Stru\老龄办\敬老优待证统计2.cs" />
+    <Compile Include="Stru\老龄办\老龄津贴统计.cs" />
+    <Compile Include="Stru\老龄办\老龄津贴统计2.cs" />
+    <Compile Include="Stru\职员\User.cs" />
+    <Compile Include="Stru\人员\人员.cs" />
+    <Compile Include="Stru\职员\Role.cs" />
+    <Compile Include="Stru\职员\UserRole.cs" />
+    <Compile Include="Stru\职员\User_.cs" />
+    <Compile Include="Stru\职员\vewUser.cs" />
+    <Compile Include="Tab\Log.cs" />
+    <Compile Include="Tab\事务科\专项救助_低保边缘户.cs" />
+    <Compile Include="Tab\事务科\专项救助_疾病救助.cs" />
+    <Compile Include="Tab\事务科\专项救助_意外救助.cs" />
+    <Compile Include="Tab\事务科\低收入居民.cs" />
+    <Compile Include="Tab\事务科\低收入居民_发放记录.cs" />
+    <Compile Include="Tab\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\三属\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\三属\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\三属\类别信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\三红\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\三红\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\五老人员\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\五老人员\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\伤残人员\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\伤残人员\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\伤残人员\类别信息.cs" />
+    <Compile Include="Tab\优抚科\优抚资金发放.cs" />
+    <Compile Include="Tab\优抚科\伤残物品发放.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\六十周岁以上农村籍退役人员\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\六十周岁以上农村籍退役人员\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\参战涉核人员\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\参战涉核人员\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\参战涉核人员\类别信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\在乡复员军人\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\在乡复员军人\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\带病回乡退伍军人\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\带病回乡退伍军人\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\港澳老战士和烈属\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\港澳老战士和烈属\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\铀矿开采军队退役人员\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\部分烈士错杀被平反人员子女\基本信息.cs" />
+    <Compile Include="Tab\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
+    <Compile Include="Tab\优抚科\伤残物品登记.cs" />
+    <Compile Include="Tab\优抚科\抚恤标准.cs" />
+    <Compile Include="Tab\系统\SysParam.cs" />
+    <Compile Include="Tab\老龄办\敬老优待证.cs" />
+    <Compile Include="Tab\老龄办\停发老龄津贴.cs" />
+    <Compile Include="Tab\老龄办\发放老龄津贴.cs" />
+    <Compile Include="Tab\老龄办\敬老优待证统计.cs" />
+    <Compile Include="Tab\老龄办\老龄津贴统计.cs" />
+    <Compile Include="Tab\职员\User.cs" />
+    <Compile Include="Tab\职员\Role.cs" />
+    <Compile Include="Tab\人员\人员.cs" />
+    <Compile Include="Tab\职员\UserRole.cs" />
+    <Compile Include="Tab\职员\vewUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Def\Def.csproj">
+      <Project>{e86a10e0-6a28-4cbe-b767-1e6d7dbe44f1}</Project>
+      <Name>Def</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontFlag\FrontFlag.csproj">
+      <Project>{40e5d6d3-0acc-46d1-9a4a-8818df3756ce}</Project>
+      <Name>FrontFlag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

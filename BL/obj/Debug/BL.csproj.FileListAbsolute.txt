@@ -1,0 +1,11 @@
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\BL\bin\Debug\BL.dll.config
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\BL\bin\Debug\BL.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\BL\bin\Debug\BL.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\BL\obj\Debug\BL.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政系统》\Project\BL\obj\Debug\BL.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\bin\Debug\BL.dll.config
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\bin\Debug\BL.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\bin\Debug\BL.pdb
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\obj\Debug\BL.dll
+F:\MyWork\《编程项目》\《数据库项目》\《福田民政》\Project\BL\obj\Debug\BL.pdb
