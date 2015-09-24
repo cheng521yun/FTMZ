@@ -520,6 +520,12 @@
     <Compile Include="UC\福利中心\老人入住管理\老人入住管理.Designer.cs">
       <DependentUpon>老人入住管理.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\福利中心\老人费用登记管理\老人费用登记管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\福利中心\老人费用登记管理\老人费用登记管理.Designer.cs">
+      <DependentUpon>老人费用登记管理.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\福利中心\老人退住管理\老人退住管理.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -758,6 +764,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\福利中心\老人入住管理\老人入住管理.resx">
       <DependentUpon>老人入住管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\福利中心\老人费用登记管理\老人费用登记管理.resx">
+      <DependentUpon>老人费用登记管理.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\福利中心\老人退住管理\老人退住管理.resx">
       <DependentUpon>老人退住管理.cs</DependentUpon>

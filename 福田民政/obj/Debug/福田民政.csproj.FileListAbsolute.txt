@@ -966,3 +966,5 @@ E:\yun\mail+project\FTMZ\福田民政\obj\Debug\福田民政.csproj.GenerateReso
 E:\yun\mail+project\FTMZ\福田民政\obj\Debug\cs\福田民政.resources.dll
 E:\yun\mail+project\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担保人.Edit.resources
 E:\yun\mail+project\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.监护人.Edit.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担保人.Edit.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.监护人.Edit.resources

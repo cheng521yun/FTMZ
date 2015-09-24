@@ -32,22 +32,20 @@ namespace UI.UC.福利中心.老人退住管理
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txt姓名 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbType = new System.Windows.Forms.ComboBox();
-            this.txt年龄 = new UI.Ctrl.TextBox.NumberTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt身份证 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt所属社区 = new System.Windows.Forms.TextBox();
+            this.txt申请时间 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt通讯住址 = new System.Windows.Forms.TextBox();
+            this.txt入住时间 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt银行帐号 = new System.Windows.Forms.TextBox();
+            this.txt退住级别 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt电话号码 = new System.Windows.Forms.TextBox();
+            this.txt入住级别 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmb性别 = new UI.Ctrl.Cmb.性别();
+            this.txt年龄 = new UI.Ctrl.TextBox.NumberTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -65,35 +63,6 @@ namespace UI.UC.福利中心.老人退住管理
             this.txt姓名.Name = "txt姓名";
             this.txt姓名.Size = new System.Drawing.Size(100, 21);
             this.txt姓名.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "类别：";
-            // 
-            // cmbType
-            // 
-            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbType.FormattingEnabled = true;
-            this.cmbType.Items.AddRange(new object[] {
-            "",
-            "低保",
-            "边缘"});
-            this.cmbType.Location = new System.Drawing.Point(101, 5);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(100, 20);
-            this.cmbType.TabIndex = 3;
-            // 
-            // txt年龄
-            // 
-            this.txt年龄.Location = new System.Drawing.Point(101, 68);
-            this.txt年龄.Name = "txt年龄";
-            this.txt年龄.Size = new System.Drawing.Size(100, 21);
-            this.txt年龄.TabIndex = 5;
             // 
             // label3
             // 
@@ -129,12 +98,12 @@ namespace UI.UC.福利中心.老人退住管理
             this.label5.TabIndex = 8;
             this.label5.Text = "性别：";
             // 
-            // txt所属社区
+            // txt申请时间
             // 
-            this.txt所属社区.Location = new System.Drawing.Point(101, 164);
-            this.txt所属社区.Name = "txt所属社区";
-            this.txt所属社区.Size = new System.Drawing.Size(100, 21);
-            this.txt所属社区.TabIndex = 13;
+            this.txt申请时间.Location = new System.Drawing.Point(101, 164);
+            this.txt申请时间.Name = "txt申请时间";
+            this.txt申请时间.Size = new System.Drawing.Size(100, 21);
+            this.txt申请时间.TabIndex = 13;
             // 
             // label6
             // 
@@ -143,14 +112,14 @@ namespace UI.UC.福利中心.老人退住管理
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 12;
-            this.label6.Text = "所属社区：";
+            this.label6.Text = "申请时间：";
             // 
-            // txt通讯住址
+            // txt入住时间
             // 
-            this.txt通讯住址.Location = new System.Drawing.Point(101, 132);
-            this.txt通讯住址.Name = "txt通讯住址";
-            this.txt通讯住址.Size = new System.Drawing.Size(100, 21);
-            this.txt通讯住址.TabIndex = 11;
+            this.txt入住时间.Location = new System.Drawing.Point(101, 132);
+            this.txt入住时间.Name = "txt入住时间";
+            this.txt入住时间.Size = new System.Drawing.Size(100, 21);
+            this.txt入住时间.TabIndex = 11;
             // 
             // label7
             // 
@@ -159,14 +128,14 @@ namespace UI.UC.福利中心.老人退住管理
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 10;
-            this.label7.Text = "通讯住址：";
+            this.label7.Text = "入住时间：";
             // 
-            // txt银行帐号
+            // txt退住级别
             // 
-            this.txt银行帐号.Location = new System.Drawing.Point(101, 228);
-            this.txt银行帐号.Name = "txt银行帐号";
-            this.txt银行帐号.Size = new System.Drawing.Size(255, 21);
-            this.txt银行帐号.TabIndex = 17;
+            this.txt退住级别.Location = new System.Drawing.Point(101, 228);
+            this.txt退住级别.Name = "txt退住级别";
+            this.txt退住级别.Size = new System.Drawing.Size(255, 21);
+            this.txt退住级别.TabIndex = 17;
             // 
             // label8
             // 
@@ -175,14 +144,14 @@ namespace UI.UC.福利中心.老人退住管理
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 12);
             this.label8.TabIndex = 16;
-            this.label8.Text = "银行帐号：";
+            this.label8.Text = "退住级别：";
             // 
-            // txt电话号码
+            // txt入住级别
             // 
-            this.txt电话号码.Location = new System.Drawing.Point(101, 196);
-            this.txt电话号码.Name = "txt电话号码";
-            this.txt电话号码.Size = new System.Drawing.Size(100, 21);
-            this.txt电话号码.TabIndex = 15;
+            this.txt入住级别.Location = new System.Drawing.Point(101, 196);
+            this.txt入住级别.Name = "txt入住级别";
+            this.txt入住级别.Size = new System.Drawing.Size(100, 21);
+            this.txt入住级别.TabIndex = 15;
             // 
             // label9
             // 
@@ -191,31 +160,42 @@ namespace UI.UC.福利中心.老人退住管理
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 12);
             this.label9.TabIndex = 14;
-            this.label9.Text = "电话号码：";
+            this.label9.Text = "入住级别：";
             // 
             // cmb性别
             // 
             this.cmb性别.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb性别.DropDownWidth = 80;
             this.cmb性别.FormattingEnabled = true;
+            this.cmb性别.Items.AddRange(new object[] {
+            " ",
+            "男",
+            "女"});
             this.cmb性别.Location = new System.Drawing.Point(276, 36);
             this.cmb性别.Name = "cmb性别";
             this.cmb性别.Size = new System.Drawing.Size(80, 20);
             this.cmb性别.TabIndex = 9;
             this.cmb性别.Value = "False";
             // 
-            // 低收入居民
+            // txt年龄
+            // 
+            this.txt年龄.Location = new System.Drawing.Point(101, 68);
+            this.txt年龄.Name = "txt年龄";
+            this.txt年龄.Size = new System.Drawing.Size(100, 21);
+            this.txt年龄.TabIndex = 5;
+            // 
+            // 老人退住管理
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.txt银行帐号);
+            this.Controls.Add(this.txt退住级别);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txt电话号码);
+            this.Controls.Add(this.txt入住级别);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txt所属社区);
+            this.Controls.Add(this.txt申请时间);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt通讯住址);
+            this.Controls.Add(this.txt入住时间);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmb性别);
             this.Controls.Add(this.label5);
@@ -223,11 +203,9 @@ namespace UI.UC.福利中心.老人退住管理
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt年龄);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmbType);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txt姓名);
             this.Controls.Add(this.label1);
-            this.Name = "低收入居民";
+            this.Name = "老人退住管理";
             this.Size = new System.Drawing.Size(398, 297);
             this.Load += new System.EventHandler(this.老人退住管理_Load);
             this.ResumeLayout(false);
@@ -239,21 +217,19 @@ namespace UI.UC.福利中心.老人退住管理
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt姓名;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbType;
         private NumberTextBox txt年龄;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt身份证;
         private System.Windows.Forms.Label label4;
         private UI.Ctrl.Cmb.性别 cmb性别;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt所属社区;
+        private System.Windows.Forms.TextBox txt申请时间;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt通讯住址;
+        private System.Windows.Forms.TextBox txt入住时间;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt银行帐号;
+        private System.Windows.Forms.TextBox txt退住级别;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt电话号码;
+        private System.Windows.Forms.TextBox txt入住级别;
         private System.Windows.Forms.Label label9;
     }
 }
