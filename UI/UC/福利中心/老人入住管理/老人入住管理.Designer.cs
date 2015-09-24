@@ -46,7 +46,7 @@ namespace UI.UC.福利中心.老人入住管理
             this.txt家庭住址 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmb性别 = new UI.Ctrl.Cmb.性别();
-            this.txt身体事由 = new System.Windows.Forms.TextBox();
+            this.txt申请事由 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt押金费用 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -187,6 +187,9 @@ namespace UI.UC.福利中心.老人入住管理
             "女",
             " ",
             "男",
+            "女",
+            " ",
+            "男",
             "女"});
             this.cmb性别.Location = new System.Drawing.Point(276, 36);
             this.cmb性别.Name = "cmb性别";
@@ -196,10 +199,10 @@ namespace UI.UC.福利中心.老人入住管理
             // 
             // txt身体事由
             // 
-            this.txt身体事由.Location = new System.Drawing.Point(100, 261);
-            this.txt身体事由.Name = "txt身体事由";
-            this.txt身体事由.Size = new System.Drawing.Size(255, 21);
-            this.txt身体事由.TabIndex = 19;
+            this.txt申请事由.Location = new System.Drawing.Point(100, 261);
+            this.txt申请事由.Name = "txt身体事由";
+            this.txt申请事由.Size = new System.Drawing.Size(255, 21);
+            this.txt申请事由.TabIndex = 19;
             // 
             // label2
             // 
@@ -208,7 +211,7 @@ namespace UI.UC.福利中心.老人入住管理
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 18;
-            this.label2.Text = "身体事由：";
+            this.label2.Text = "申请事由：";
             // 
             // txt押金费用
             // 
@@ -233,7 +236,7 @@ namespace UI.UC.福利中心.老人入住管理
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txt押金费用);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txt身体事由);
+            this.Controls.Add(this.txt申请事由);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt身体状况);
             this.Controls.Add(this.label8);
@@ -277,7 +280,7 @@ namespace UI.UC.福利中心.老人入住管理
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt家庭住址;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt身体事由;
+        private System.Windows.Forms.TextBox txt申请事由;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt押金费用;
         private System.Windows.Forms.Label label10;

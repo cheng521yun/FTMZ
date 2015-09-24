@@ -13,7 +13,7 @@ namespace UI.UC.福利中心.老人入住管理
 {
     public partial class 老人入住管理 : UserControl
     {
-        DB.Stru.事务科.低收入居民_发放记录 _stru = new DB.Stru.事务科.低收入居民_发放记录();
+        DB.Stru.福利中心.老人入住管理 _stru = new DB.Stru.福利中心.老人入住管理();
 
         public 老人入住管理()
         {
@@ -21,7 +21,7 @@ namespace UI.UC.福利中心.老人入住管理
         }
 
         #region 属性
-        public DB.Stru.事务科.低收入居民_发放记录 stru
+        public DB.Stru.福利中心.老人入住管理 stru
         {
             set 
             { 
@@ -39,41 +39,36 @@ namespace UI.UC.福利中心.老人入住管理
 
         private void 老人入住管理_Load( object sender, EventArgs e )
         {
-            //DB2Dlg();
+            DB2Dlg();
         }
 
         private void DB2Dlg()
         {
-            /*
-            FF.Ctrl.Combo.SetSelectText( cmbType, _stru.类别 );
-            txt姓名.Text = _stru.户主姓名;
+            txt姓名.Text = _stru.姓名;
             cmb性别.Value = _stru.性别;
-            txt年龄.Text = _stru.年龄;
+            txt本人成分.Text = _stru.本人成份;
             txt身份证.Text = _stru.身份证;
-            txt通讯住址.Text = _stru.通讯住址;
-            txt所属社区.Text = _stru.所属社区;
-            txt电话号码.Text = _stru.电话号码;
-            txt银行帐号.Text = _stru.银行帐号;
-            */
-
+            txt户籍所在地.Text = _stru.户籍所在地;
+            txt籍贯.Text = _stru.籍贯;
+            txt家庭住址.Text = _stru.家庭住址;
+            txt申请事由.Text = _stru.申请事由;
+            txt押金费用.Text = _stru.押金费用;
+            txt身体状况.Text = _stru.身体状况;
 
         }
 
         private void Dlg2DB()
         {
-            /*
-            _stru.类别 = cmbType.Text;
-            _stru.户主姓名 = txt姓名.Text.Trim();
+            _stru.姓名 = txt姓名.Text;
             _stru.性别 = cmb性别.Value;
-            _stru.年龄 = txt年龄.Text.Trim();
-            _stru.身份证 = txt身份证.Text.Trim();
-            _stru.通讯住址 = txt通讯住址.Text.Trim();
-            _stru.所属社区 = txt所属社区.Text.Trim();
-            _stru.电话号码 = txt电话号码.Text.Trim();
-            _stru.银行帐号 = txt银行帐号.Text.Trim();
-             * */
+            _stru.本人成份 = txt本人成分.Text;
+            _stru.身份证 = txt身份证.Text;
+            _stru.户籍所在地 = txt户籍所在地.Text;
+            _stru.籍贯 = txt籍贯.Text;
+            _stru.家庭住址 = txt家庭住址.Text;
+            _stru.申请事由 = txt申请事由.Text;
+            _stru.押金费用 = txt押金费用.Text;
+            _stru.身体状况 = txt身体状况.Text;
         }
-
-
     }
 }

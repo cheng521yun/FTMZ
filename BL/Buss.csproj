@@ -63,6 +63,8 @@
     <Compile Include="优抚科\优抚科.cs" />
     <Compile Include="基层科\民主管理信息管理.cs" />
     <Compile Include="基层科\基层科.cs" />
+    <Compile Include="福利中心\福利中心.cs" />
+    <Compile Include="福利中心\老人入住管理.cs" />
     <Compile Include="系统\SysParam.cs" />
     <Compile Include="老龄办\敬老优待证.cs" />
     <Compile Include="老龄办\停发老龄津贴.cs" />

@@ -1,5 +1,3 @@
-ï»¿
-
 
 using System;
 using System.Collections.Generic;
@@ -9,194 +7,203 @@ using System.Data;
 
 using FrontFlag;
 
-namespace DB.Stru.ç¦åˆ©ä¸­å¿ƒ
+namespace DB.Stru.¸£ÀûÖĞĞÄ
 {
-    public class è€äººå…¥ä½ç®¡ç†
+    public class ÀÏÈËÈë×¡¹ÜÀí
     {
-        string _ID = String.Empty;
-        string _CreateDate = String.Empty;
-        string _Creator = String.Empty;
-        string _å§”å‘˜ä¼šåç§° = String.Empty;
-        string _æ‰€å±è¡—é“1 = String.Empty;
-        string _æ‰€å±è¡—é“2 = String.Empty;
-        string _åŠå…¬ç”µè¯ = String.Empty;
-        string _å§”å‘˜ä¼šåœ°å€ = String.Empty;
-        string _äººå£æ•° = String.Empty;
-        string _é¢ç§¯ = String.Empty;
-        string _è¾–åŒºèŒƒå›´ = String.Empty;
-        string _ç»„ç»‡æœºæ„ä»£ç  = String.Empty;
-
-        public è€äººå…¥ä½ç®¡ç†()
+		string _ID = String.Empty ; 
+		string _CreateDate = String.Empty ; 
+		string _Creator = String.Empty ; 
+		string _ĞÕÃû = String.Empty ; 
+		string _ĞÔ±ğ = String.Empty ; 
+		string _±¾ÈË³É·İ = String.Empty ; 
+		string _»§¼®ËùÔÚµØ = String.Empty ; 
+		string _¼®¹á = String.Empty ; 
+		string _Éí·İÖ¤ = String.Empty ; 
+		string _¼ÒÍ¥×¡Ö· = String.Empty ; 
+		string _ÉíÌå×´¿ö = String.Empty ; 
+		string _ÉêÇëÊÂÓÉ = String.Empty ; 
+		string _Ñº½ğ·ÑÓÃ = String.Empty ; 
+		
+		public ÀÏÈËÈë×¡¹ÜÀí()
+		{
+			Init();
+		}
+		
+		#region Prop 
+		
+		public string ID
+		{
+			set { _ID = value ; }
+			get { return _ID  ; }
+		}
+		
+		public string CreateDate
+		{
+			set { _CreateDate = value ; }
+			get { return _CreateDate  ; }
+		}
+		public DateTime datCreateDate
         {
-            Init();
+            set { _CreateDate = value.ToString("yyyy-MM-dd HH:mm:ss") ; }
+            get { return FF.Fun.MyConvert.Str2Date( _CreateDate ); }
         }
-
-        #region Prop
-
-        public string ID
-        {
-            set { _ID = value; }
-            get { return _ID; }
-        }
-
-        public string CreateDate
-        {
-            set { _CreateDate = value; }
-            get { return _CreateDate; }
-        }
-        public DateTime datCreateDate
-        {
-            set { _CreateDate = value.ToString("yyyy-MM-dd HH:mm:ss"); }
-            get { return FF.Fun.MyConvert.Str2Date(_CreateDate); }
-        }
-        public string CreateDateStr
-        {
-            get { return FF.Fun.MyConvert.Str2Date(_CreateDate).ToString("yyyy-MM-dd"); }
-        }
-
-        public string Creator
-        {
-            set { _Creator = value; }
-            get { return _Creator; }
-        }
-
-        public string å§”å‘˜ä¼šåç§°
-        {
-            set { _å§”å‘˜ä¼šåç§° = value; }
-            get { return _å§”å‘˜ä¼šåç§°; }
-        }
-
-        public string æ‰€å±è¡—é“1
-        {
-            set { _æ‰€å±è¡—é“1 = value; }
-            get { return _æ‰€å±è¡—é“1; }
-        }
-
-        public string æ‰€å±è¡—é“2
-        {
-            set { _æ‰€å±è¡—é“2 = value; }
-            get { return _æ‰€å±è¡—é“2; }
-        }
-
-        public string åŠå…¬ç”µè¯
-        {
-            set { _åŠå…¬ç”µè¯ = value; }
-            get { return _åŠå…¬ç”µè¯; }
-        }
-
-        public string å§”å‘˜ä¼šåœ°å€
-        {
-            set { _å§”å‘˜ä¼šåœ°å€ = value; }
-            get { return _å§”å‘˜ä¼šåœ°å€; }
-        }
-
-        public string äººå£æ•°
-        {
-            set { _äººå£æ•° = value; }
-            get { return _äººå£æ•°; }
-        }
-
-        public string é¢ç§¯
-        {
-            set { _é¢ç§¯ = value; }
-            get { return _é¢ç§¯; }
-        }
-
-        public string è¾–åŒºèŒƒå›´
-        {
-            set { _è¾–åŒºèŒƒå›´ = value; }
-            get { return _è¾–åŒºèŒƒå›´; }
-        }
-
-        public string ç»„ç»‡æœºæ„ä»£ç 
-        {
-            set { _ç»„ç»‡æœºæ„ä»£ç  = value; }
-            get { return _ç»„ç»‡æœºæ„ä»£ç ; }
-        }
-
-
-        #endregion
-
-        //Will Manual Input Code
-        //Default Value, 
-        void Init()
-        {
-        }
-
-        void Clear()
-        {
-            ID = String.Empty;
-            CreateDate = String.Empty;
-            Creator = String.Empty;
-            å§”å‘˜ä¼šåç§° = String.Empty;
-            æ‰€å±è¡—é“1 = String.Empty;
-            æ‰€å±è¡—é“2 = String.Empty;
-            åŠå…¬ç”µè¯ = String.Empty;
-            å§”å‘˜ä¼šåœ°å€ = String.Empty;
-            äººå£æ•° = String.Empty;
-            é¢ç§¯ = String.Empty;
-            è¾–åŒºèŒƒå›´ = String.Empty;
-            ç»„ç»‡æœºæ„ä»£ç  = String.Empty;
-
-            Init();
-        }
+		public string CreateDateStr
+		{
+			get { return FF.Fun.MyConvert.Str2Date(_CreateDate).ToString("yyyy-MM-dd"); }
+		}
+		
+		public string Creator
+		{
+			set { _Creator = value ; }
+			get { return _Creator  ; }
+		}
+		
+		public string ĞÕÃû
+		{
+			set { _ĞÕÃû = value ; }
+			get { return _ĞÕÃû  ; }
+		}
+		
+		public string ĞÔ±ğ
+		{
+			set { _ĞÔ±ğ = value ; }
+			get { return _ĞÔ±ğ  ; }
+		}
+		
+		public string ±¾ÈË³É·İ
+		{
+			set { _±¾ÈË³É·İ = value ; }
+			get { return _±¾ÈË³É·İ  ; }
+		}
+		
+		public string »§¼®ËùÔÚµØ
+		{
+			set { _»§¼®ËùÔÚµØ = value ; }
+			get { return _»§¼®ËùÔÚµØ  ; }
+		}
+		
+		public string ¼®¹á
+		{
+			set { _¼®¹á = value ; }
+			get { return _¼®¹á  ; }
+		}
+		
+		public string Éí·İÖ¤
+		{
+			set { _Éí·İÖ¤ = value ; }
+			get { return _Éí·İÖ¤  ; }
+		}
+		
+		public string ¼ÒÍ¥×¡Ö·
+		{
+			set { _¼ÒÍ¥×¡Ö· = value ; }
+			get { return _¼ÒÍ¥×¡Ö·  ; }
+		}
+		
+		public string ÉíÌå×´¿ö
+		{
+			set { _ÉíÌå×´¿ö = value ; }
+			get { return _ÉíÌå×´¿ö  ; }
+		}
+		
+		public string ÉêÇëÊÂÓÉ
+		{
+			set { _ÉêÇëÊÂÓÉ = value ; }
+			get { return _ÉêÇëÊÂÓÉ  ; }
+		}
+		
+		public string Ñº½ğ·ÑÓÃ
+		{
+			set { _Ñº½ğ·ÑÓÃ = value ; }
+			get { return _Ñº½ğ·ÑÓÃ  ; }
+		}
+		
+	
+		#endregion
+		
+		//Will Manual Input Code
+		//Default Value, 
+		void Init ()
+		{
+		}
+				
+		void Clear()
+		{
+			ID = String.Empty ; 
+			CreateDate = String.Empty ; 
+			Creator = String.Empty ; 
+			ĞÕÃû = String.Empty ; 
+			ĞÔ±ğ = String.Empty ; 
+			±¾ÈË³É·İ = String.Empty ; 
+			»§¼®ËùÔÚµØ = String.Empty ; 
+			¼®¹á = String.Empty ; 
+			Éí·İÖ¤ = String.Empty ; 
+			¼ÒÍ¥×¡Ö· = String.Empty ; 
+			ÉíÌå×´¿ö = String.Empty ; 
+			ÉêÇëÊÂÓÉ = String.Empty ; 
+			Ñº½ğ·ÑÓÃ = String.Empty ; 
+			
+			Init ();
+		}
 
         public bool IsValid()
         {
-            return (ID.Trim() == String.Empty) ? false : true;
+            return ( ID.Trim() == String.Empty ) ? false : true;
         }
-
+		
         public bool IsNotValid()
         {
-            return !IsValid();
+            return ! IsValid() ;
         }
+		
+		public bool Dr2Stru(DataRow dr)
+		{
+			Clear();
+		
+			if (dr == null)
+				return false;
+		
+			ID = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ID].ToString().Trim();
+			CreateDate = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.CreateDate].ToString().Trim();
+			Creator = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Creator].ToString().Trim();
+			ĞÕÃû = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ĞÕÃû].ToString().Trim();
+			ĞÔ±ğ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ĞÔ±ğ].ToString().Trim();
+			±¾ÈË³É·İ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.±¾ÈË³É·İ].ToString().Trim();
+			»§¼®ËùÔÚµØ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.»§¼®ËùÔÚµØ].ToString().Trim();
+			¼®¹á = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.¼®¹á].ToString().Trim();
+			Éí·İÖ¤ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Éí·İÖ¤].ToString().Trim();
+			¼ÒÍ¥×¡Ö· = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.¼ÒÍ¥×¡Ö·].ToString().Trim();
+			ÉíÌå×´¿ö = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ÉíÌå×´¿ö].ToString().Trim();
+			ÉêÇëÊÂÓÉ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ÉêÇëÊÂÓÉ].ToString().Trim();
+			Ñº½ğ·ÑÓÃ = dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Ñº½ğ·ÑÓÃ].ToString().Trim();
+		
+			return true;
+		}
 
-        public bool Dr2Stru(DataRow dr)
+		public static List<DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí> Dt2List(ref DataTable dt)
         {
-            Clear();
-
-            if (dr == null)
-                return false;
-
-            ID = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.ID].ToString().Trim();
-            CreateDate = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.CreateDate].ToString().Trim();
-            Creator = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.Creator].ToString().Trim();
-            å§”å‘˜ä¼šåç§° = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.å§”å‘˜ä¼šåç§°].ToString().Trim();
-            æ‰€å±è¡—é“1 = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.æ‰€å±è¡—é“1].ToString().Trim();
-            æ‰€å±è¡—é“2 = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.æ‰€å±è¡—é“2].ToString().Trim();
-            åŠå…¬ç”µè¯ = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.åŠå…¬ç”µè¯].ToString().Trim();
-            å§”å‘˜ä¼šåœ°å€ = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.å§”å‘˜ä¼šåœ°å€].ToString().Trim();
-            äººå£æ•° = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.äººå£æ•°].ToString().Trim();
-            é¢ç§¯ = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.é¢ç§¯].ToString().Trim();
-            è¾–åŒºèŒƒå›´ = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.è¾–åŒºèŒƒå›´].ToString().Trim();
-            ç»„ç»‡æœºæ„ä»£ç  = dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.ç»„ç»‡æœºæ„ä»£ç ].ToString().Trim();
-
-            return true;
-        }
-
-        public static List<DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†> Dt2List(ref DataTable dt)
-        {
-            List<DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†> lst = new List<DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†>();
+            List<DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí> lst = new List<DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí>();
 
             if (SQL.IsNotValid(ref dt))
                 return lst;
 
             foreach (DataRow dr in dt.Rows)
             {
-                DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† stru = new DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†();
-                stru.Dr2Stru(dr);
-                lst.Add(stru);
+                DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí stru = new DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí();
+                stru.Dr2Stru ( dr );
+                lst.Add ( stru );
             }
 
             return lst;
         }
-
-        public static DataTable List2Dt(ref List<DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†> lst)
+		
+		public static DataTable List2Dt ( ref List<DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí> lst )
         {
-            DB.Orm.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† orm = new DB.Orm.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†();
+            DB.Orm.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí orm = new DB.Orm.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí ();
             DataTable dt = orm.GetBlank();
 
-            foreach (DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† o in lst)
+            foreach ( DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí o in lst )
             {
                 DataRow dr = dt.Rows.Add();
                 o.Stru2Dr(ref dr);
@@ -204,119 +211,124 @@ namespace DB.Stru.ç¦åˆ©ä¸­å¿ƒ
 
             return dt;
         }
-
-        public static DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† StruFromList_ByID(ref List<DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†> list, string strID)
+		
+        public static DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí StruFromList_ByID ( ref List<DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí> list, string strID )
         {
-            if (strID.Trim() == String.Empty)
+		    if ( strID.Trim() == String.Empty )
                 return null;
-
-            foreach (DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† stru in list)
+				
+            foreach ( DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí stru in list )
             {
-                if (stru.ID == strID)
+                if( stru.ID == strID )
                     return stru;
             }
             return null;
         }
 
-        //Will Manual Input Code
-        //Check Special Field Data can save into DataBase
+		//Will Manual Input Code
+		//Check Special Field Data can save into DataBase
         private void CheckData()
         {
-            if (CreateDate == String.Empty)
-                CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
+			if ( CreateDate == String.Empty )
+                CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");	
+				
         }
-
-        public void Stru2Dr(ref DataRow dr)
+		
+		public void Stru2Dr( ref DataRow dr)
         {
-            if (ID.Trim() != String.Empty)
-                dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.ID] = ID;
-
-            CheckData();
-
-            if (CreateDate != String.Empty)
-                dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.CreateDate] = CreateDate;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.Creator] = Creator;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.å§”å‘˜ä¼šåç§°] = å§”å‘˜ä¼šåç§°;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.æ‰€å±è¡—é“1] = æ‰€å±è¡—é“1;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.æ‰€å±è¡—é“2] = æ‰€å±è¡—é“2;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.åŠå…¬ç”µè¯] = åŠå…¬ç”µè¯;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.å§”å‘˜ä¼šåœ°å€] = å§”å‘˜ä¼šåœ°å€;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.äººå£æ•°] = äººå£æ•°;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.é¢ç§¯] = é¢ç§¯;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.è¾–åŒºèŒƒå›´] = è¾–åŒºèŒƒå›´;
-            dr[DB.Tab.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç†.ç»„ç»‡æœºæ„ä»£ç ] = ç»„ç»‡æœºæ„ä»£ç ;
+            if ( ID.Trim() != String.Empty )
+                dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ID] = ID;
+				
+			CheckData();
+			
+			if ( CreateDate != String.Empty )
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.CreateDate] = CreateDate;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Creator] = Creator;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ĞÕÃû] = ĞÕÃû;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ĞÔ±ğ] = ĞÔ±ğ;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.±¾ÈË³É·İ] = ±¾ÈË³É·İ;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.»§¼®ËùÔÚµØ] = »§¼®ËùÔÚµØ;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.¼®¹á] = ¼®¹á;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Éí·İÖ¤] = Éí·İÖ¤;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.¼ÒÍ¥×¡Ö·] = ¼ÒÍ¥×¡Ö·;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ÉíÌå×´¿ö] = ÉíÌå×´¿ö;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.ÉêÇëÊÂÓÉ] = ÉêÇëÊÂÓÉ;
+			dr[DB.Tab.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí.Ñº½ğ·ÑÓÃ] = Ñº½ğ·ÑÓÃ;
         }
-
-        public void CopyFrom(DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† struFrom)
+		
+		public void CopyFrom( DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí struFrom )
         {
-            ID = struFrom.ID;
-            CreateDate = struFrom.CreateDate;
-            Creator = struFrom.Creator;
-            å§”å‘˜ä¼šåç§° = struFrom.å§”å‘˜ä¼šåç§°;
-            æ‰€å±è¡—é“1 = struFrom.æ‰€å±è¡—é“1;
-            æ‰€å±è¡—é“2 = struFrom.æ‰€å±è¡—é“2;
-            åŠå…¬ç”µè¯ = struFrom.åŠå…¬ç”µè¯;
-            å§”å‘˜ä¼šåœ°å€ = struFrom.å§”å‘˜ä¼šåœ°å€;
-            äººå£æ•° = struFrom.äººå£æ•°;
-            é¢ç§¯ = struFrom.é¢ç§¯;
-            è¾–åŒºèŒƒå›´ = struFrom.è¾–åŒºèŒƒå›´;
-            ç»„ç»‡æœºæ„ä»£ç  = struFrom.ç»„ç»‡æœºæ„ä»£ç ;
+			ID = struFrom.ID;
+			CreateDate = struFrom.CreateDate;
+			Creator = struFrom.Creator;
+			ĞÕÃû = struFrom.ĞÕÃû;
+			ĞÔ±ğ = struFrom.ĞÔ±ğ;
+			±¾ÈË³É·İ = struFrom.±¾ÈË³É·İ;
+			»§¼®ËùÔÚµØ = struFrom.»§¼®ËùÔÚµØ;
+			¼®¹á = struFrom.¼®¹á;
+			Éí·İÖ¤ = struFrom.Éí·İÖ¤;
+			¼ÒÍ¥×¡Ö· = struFrom.¼ÒÍ¥×¡Ö·;
+			ÉíÌå×´¿ö = struFrom.ÉíÌå×´¿ö;
+			ÉêÇëÊÂÓÉ = struFrom.ÉêÇëÊÂÓÉ;
+			Ñº½ğ·ÑÓÃ = struFrom.Ñº½ğ·ÑÓÃ;
         }
-
-        /// <summary>
+		
+		/// <summary>
         /// Get Modify Log
         /// </summary>
         /// <returns></returns>
-        public string GetLogStr(DB.Stru.åŸºå±‚ç§‘.æ°‘ä¸»ç®¡ç†ä¿¡æ¯ç®¡ç† struOrg)
+		public string GetLogStr ( DB.Stru.¸£ÀûÖĞĞÄ.ÀÏÈËÈë×¡¹ÜÀí struOrg )
         {
-            if (struOrg.ID == String.Empty)
-                return String.Empty;
-
+			if ( struOrg.ID == String.Empty ) 
+				return String.Empty; 
+		
             string strRet = String.Empty;
-            ArrayList ary = new ArrayList();
+            ArrayList ary = new ArrayList ();
+			
+			if ( CreateDate.Trim() != struOrg.CreateDate.Trim() )
+				ary.Add ( String.Format ( "[CreateDate]: {0} => {1}", struOrg.CreateDate, CreateDate) ) ;
 
-            if (CreateDate.Trim() != struOrg.CreateDate.Trim())
-                ary.Add(String.Format("[CreateDate]: {0} => {1}", struOrg.CreateDate, CreateDate));
+			if ( Creator.Trim() != struOrg.Creator.Trim() )
+				ary.Add ( String.Format ( "[Creator]: {0} => {1}", struOrg.Creator, Creator) ) ;
 
-            if (Creator.Trim() != struOrg.Creator.Trim())
-                ary.Add(String.Format("[Creator]: {0} => {1}", struOrg.Creator, Creator));
+			if ( ĞÕÃû.Trim() != struOrg.ĞÕÃû.Trim() )
+				ary.Add ( String.Format ( "[ĞÕÃû]: {0} => {1}", struOrg.ĞÕÃû, ĞÕÃû) ) ;
 
-            if (å§”å‘˜ä¼šåç§°.Trim() != struOrg.å§”å‘˜ä¼šåç§°.Trim())
-                ary.Add(String.Format("[å§”å‘˜ä¼šåç§°]: {0} => {1}", struOrg.å§”å‘˜ä¼šåç§°, å§”å‘˜ä¼šåç§°));
+			if ( ĞÔ±ğ.Trim() != struOrg.ĞÔ±ğ.Trim() )
+				ary.Add ( String.Format ( "[ĞÔ±ğ]: {0} => {1}", struOrg.ĞÔ±ğ, ĞÔ±ğ) ) ;
 
-            if (æ‰€å±è¡—é“1.Trim() != struOrg.æ‰€å±è¡—é“1.Trim())
-                ary.Add(String.Format("[æ‰€å±è¡—é“1]: {0} => {1}", struOrg.æ‰€å±è¡—é“1, æ‰€å±è¡—é“1));
+			if ( ±¾ÈË³É·İ.Trim() != struOrg.±¾ÈË³É·İ.Trim() )
+				ary.Add ( String.Format ( "[±¾ÈË³É·İ]: {0} => {1}", struOrg.±¾ÈË³É·İ, ±¾ÈË³É·İ) ) ;
 
-            if (æ‰€å±è¡—é“2.Trim() != struOrg.æ‰€å±è¡—é“2.Trim())
-                ary.Add(String.Format("[æ‰€å±è¡—é“2]: {0} => {1}", struOrg.æ‰€å±è¡—é“2, æ‰€å±è¡—é“2));
+			if ( »§¼®ËùÔÚµØ.Trim() != struOrg.»§¼®ËùÔÚµØ.Trim() )
+				ary.Add ( String.Format ( "[»§¼®ËùÔÚµØ]: {0} => {1}", struOrg.»§¼®ËùÔÚµØ, »§¼®ËùÔÚµØ) ) ;
 
-            if (åŠå…¬ç”µè¯.Trim() != struOrg.åŠå…¬ç”µè¯.Trim())
-                ary.Add(String.Format("[åŠå…¬ç”µè¯]: {0} => {1}", struOrg.åŠå…¬ç”µè¯, åŠå…¬ç”µè¯));
+			if ( ¼®¹á.Trim() != struOrg.¼®¹á.Trim() )
+				ary.Add ( String.Format ( "[¼®¹á]: {0} => {1}", struOrg.¼®¹á, ¼®¹á) ) ;
 
-            if (å§”å‘˜ä¼šåœ°å€.Trim() != struOrg.å§”å‘˜ä¼šåœ°å€.Trim())
-                ary.Add(String.Format("[å§”å‘˜ä¼šåœ°å€]: {0} => {1}", struOrg.å§”å‘˜ä¼šåœ°å€, å§”å‘˜ä¼šåœ°å€));
+			if ( Éí·İÖ¤.Trim() != struOrg.Éí·İÖ¤.Trim() )
+				ary.Add ( String.Format ( "[Éí·İÖ¤]: {0} => {1}", struOrg.Éí·İÖ¤, Éí·İÖ¤) ) ;
 
-            if (äººå£æ•°.Trim() != struOrg.äººå£æ•°.Trim())
-                ary.Add(String.Format("[äººå£æ•°]: {0} => {1}", struOrg.äººå£æ•°, äººå£æ•°));
+			if ( ¼ÒÍ¥×¡Ö·.Trim() != struOrg.¼ÒÍ¥×¡Ö·.Trim() )
+				ary.Add ( String.Format ( "[¼ÒÍ¥×¡Ö·]: {0} => {1}", struOrg.¼ÒÍ¥×¡Ö·, ¼ÒÍ¥×¡Ö·) ) ;
 
-            if (é¢ç§¯.Trim() != struOrg.é¢ç§¯.Trim())
-                ary.Add(String.Format("[é¢ç§¯]: {0} => {1}", struOrg.é¢ç§¯, é¢ç§¯));
+			if ( ÉíÌå×´¿ö.Trim() != struOrg.ÉíÌå×´¿ö.Trim() )
+				ary.Add ( String.Format ( "[ÉíÌå×´¿ö]: {0} => {1}", struOrg.ÉíÌå×´¿ö, ÉíÌå×´¿ö) ) ;
 
-            if (è¾–åŒºèŒƒå›´.Trim() != struOrg.è¾–åŒºèŒƒå›´.Trim())
-                ary.Add(String.Format("[è¾–åŒºèŒƒå›´]: {0} => {1}", struOrg.è¾–åŒºèŒƒå›´, è¾–åŒºèŒƒå›´));
+			if ( ÉêÇëÊÂÓÉ.Trim() != struOrg.ÉêÇëÊÂÓÉ.Trim() )
+				ary.Add ( String.Format ( "[ÉêÇëÊÂÓÉ]: {0} => {1}", struOrg.ÉêÇëÊÂÓÉ, ÉêÇëÊÂÓÉ) ) ;
 
-            if (ç»„ç»‡æœºæ„ä»£ç .Trim() != struOrg.ç»„ç»‡æœºæ„ä»£ç .Trim())
-                ary.Add(String.Format("[ç»„ç»‡æœºæ„ä»£ç ]: {0} => {1}", struOrg.ç»„ç»‡æœºæ„ä»£ç , ç»„ç»‡æœºæ„ä»£ç ));
+			if ( Ñº½ğ·ÑÓÃ.Trim() != struOrg.Ñº½ğ·ÑÓÃ.Trim() )
+				ary.Add ( String.Format ( "[Ñº½ğ·ÑÓÃ]: {0} => {1}", struOrg.Ñº½ğ·ÑÓÃ, Ñº½ğ·ÑÓÃ) ) ;
 
 
-            foreach (string str in ary)
+            foreach ( string str in ary )
             {
                 strRet += str + System.Environment.NewLine;
             }
 
             return strRet;
         }
-
-    }
+		
+	}
 }

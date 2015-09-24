@@ -94,7 +94,7 @@ namespace 福田民政.Forms.Work.数据管理.老龄办.老龄优待证_发放
         {
             fl.SortBindingList( _lst );
             fl.Refresh();
-
+            fl.grd.Refresh();
         }
 
         void Modify( int nRow, int nCol )

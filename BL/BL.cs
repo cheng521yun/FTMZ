@@ -9,6 +9,7 @@ using Buss.优抚科;
 using Buss.系统;
 using Buss.老龄办;
 using Buss.基层科;
+using Buss.福利中心;
 
 namespace Buss
 {
@@ -25,6 +26,7 @@ namespace Buss
         public static 优抚科.优抚科 优抚科 = new 优抚科.优抚科();
         public static Buss.事务科.事务科 事务科 = new 事务科.事务科();
         public static buss基层科 基层科 = new buss基层科();
+        public static buss福利中心 福利中心 = new buss福利中心();
 
     }
 }

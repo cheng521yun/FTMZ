@@ -15,6 +15,7 @@ namespace 福田民政.Forms.Work.数据管理.老龄办.老龄优待证_发放
     public partial class FEdit : EditDlg
     {
         DB.Stru.老龄办.敬老优待证 _stru = new DB.Stru.老龄办.敬老优待证();
+        列表 _list = new 列表();
 
         public FEdit()
         {
@@ -59,6 +60,8 @@ namespace 福田民政.Forms.Work.数据管理.老龄办.老龄优待证_发放
                 FF.Ctrl.MsgBox.Show( Def.Str.Msg.Save_OK );
             else
                 FF.Ctrl.MsgBox.Show( Def.Str.Msg.Save_Err );
+
+            _list.Find();
         }
 
         protected override void Delete()

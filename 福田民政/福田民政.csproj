@@ -866,6 +866,12 @@
     <Compile Include="Forms\Work\数据管理\福利中心\Wnd.Designer.cs">
       <DependentUpon>Wnd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Work\数据管理\福利中心\老人入住\Find.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1726,6 +1732,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\Wnd.resx">
       <DependentUpon>Wnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\Find.resx">
       <DependentUpon>Find.cs</DependentUpon>

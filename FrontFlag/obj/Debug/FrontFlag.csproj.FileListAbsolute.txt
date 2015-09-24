@@ -189,7 +189,6 @@ E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.Properties.Resources.resources
 E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.csproj.GenerateResource.Cache
 E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.dll
 E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.pdb
-E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.csprojResolveAssemblyReference.cache
 E:\Projects\mail+project\Publish\NLog.config
 E:\Projects\mail+project\Publish\FrontFlag.dll.config
 E:\Projects\mail+project\Publish\FrontFlag.dll
@@ -232,3 +231,4 @@ E:\yun\mail+project\FTMZ\FrontFlag\obj\Debug\FrontFlag.Properties.Resources.reso
 E:\yun\mail+project\FTMZ\FrontFlag\obj\Debug\FrontFlag.csproj.GenerateResource.Cache
 E:\yun\mail+project\FTMZ\FrontFlag\obj\Debug\FrontFlag.dll
 E:\yun\mail+project\FTMZ\FrontFlag\obj\Debug\FrontFlag.pdb
+E:\yun\GitCode\FTMZ\FrontFlag\obj\Debug\FrontFlag.csprojResolveAssemblyReference.cache

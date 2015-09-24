@@ -631,3 +631,10 @@ E:\yun\mail+project\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老�
 E:\yun\mail+project\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老人入住管理_担保人.resources
 E:\yun\mail+project\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老人入住管理_监护人.resources
 E:\yun\mail+project\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人退住管理.老人退住管理.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.民管局.登记_民非.机构信息.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老人入住管理_监护人.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老人入住管理_担保人.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人入住管理.老人入住管理.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人费用登记管理.老人费用登记管理.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人费用退费管理.老人费用退费管理.resources
+E:\yun\GitCode\FTMZ\UI\obj\Debug\UI.UC.福利中心.老人退住管理.老人退住管理.resources
