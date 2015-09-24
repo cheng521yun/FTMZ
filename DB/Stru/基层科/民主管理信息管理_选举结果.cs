@@ -16,177 +16,150 @@ namespace DB.Stru.基层科
 {
     public class 民主管理信息管理_选举结果
     {
-        string _ID = String.Empty;
-        string _CreateDate = String.Empty;
-        string _Creator = String.Empty;
-        string _用户代码 = String.Empty;
-        string _老人名称 = String.Empty;
-        string _银行账号 = String.Empty;
-        string _养老服务费 = String.Empty;
-        string _老人伙食费 = String.Empty;
-        string _老人药费 = String.Empty;
-        string _老人电费 = String.Empty;
-        string _应收金额 = String.Empty;
-        string _时间 = String.Empty;
-
-        public 民主管理信息管理_选举结果()
+		string _ID = String.Empty ; 
+		string _父ID = String.Empty ; 
+		string _CreateDate = String.Empty ; 
+		string _Creator = String.Empty ; 
+		string _街道办事处 = String.Empty ; 
+		string _本级社区委员会数 = String.Empty ; 
+		string _需要换届选举的社区委员会数 = String.Empty ; 
+		string _社区综合当组织班子总职数 = String.Empty ; 
+		string _社区委员会班子总职数 = String.Empty ; 
+		string _总数 = String.Empty ; 
+		
+		public 民主管理信息管理_选举结果()
+		{
+			Init();
+		}
+		
+		#region Prop 
+		
+		public string ID
+		{
+			set { _ID = value ; }
+			get { return _ID  ; }
+		}
+		
+		public string 父ID
+		{
+			set { _父ID = value ; }
+			get { return _父ID  ; }
+		}
+		
+		public string CreateDate
+		{
+			set { _CreateDate = value ; }
+			get { return _CreateDate  ; }
+		}
+		public DateTime datCreateDate
         {
-            Init();
+            set { _CreateDate = value.ToString("yyyy-MM-dd HH:mm:ss") ; }
+            get { return FF.Fun.MyConvert.Str2Date( _CreateDate ); }
         }
-
-        #region Prop
-
-        public string ID
-        {
-            set { _ID = value; }
-            get { return _ID; }
-        }
-
-        public string CreateDate
-        {
-            set { _CreateDate = value; }
-            get { return _CreateDate; }
-        }
-        public DateTime datCreateDate
-        {
-            set { _CreateDate = value.ToString("yyyy-MM-dd HH:mm:ss"); }
-            get { return FF.Fun.MyConvert.Str2Date(_CreateDate); }
-        }
-        public string CreateDateStr
-        {
-            get { return FF.Fun.MyConvert.Str2Date(_CreateDate).ToString("yyyy-MM-dd"); }
-        }
-
-        public string Creator
-        {
-            set { _Creator = value; }
-            get { return _Creator; }
-        }
-
-        public string 用户代码
-        {
-            set { _用户代码 = value; }
-            get { return _用户代码; }
-        }
-
-        public string 老人名称
-        {
-            set { _老人名称 = value; }
-            get { return _老人名称; }
-        }
-
-        public string 银行账号
-        {
-            set { _银行账号 = value; }
-            get { return _银行账号; }
-        }
-
-        public string 养老服务费
-        {
-            set { _养老服务费 = value; }
-            get { return _养老服务费; }
-        }
-
-        public string 老人伙食费
-        {
-            set { _老人伙食费 = value; }
-            get { return _老人伙食费; }
-        }
-
-        public string 老人药费
-        {
-            set { _老人药费 = value; }
-            get { return _老人药费; }
-        }
-
-        public string 老人电费
-        {
-            set { _老人电费 = value; }
-            get { return _老人电费; }
-        }
-
-        public string 应收金额
-        {
-            set { _应收金额 = value; }
-            get { return _应收金额; }
-        }
-
-        public string 时间
-        {
-            set { _时间 = value; }
-            get { return _时间; }
-        }
-        public DateTime dat时间
-        {
-            set { _时间 = value.ToString("yyyy-MM-dd HH:mm:ss"); }
-            get { return FF.Fun.MyConvert.Str2Date(_时间); }
-        }
-        public string 时间Str
-        {
-            get { return FF.Fun.MyConvert.Str2Date(_时间).ToString("yyyy-MM-dd"); }
-        }
-
-
-        #endregion
-
-        //Will Manual Input Code
-        //Default Value, 
-        void Init()
-        {
-        }
-
-        void Clear()
-        {
-            ID = String.Empty;
-            CreateDate = String.Empty;
-            Creator = String.Empty;
-            用户代码 = String.Empty;
-            老人名称 = String.Empty;
-            银行账号 = String.Empty;
-            养老服务费 = String.Empty;
-            老人伙食费 = String.Empty;
-            老人药费 = String.Empty;
-            老人电费 = String.Empty;
-            应收金额 = String.Empty;
-            时间 = String.Empty;
-
-            Init();
-        }
+		public string CreateDateStr
+		{
+			get { return FF.Fun.MyConvert.Str2Date(_CreateDate).ToString("yyyy-MM-dd"); }
+		}
+		
+		public string Creator
+		{
+			set { _Creator = value ; }
+			get { return _Creator  ; }
+		}
+		
+		public string 街道办事处
+		{
+			set { _街道办事处 = value ; }
+			get { return _街道办事处  ; }
+		}
+		
+		public string 本级社区委员会数
+		{
+			set { _本级社区委员会数 = value ; }
+			get { return _本级社区委员会数  ; }
+		}
+		
+		public string 需要换届选举的社区委员会数
+		{
+			set { _需要换届选举的社区委员会数 = value ; }
+			get { return _需要换届选举的社区委员会数  ; }
+		}
+		
+		public string 社区综合当组织班子总职数
+		{
+			set { _社区综合当组织班子总职数 = value ; }
+			get { return _社区综合当组织班子总职数  ; }
+		}
+		
+		public string 社区委员会班子总职数
+		{
+			set { _社区委员会班子总职数 = value ; }
+			get { return _社区委员会班子总职数  ; }
+		}
+		
+		public string 总数
+		{
+			set { _总数 = value ; }
+			get { return _总数  ; }
+		}
+		
+	
+		#endregion
+		
+		//Will Manual Input Code
+		//Default Value, 
+		void Init ()
+		{
+		}
+				
+		void Clear()
+		{
+			ID = String.Empty ; 
+			父ID = String.Empty ; 
+			CreateDate = String.Empty ; 
+			Creator = String.Empty ; 
+			街道办事处 = String.Empty ; 
+			本级社区委员会数 = String.Empty ; 
+			需要换届选举的社区委员会数 = String.Empty ; 
+			社区综合当组织班子总职数 = String.Empty ; 
+			社区委员会班子总职数 = String.Empty ; 
+			总数 = String.Empty ; 
+			
+			Init ();
+		}
 
         public bool IsValid()
         {
-            return (ID.Trim() == String.Empty) ? false : true;
+            return ( ID.Trim() == String.Empty ) ? false : true;
         }
-
+		
         public bool IsNotValid()
         {
-            return !IsValid();
+            return ! IsValid() ;
         }
+		
+		public bool Dr2Stru(DataRow dr)
+		{
+			Clear();
+		
+			if (dr == null)
+				return false;
+		
+			ID = dr[DB.Tab.基层科.民主管理信息管理_选举结果.ID].ToString().Trim();
+			父ID = dr[DB.Tab.基层科.民主管理信息管理_选举结果.父ID].ToString().Trim();
+			CreateDate = dr[DB.Tab.基层科.民主管理信息管理_选举结果.CreateDate].ToString().Trim();
+			Creator = dr[DB.Tab.基层科.民主管理信息管理_选举结果.Creator].ToString().Trim();
+			街道办事处 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.街道办事处].ToString().Trim();
+			本级社区委员会数 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.本级社区委员会数].ToString().Trim();
+			需要换届选举的社区委员会数 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.需要换届选举的社区委员会数].ToString().Trim();
+			社区综合当组织班子总职数 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.社区综合当组织班子总职数].ToString().Trim();
+			社区委员会班子总职数 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.社区委员会班子总职数].ToString().Trim();
+			总数 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.总数].ToString().Trim();
+		
+			return true;
+		}
 
-        public bool Dr2Stru(DataRow dr)
-        {
-            Clear();
-
-            if (dr == null)
-                return false;
-
-            ID = dr[DB.Tab.基层科.民主管理信息管理_选举结果.ID].ToString().Trim();
-            CreateDate = dr[DB.Tab.基层科.民主管理信息管理_选举结果.CreateDate].ToString().Trim();
-            Creator = dr[DB.Tab.基层科.民主管理信息管理_选举结果.Creator].ToString().Trim();
-            用户代码 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.用户代码].ToString().Trim();
-            老人名称 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人名称].ToString().Trim();
-            银行账号 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.银行账号].ToString().Trim();
-            养老服务费 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.养老服务费].ToString().Trim();
-            老人伙食费 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人伙食费].ToString().Trim();
-            老人药费 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人药费].ToString().Trim();
-            老人电费 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人电费].ToString().Trim();
-            应收金额 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.应收金额].ToString().Trim();
-            时间 = dr[DB.Tab.基层科.民主管理信息管理_选举结果.时间].ToString().Trim();
-
-            return true;
-        }
-
-        public static List<DB.Stru.基层科.民主管理信息管理_选举结果> Dt2List(ref DataTable dt)
+		public static List<DB.Stru.基层科.民主管理信息管理_选举结果> Dt2List(ref DataTable dt)
         {
             List<DB.Stru.基层科.民主管理信息管理_选举结果> lst = new List<DB.Stru.基层科.民主管理信息管理_选举结果>();
 
@@ -196,19 +169,19 @@ namespace DB.Stru.基层科
             foreach (DataRow dr in dt.Rows)
             {
                 DB.Stru.基层科.民主管理信息管理_选举结果 stru = new DB.Stru.基层科.民主管理信息管理_选举结果();
-                stru.Dr2Stru(dr);
-                lst.Add(stru);
+                stru.Dr2Stru ( dr );
+                lst.Add ( stru );
             }
 
             return lst;
         }
-
-        public static DataTable List2Dt(ref List<DB.Stru.基层科.民主管理信息管理_选举结果> lst)
+		
+		public static DataTable List2Dt ( ref List<DB.Stru.基层科.民主管理信息管理_选举结果> lst )
         {
-            DB.Orm.基层科.民主管理信息管理_选举结果 orm = new DB.Orm.基层科.民主管理信息管理_选举结果();
+            DB.Orm.基层科.民主管理信息管理_选举结果 orm = new DB.Orm.基层科.民主管理信息管理_选举结果 ();
             DataTable dt = orm.GetBlank();
 
-            foreach (DB.Stru.基层科.民主管理信息管理_选举结果 o in lst)
+            foreach ( DB.Stru.基层科.民主管理信息管理_选举结果 o in lst )
             {
                 DataRow dr = dt.Rows.Add();
                 o.Stru2Dr(ref dr);
@@ -216,120 +189,109 @@ namespace DB.Stru.基层科
 
             return dt;
         }
-
-        public static DB.Stru.基层科.民主管理信息管理_选举结果 StruFromList_ByID(ref List<DB.Stru.基层科.民主管理信息管理_选举结果> list, string strID)
+		
+        public static DB.Stru.基层科.民主管理信息管理_选举结果 StruFromList_ByID ( ref List<DB.Stru.基层科.民主管理信息管理_选举结果> list, string strID )
         {
-            if (strID.Trim() == String.Empty)
+		    if ( strID.Trim() == String.Empty )
                 return null;
-
-            foreach (DB.Stru.基层科.民主管理信息管理_选举结果 stru in list)
+				
+            foreach ( DB.Stru.基层科.民主管理信息管理_选举结果 stru in list )
             {
-                if (stru.ID == strID)
+                if( stru.ID == strID )
                     return stru;
             }
             return null;
         }
 
-        //Will Manual Input Code
-        //Check Special Field Data can save into DataBase
+		//Will Manual Input Code
+		//Check Special Field Data can save into DataBase
         private void CheckData()
         {
-            if (CreateDate == String.Empty)
-                CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
+			if ( CreateDate == String.Empty )
+                CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");	
+				
         }
-
-        public void Stru2Dr(ref DataRow dr)
+		
+		public void Stru2Dr( ref DataRow dr)
         {
-            if (ID.Trim() != String.Empty)
+            if ( ID.Trim() != String.Empty )
                 dr[DB.Tab.基层科.民主管理信息管理_选举结果.ID] = ID;
-
-            CheckData();
-
-            if (CreateDate != String.Empty)
-                dr[DB.Tab.基层科.民主管理信息管理_选举结果.CreateDate] = CreateDate;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.Creator] = Creator;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.用户代码] = 用户代码;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人名称] = 老人名称;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.银行账号] = 银行账号;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.养老服务费] = 养老服务费;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人伙食费] = 老人伙食费;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人药费] = 老人药费;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.老人电费] = 老人电费;
-            dr[DB.Tab.基层科.民主管理信息管理_选举结果.应收金额] = 应收金额;
-            if (时间 != String.Empty)
-                dr[DB.Tab.基层科.民主管理信息管理_选举结果.时间] = 时间;
+				
+			CheckData();
+			
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.父ID] = 父ID;
+			if ( CreateDate != String.Empty )
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.CreateDate] = CreateDate;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.Creator] = Creator;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.街道办事处] = 街道办事处;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.本级社区委员会数] = 本级社区委员会数;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.需要换届选举的社区委员会数] = 需要换届选举的社区委员会数;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.社区综合当组织班子总职数] = 社区综合当组织班子总职数;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.社区委员会班子总职数] = 社区委员会班子总职数;
+			dr[DB.Tab.基层科.民主管理信息管理_选举结果.总数] = 总数;
         }
-
-        public void CopyFrom(DB.Stru.基层科.民主管理信息管理_选举结果 struFrom)
+		
+		public void CopyFrom( DB.Stru.基层科.民主管理信息管理_选举结果 struFrom )
         {
-            ID = struFrom.ID;
-            CreateDate = struFrom.CreateDate;
-            Creator = struFrom.Creator;
-            用户代码 = struFrom.用户代码;
-            老人名称 = struFrom.老人名称;
-            银行账号 = struFrom.银行账号;
-            养老服务费 = struFrom.养老服务费;
-            老人伙食费 = struFrom.老人伙食费;
-            老人药费 = struFrom.老人药费;
-            老人电费 = struFrom.老人电费;
-            应收金额 = struFrom.应收金额;
-            时间 = struFrom.时间;
+			ID = struFrom.ID;
+			父ID = struFrom.父ID;
+			CreateDate = struFrom.CreateDate;
+			Creator = struFrom.Creator;
+			街道办事处 = struFrom.街道办事处;
+			本级社区委员会数 = struFrom.本级社区委员会数;
+			需要换届选举的社区委员会数 = struFrom.需要换届选举的社区委员会数;
+			社区综合当组织班子总职数 = struFrom.社区综合当组织班子总职数;
+			社区委员会班子总职数 = struFrom.社区委员会班子总职数;
+			总数 = struFrom.总数;
         }
-
-        /// <summary>
+		
+		/// <summary>
         /// Get Modify Log
         /// </summary>
         /// <returns></returns>
-        public string GetLogStr(DB.Stru.基层科.民主管理信息管理_选举结果 struOrg)
+		public string GetLogStr ( DB.Stru.基层科.民主管理信息管理_选举结果 struOrg )
         {
-            if (struOrg.ID == String.Empty)
-                return String.Empty;
-
+			if ( struOrg.ID == String.Empty ) 
+				return String.Empty; 
+		
             string strRet = String.Empty;
-            ArrayList ary = new ArrayList();
+            ArrayList ary = new ArrayList ();
+			
+			if ( 父ID.Trim() != struOrg.父ID.Trim() )
+				ary.Add ( String.Format ( "[父ID]: {0} => {1}", struOrg.父ID, 父ID) ) ;
 
-            if (CreateDate.Trim() != struOrg.CreateDate.Trim())
-                ary.Add(String.Format("[CreateDate]: {0} => {1}", struOrg.CreateDate, CreateDate));
+			if ( CreateDate.Trim() != struOrg.CreateDate.Trim() )
+				ary.Add ( String.Format ( "[CreateDate]: {0} => {1}", struOrg.CreateDate, CreateDate) ) ;
 
-            if (Creator.Trim() != struOrg.Creator.Trim())
-                ary.Add(String.Format("[Creator]: {0} => {1}", struOrg.Creator, Creator));
+			if ( Creator.Trim() != struOrg.Creator.Trim() )
+				ary.Add ( String.Format ( "[Creator]: {0} => {1}", struOrg.Creator, Creator) ) ;
 
-            if (用户代码.Trim() != struOrg.用户代码.Trim())
-                ary.Add(String.Format("[用户代码]: {0} => {1}", struOrg.用户代码, 用户代码));
+			if ( 街道办事处.Trim() != struOrg.街道办事处.Trim() )
+				ary.Add ( String.Format ( "[街道办事处]: {0} => {1}", struOrg.街道办事处, 街道办事处) ) ;
 
-            if (老人名称.Trim() != struOrg.老人名称.Trim())
-                ary.Add(String.Format("[老人名称]: {0} => {1}", struOrg.老人名称, 老人名称));
+			if ( 本级社区委员会数.Trim() != struOrg.本级社区委员会数.Trim() )
+				ary.Add ( String.Format ( "[本级社区委员会数]: {0} => {1}", struOrg.本级社区委员会数, 本级社区委员会数) ) ;
 
-            if (银行账号.Trim() != struOrg.银行账号.Trim())
-                ary.Add(String.Format("[银行账号]: {0} => {1}", struOrg.银行账号, 银行账号));
+			if ( 需要换届选举的社区委员会数.Trim() != struOrg.需要换届选举的社区委员会数.Trim() )
+				ary.Add ( String.Format ( "[需要换届选举的社区委员会数]: {0} => {1}", struOrg.需要换届选举的社区委员会数, 需要换届选举的社区委员会数) ) ;
 
-            if (养老服务费.Trim() != struOrg.养老服务费.Trim())
-                ary.Add(String.Format("[养老服务费]: {0} => {1}", struOrg.养老服务费, 养老服务费));
+			if ( 社区综合当组织班子总职数.Trim() != struOrg.社区综合当组织班子总职数.Trim() )
+				ary.Add ( String.Format ( "[社区综合当组织班子总职数]: {0} => {1}", struOrg.社区综合当组织班子总职数, 社区综合当组织班子总职数) ) ;
 
-            if (老人伙食费.Trim() != struOrg.老人伙食费.Trim())
-                ary.Add(String.Format("[老人伙食费]: {0} => {1}", struOrg.老人伙食费, 老人伙食费));
+			if ( 社区委员会班子总职数.Trim() != struOrg.社区委员会班子总职数.Trim() )
+				ary.Add ( String.Format ( "[社区委员会班子总职数]: {0} => {1}", struOrg.社区委员会班子总职数, 社区委员会班子总职数) ) ;
 
-            if (老人药费.Trim() != struOrg.老人药费.Trim())
-                ary.Add(String.Format("[老人药费]: {0} => {1}", struOrg.老人药费, 老人药费));
-
-            if (老人电费.Trim() != struOrg.老人电费.Trim())
-                ary.Add(String.Format("[老人电费]: {0} => {1}", struOrg.老人电费, 老人电费));
-
-            if (应收金额.Trim() != struOrg.应收金额.Trim())
-                ary.Add(String.Format("[应收金额]: {0} => {1}", struOrg.应收金额, 应收金额));
-
-            if (时间.Trim() != struOrg.时间.Trim())
-                ary.Add(String.Format("[时间]: {0} => {1}", struOrg.时间, 时间));
+			if ( 总数.Trim() != struOrg.总数.Trim() )
+				ary.Add ( String.Format ( "[总数]: {0} => {1}", struOrg.总数, 总数) ) ;
 
 
-            foreach (string str in ary)
+            foreach ( string str in ary )
             {
                 strRet += str + System.Environment.NewLine;
             }
 
             return strRet;
         }
-
-    }
+		
+	}
 }

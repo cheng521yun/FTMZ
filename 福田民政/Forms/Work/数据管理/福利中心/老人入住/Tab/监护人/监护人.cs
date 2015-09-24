@@ -18,7 +18,7 @@ namespace 福田民政.Forms.数据管理.福利中心.老人入住.Tab
             InitializeComponent();
         }
 
-        private void 成员信息_Load( object sender, EventArgs e )
+        private void 监护人_Load(object sender, EventArgs e)
         {
             LoadForm();
         }
@@ -45,18 +45,19 @@ namespace 福田民政.Forms.数据管理.福利中心.老人入住.Tab
 
         private void InitTool()
         {
-            //ButnTool fTool= new ButnTool();
-            //Form f = (Form) fTool;
-            //fl.AddFootPnl( ref f );
+            ButnTool fTool = new ButnTool();
+            Form f = (Form)fTool;
+            fl.AddFootPnl(ref f);
 
-            //fTool.dlgtAdd = Add;
-            //fTool.dlgtDelete = Delete;
+            fTool.dlgtAdd = Add;
+            fTool.dlgtDelete = Delete;
 
         }
-
+      
         private void Add()
         {
-            MessageBox.Show("Add");
+            福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.监护人.Edit fm = new Work.数据管理.福利中心.老人入住.Tab.监护人.Edit();
+            fm.ShowDialog();
         }
 
         private void Delete()

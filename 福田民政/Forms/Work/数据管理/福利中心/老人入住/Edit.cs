@@ -39,7 +39,7 @@ namespace 福田民政.Forms.Work.数据管理.福利中心.老人入住
 
         private void LoadForm()
         {
-            Caption = ".老人入住管理";
+            Caption = "老人入住管理";
             //SetChild(uc);
 
             uc.stru = _stru;

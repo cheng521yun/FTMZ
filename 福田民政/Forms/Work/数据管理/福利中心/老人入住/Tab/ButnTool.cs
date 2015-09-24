@@ -17,6 +17,7 @@ namespace 福田民政.Forms.数据管理.福利中心.老人入住.Tab
         public ButnTool()
         {
             InitializeComponent();
+
         }
 
         private void labAdd_Click( object sender, EventArgs e )

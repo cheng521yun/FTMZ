@@ -14,10 +14,7 @@ namespace 福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担
 {
     public partial class Edit : EditDlg //Form
     {
-        /*
-        DB.Stru.事务科.低收入居民_发放记录 _stru = new DB.Stru.事务科.低收入居民_发放记录();
-
-        福田民政.Forms.Work.数据管理.事务科.社会救助.Tab.发放记录 _list = new 福田民政.Forms.Work.数据管理.事务科.社会救助.Tab.发放记录();
+        DB.Stru.福利中心.老人入住管理_担保人 _stru = new DB.Stru.福利中心.老人入住管理_担保人();
 
         public Edit()
         {
@@ -31,7 +28,7 @@ namespace 福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担
 
         #region 属性
 
-        public DB.Stru.事务科.低收入居民_发放记录 stru
+        public DB.Stru.福利中心.老人入住管理_担保人 stru
         {
             set
             {
@@ -47,24 +44,22 @@ namespace 福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担
 
         private void LoadForm()
         {
-            Caption = "低收入居民 发放记录";
+            Caption = "担保人";
 
             uc.stru = _stru;
-            _list.Find();
         }
 
         protected override void Save()
         {
             _stru = uc.stru;
 
-            bool result = BL.事务科.低收入居民_发放记录.Save(_stru);
+            bool result = BL.福利中心.老人入住管理_担保人.Save(_stru);
 
             if (result)
                 FF.Ctrl.MsgBox.Show(Def.Str.Msg.Save_OK);
             else
                 FF.Ctrl.MsgBox.Show(Def.Str.Msg.Save_Err);
 
-            _list.Find();
 
         }
         public void Delete(string id)
@@ -80,14 +75,12 @@ namespace 福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担
             {
                 return;
             }
-            bool result = BL.事务科.低收入居民_发放记录.Delete(_stru);
+            bool result = BL.福利中心.老人入住管理_担保人.Delete(_stru);
 
             if (result)
                 FF.Ctrl.MsgBox.Show(Def.Str.Msg.Delete_OK);
             else
                 FF.Ctrl.MsgBox.Show(Def.Str.Msg.Delete_Err);
-
-            _list.Find();
-        }*/
+        }
     }
 }

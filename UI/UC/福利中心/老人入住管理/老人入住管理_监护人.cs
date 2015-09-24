@@ -13,7 +13,8 @@ namespace UI.UC.福利中心.老人入住管理
 {
     public partial class 老人入住管理_监护人 : UserControl
     {
-        DB.Stru.事务科.低收入居民_发放记录 _stru = new DB.Stru.事务科.低收入居民_发放记录();
+        DB.Stru.福利中心.老人入住管理_监护人 _stru = new DB.Stru.福利中心.老人入住管理_监护人();
+
 
         public 老人入住管理_监护人()
         {
@@ -21,7 +22,7 @@ namespace UI.UC.福利中心.老人入住管理
         }
 
         #region 属性
-        public DB.Stru.事务科.低收入居民_发放记录 stru
+        public DB.Stru.福利中心.老人入住管理_监护人 stru
         {
             set 
             { 

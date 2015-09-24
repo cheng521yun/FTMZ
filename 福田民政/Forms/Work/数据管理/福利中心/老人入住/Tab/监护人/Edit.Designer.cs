@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DB.Stru.事务科.低收入居民_发放记录 低收入居民_发放记录2 = new DB.Stru.事务科.低收入居民_发放记录();
+            DB.Stru.福利中心.老人入住管理_监护人 监护人 = new DB.Stru.福利中心.老人入住管理_监护人();
             this.uc = new UI.UC.福利中心.老人入住管理.老人入住管理_监护人();
             this.SuspendLayout();
             // 
@@ -39,17 +39,12 @@
             this.uc.Location = new System.Drawing.Point(0, 40);
             this.uc.Name = "uc";
             this.uc.Size = new System.Drawing.Size(439, 251);
-            低收入居民_发放记录2.dat审批时间 = new System.DateTime(2015, 5, 10, 11, 34, 14, 233);
-            低收入居民_发放记录2.dat待遇截止日期 = new System.DateTime(2015, 5, 10, 11, 34, 14, 233);
-            低收入居民_发放记录2.ID = "";
-            低收入居民_发放记录2.低保证号 = "";
-            低收入居民_发放记录2.发放年月 = "";
-            低收入居民_发放记录2.发放类型 = "";
-            低收入居民_发放记录2.审批时间 = "";
-            低收入居民_发放记录2.待遇截止日期 = "";
-            低收入居民_发放记录2.接收人 = "";
-            低收入居民_发放记录2.父ID = "";
-            this.uc.stru = 低收入居民_发放记录2;
+            监护人.地址或工作单位 = "";
+            监护人.父ID = "";
+            监护人.关系 = "";
+            监护人.联系电话 = "";
+            监护人.姓名 = "";
+            this.uc.stru = 监护人;
             this.uc.TabIndex = 5;
             // 
             // Edit
@@ -58,8 +53,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 331);
             this.Controls.Add(this.uc);
-            this.Name = "Edit";
-            this.Text = "编辑";
+            this.Name = "监护人";
+            this.Text = "监护人";
+            this.Load += new System.EventHandler(this.Edit_Load);
             this.Controls.SetChildIndex(this.uc, 0);
             this.ResumeLayout(false);
 

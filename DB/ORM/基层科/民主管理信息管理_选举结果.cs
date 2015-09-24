@@ -17,141 +17,141 @@ namespace DB.Orm.基层科
     public class 民主管理信息管理_选举结果
     {
         DB.DA.基层科.民主管理信息管理_选举结果 da = new DB.DA.基层科.民主管理信息管理_选举结果();
+		
+		#region Get
 
-        #region Get
+		public DataTable GetBlank ()
+		{
+			return da.GetBlank();
+		}
 
-        public DataTable GetBlank()
-        {
-            return da.GetBlank();
-        }
-
-        public List<DB.Stru.基层科.民主管理信息管理_选举结果> Get_ByWhere(string strWhere)
-        {
-            List<DB.Stru.基层科.民主管理信息管理_选举结果> lst = new List<DB.Stru.基层科.民主管理信息管理_选举结果>();
-
-            DataTable dt = da.GetWhere(strWhere);
-
-            if (SQL.IsNotValid(ref dt))
-                return lst;
-
-            lst = DB.Stru.基层科.民主管理信息管理_选举结果.Dt2List(ref dt);
-
-            return lst;
-        }
-
-        public DB.Stru.基层科.民主管理信息管理_选举结果 GetFirst_ByWhere(string strWhere)
-        {
-            DB.Stru.基层科.民主管理信息管理_选举结果 stru = new DB.Stru.基层科.民主管理信息管理_选举结果();
-            List<DB.Stru.基层科.民主管理信息管理_选举结果> list = Get_ByWhere(strWhere);
-
-            if (list != null && list.Count > 0)
-                stru = list[0];
-
-            return stru;
-        }
-
-        public DB.Stru.基层科.民主管理信息管理_选举结果 Get_ByID(string strID)
-        {
-            string strWhere = String.Format("{0}='{1}'", DB.Tab.基层科.民主管理信息管理_选举结果.ID, strID);
-            return GetFirst_ByWhere(strWhere);
-        }
-
-        #endregion
-
-        #region Split to Page
-
+		public List<DB.Stru.基层科.民主管理信息管理_选举结果> Get_ByWhere (string strWhere)
+		{
+			List<DB.Stru.基层科.民主管理信息管理_选举结果> lst = new List<DB.Stru.基层科.民主管理信息管理_选举结果>();
+		
+			DataTable dt = da.GetWhere(strWhere);
+	
+			if (SQL.IsNotValid(ref dt))
+				return lst;
+				
+			lst = DB.Stru.基层科.民主管理信息管理_选举结果.Dt2List(ref dt);
+	
+			return lst;
+		}
+		
+		public DB.Stru.基层科.民主管理信息管理_选举结果 GetFirst_ByWhere (string strWhere)
+		{
+			DB.Stru.基层科.民主管理信息管理_选举结果 stru = new DB.Stru.基层科.民主管理信息管理_选举结果 () ;
+			List<DB.Stru.基层科.民主管理信息管理_选举结果> list = Get_ByWhere ( strWhere ) ;
+			
+			if ( list != null && list.Count > 0 )
+				stru = list [ 0 ];
+				
+			return stru ;
+		}
+		
+		public DB.Stru.基层科.民主管理信息管理_选举结果 Get_ByID (string strID)
+		{
+		    string strWhere = String.Format("{0}='{1}'", DB.Tab.基层科.民主管理信息管理_选举结果.ID, strID);
+            return GetFirst_ByWhere ( strWhere );
+		}
+		
+		#endregion 
+		
+		#region Split to Page
+		
         //Get one Page data from all 
-        public List<DB.Stru.基层科.民主管理信息管理_选举结果> GetPage(int nPageNo, string strWhere)
+		public List<DB.Stru.基层科.民主管理信息管理_选举结果> GetPage( int nPageNo , string strWhere )
         {
-            List<DB.Stru.基层科.民主管理信息管理_选举结果> lst = new List<DB.Stru.基层科.民主管理信息管理_选举结果>();
+            List<DB.Stru.基层科.民主管理信息管理_选举结果> lst = new List<DB.Stru.基层科.民主管理信息管理_选举结果> ();
+			
+			DataTable dt = da.GetPage ( nPageNo , strWhere );
 
-            DataTable dt = da.GetPage(nPageNo, strWhere);
-
-            if (SQL.IsNotValid(ref dt))
+            if ( SQL.IsNotValid ( ref dt ) )
                 return lst;
 
-            lst = DB.Stru.基层科.民主管理信息管理_选举结果.Dt2List(ref dt);
+			lst = DB.Stru.基层科.民主管理信息管理_选举结果.Dt2List ( ref dt );
 
             return lst;
         }
-
-        //Get Page Number  
+		
+		//Get Page Number  
         public int GetPageMax(string strWhere)
         {
             return da.GetPageMax(strWhere);
         }
 
-        #endregion
-
-        #region Save
-        public string Save(ref DataTable dt)
+		#endregion
+		
+		#region Save
+		public string Save( ref DataTable dt )
         {
-            string strID = da.Save(ref dt);
+            string strID = da.Save ( ref dt );
             return strID;
         }
-
-        public string Save(DB.Stru.基层科.民主管理信息管理_选举结果 stru)
+		
+        public string Save( DB.Stru.基层科.民主管理信息管理_选举结果 stru )
         {
             DataTable dt = GetBlank();
             DataRow dr = dt.NewRow();
-            stru.Stru2Dr(ref dr);
+            stru.Stru2Dr( ref dr );
             dt.Rows.Add(dr);
-            string strID = da.Save(ref dt);
+            string strID = da.Save( ref dt );
             return strID;
         }
-
-        public bool Save(List<DB.Stru.基层科.民主管理信息管理_选举结果> lst)
+		
+		public bool Save ( List<DB.Stru.基层科.民主管理信息管理_选举结果> lst )
         {
             bool bRet = true;
             string strID;
-            foreach (DB.Stru.基层科.民主管理信息管理_选举结果 stru in lst)
+            foreach ( DB.Stru.基层科.民主管理信息管理_选举结果 stru in lst )
             {
-                strID = Save(stru);
+                strID = Save ( stru );
                 bRet &= (strID == "") ? false : true;
             }
             return bRet;
         }
-
-        #endregion
-
-        #region Delete
-
-        public void Delete(DB.Stru.基层科.民主管理信息管理_选举结果 stru)
+		
+		#endregion 
+		
+		#region Delete
+        
+		public void Delete( DB.Stru.基层科.民主管理信息管理_选举结果 stru )
         {
-            da.Delete_ByID(stru.ID);
+            da.Delete_ByID ( stru.ID );
         }
-
-        public void Delete(List<string> lstDel)
+		
+		public void Delete ( List<string> lstDel  )
         {
-            foreach (string strID in lstDel)
-                da.Delete_ByID(strID);
+            foreach ( string strID in lstDel )
+                da.Delete_ByID ( strID );
         }
-
-        public void Delete(List<DB.Stru.基层科.民主管理信息管理_选举结果> lst)
+		
+		public void Delete( List<DB.Stru.基层科.民主管理信息管理_选举结果> lst )
         {
-            foreach (DB.Stru.基层科.民主管理信息管理_选举结果 stru in lst)
-                da.Delete_ByID(stru.ID);
+			foreach ( DB.Stru.基层科.民主管理信息管理_选举结果 stru in lst )
+            	da.Delete_ByID ( stru.ID );
         }
-
-        #endregion
-
-
-
-        #region Update
-
-        public void Update_ByID(string strID, string strFld, string strVal)
+		
+		#endregion 
+		
+		
+		
+		#region Update
+		
+        public void Update_ByID( string strID, string strFld, string strVal )
         {
-            da.Update_ByID(strID, strFld, strVal);
+            da.Update_ByID( strID, strFld, strVal );
         }
-
-        #endregion
-
-        #region Sum
-
-        public int GetCount(string strWhere)
+		
+		#endregion 
+		
+		#region Sum
+		
+		public int GetCount(string strWhere)
         {
             int nCount = 0;
-            DataTable dt = da.GetCount(strWhere);
+            DataTable dt = da.GetCount( strWhere );
 
             if (SQL.IsValid(ref dt))
             {
@@ -161,11 +161,11 @@ namespace DB.Orm.基层科
 
             return nCount;
         }
-
-        public int GetSum(string strWhere)
+		
+		public int GetSum(string strWhere)
         {
             int nCount = 0;
-            DataTable dt = da.GetCount(strWhere);
+            DataTable dt = da.GetCount( strWhere );
 
             if (SQL.IsValid(ref dt))
             {
@@ -175,11 +175,11 @@ namespace DB.Orm.基层科
 
             return nCount;
         }
+		
+		#endregion
+	}
+	
 
-        #endregion
-    }
-
-
-}
+}	
 
 
