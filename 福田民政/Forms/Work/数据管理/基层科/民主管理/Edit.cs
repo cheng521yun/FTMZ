@@ -14,7 +14,7 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
 {
     public partial class FEdit : EditDlg
     {
-        DB.Stru.老龄办.发放老龄津贴 _stru = new DB.Stru.老龄办.发放老龄津贴();  //todo  change 民主管理
+        DB.Stru.基层科.民主管理信息管理 _stru = new DB.Stru.基层科.民主管理信息管理();  //todo  change 民主管理
 
         public FEdit()
         {
@@ -28,7 +28,7 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
 
         #region 属性
 
-        public DB.Stru.老龄办.发放老龄津贴 stru
+        public DB.Stru.基层科.民主管理信息管理 stru
         {
             set
             {
@@ -53,7 +53,7 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
         {
             _stru = uc.stru;
 
-            _stru = BL.老龄办.发放老龄津贴.Save( _stru );
+            _stru = BL.基层科.民主管理信息管理.Save(_stru);
 
             if ( _stru.IsValid() )
                 FF.Ctrl.MsgBox.Show( Def.Str.Msg.Save_OK );
@@ -70,7 +70,7 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
                 return;
             }
 
-            _stru = BL.老龄办.发放老龄津贴.Delete( _stru );
+            _stru = BL.基层科.民主管理信息管理.Delete(_stru);
 
             if ( !_stru.IsValid() )
                 FF.Ctrl.MsgBox.Show( Def.Str.Msg.Delete_OK );

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DB.Stru.老龄办.发放老龄津贴 发放老龄津贴1 = new DB.Stru.老龄办.发放老龄津贴();
+            DB.Stru.基层科.民主管理信息管理 民主管理信息管理1 = new DB.Stru.基层科.民主管理信息管理();
             this.uc = new UI.UC.基层科.民主管理();
             this.SuspendLayout();
             // 
@@ -38,23 +38,18 @@
             this.uc.Location = new System.Drawing.Point(0, 40);
             this.uc.Name = "uc";
             this.uc.Size = new System.Drawing.Size(487, 251);
-            发放老龄津贴1.CreateDate = "2015-06-29 12:38:11";
-            发放老龄津贴1.Creator = "";
-            发放老龄津贴1.datCreateDate = new System.DateTime(2015, 6, 29, 12, 38, 11, 0);
-            发放老龄津贴1.dat出生日期 = new System.DateTime(2015, 6, 29, 12, 44, 5, 45);
-            发放老龄津贴1.dat领取时间 = new System.DateTime(2015, 6, 29, 12, 44, 5, 45);
-            发放老龄津贴1.DelFlag = "";
-            发放老龄津贴1.ID = "";
-            发放老龄津贴1.出生日期 = "";
-            发放老龄津贴1.姓名 = "";
-            发放老龄津贴1.死亡 = "";
-            发放老龄津贴1.状态 = "";
-            发放老龄津贴1.类别 = "";
-            发放老龄津贴1.街道 = "";
-            发放老龄津贴1.身份证 = "";
-            发放老龄津贴1.银行账号 = "";
-            发放老龄津贴1.领取时间 = "";
-            this.uc.stru = 发放老龄津贴1;
+            民主管理信息管理1.办公电话 = "";
+            民主管理信息管理1.面积 = "";
+            民主管理信息管理1.人口数 = "";
+            民主管理信息管理1.委员会地址 = "";
+            民主管理信息管理1.委员会名称 = "";
+            民主管理信息管理1.辖区范围 = "";
+            民主管理信息管理1.组织机构代码 = "";
+            民主管理信息管理1.所属街道1 = "";
+            民主管理信息管理1.所属街道2 = "";
+
+
+            this.uc.stru = 民主管理信息管理1;
             this.uc.TabIndex = 0;
             // 
             // FEdit

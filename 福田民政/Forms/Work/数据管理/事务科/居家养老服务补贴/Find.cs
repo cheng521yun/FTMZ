@@ -34,7 +34,6 @@ namespace 福田民政.Forms.Work.数据管理.事务科.居家养老服务补�
             if (dlgtAdd != null)
                 dlgtAdd();
         }
-
-
+        
     }
 }

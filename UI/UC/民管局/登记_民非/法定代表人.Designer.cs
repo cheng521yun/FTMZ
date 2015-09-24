@@ -298,7 +298,7 @@
             // 
             this.labDelete.AutoSize = true;
             this.labDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labDelete.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labDelete.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labDelete.ForeColor = System.Drawing.Color.Brown;
             this.labDelete.Location = new System.Drawing.Point(103, 9);
             this.labDelete.Name = "labDelete";
@@ -310,7 +310,7 @@
             // 
             this.labAdd.AutoSize = true;
             this.labAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labAdd.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labAdd.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labAdd.ForeColor = System.Drawing.Color.Green;
             this.labAdd.Location = new System.Drawing.Point(31, 9);
             this.labAdd.Name = "labAdd";

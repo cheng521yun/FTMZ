@@ -51,7 +51,12 @@ namespace DB.Stru.事务科
         public string 性别
         {
             set { _性别 = value; }
-            get { return _性别; }
+            get { return FF.Str.Helper.GetSexStr(_性别); }
+        }
+
+        public string 性别Str
+        {
+            get { return FF.Str.Helper.GetSexStr(性别); }
         }
 
         public string 身份证

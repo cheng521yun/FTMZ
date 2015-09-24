@@ -67,7 +67,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "成员信息";
             this.Text = "成员信息";
-            this.Load += new System.EventHandler(this.成员信息_Load);
+            this.Load += new System.EventHandler(this.低保边缘户_Load);
             this.ResumeLayout(false);
 
         }

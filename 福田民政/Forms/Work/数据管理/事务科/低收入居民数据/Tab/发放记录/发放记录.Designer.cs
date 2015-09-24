@@ -65,9 +65,9 @@
             this.ClientSize = new System.Drawing.Size(507, 300);
             this.Controls.Add(this.fl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "成员信息";
-            this.Text = "成员信息";
-            this.Load += new System.EventHandler(this.成员信息_Load);
+            this.Name = "发放记录";
+            this.Text = "发放记录";
+            this.Load += new System.EventHandler(this.发放记录_Load);
             this.ResumeLayout(false);
 
         }

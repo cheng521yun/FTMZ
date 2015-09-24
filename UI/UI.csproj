@@ -220,11 +220,11 @@
     <Compile Include="UC\事务科\低收入居民\低收入居民.Designer.cs">
       <DependentUpon>低收入居民.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC\事务科\居家养老\居家养老.cs">
+    <Compile Include="UC\事务科\居家养老\居家养老服务补贴.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC\事务科\居家养老\居家养老.Designer.cs">
-      <DependentUpon>居家养老.cs</DependentUpon>
+    <Compile Include="UC\事务科\居家养老\居家养老服务补贴.Designer.cs">
+      <DependentUpon>居家养老服务补贴.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\优抚科\优抚资金发放\Edit.cs">
       <SubType>UserControl</SubType>
@@ -388,6 +388,12 @@
     <Compile Include="UC\民管局\登记_民非\民管局登记_民非.Designer.cs">
       <DependentUpon>民管局登记_民非.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC\民管局\登记_民非\机构信息.Designer.cs">
+      <DependentUpon>机构信息.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\民管局\登记_民非\法定代表人.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -496,6 +502,30 @@
     <Compile Include="UC\民管局\登记_社团\民管局登记_社团.Designer.cs">
       <DependentUpon>民管局登记_社团.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理_监护人.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理_监护人.Designer.cs">
+      <DependentUpon>老人入住管理_监护人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理_担保人.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理_担保人.Designer.cs">
+      <DependentUpon>老人入住管理_担保人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\福利中心\老人入住管理\老人入住管理.Designer.cs">
+      <DependentUpon>老人入住管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\福利中心\老人退住管理\老人退住管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\福利中心\老人退住管理\老人退住管理.Designer.cs">
+      <DependentUpon>老人退住管理.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\老龄办\优待证.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -576,8 +606,8 @@
     <EmbeddedResource Include="UC\事务科\低收入居民\低收入居民.resx">
       <DependentUpon>低收入居民.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC\事务科\居家养老\居家养老.resx">
-      <DependentUpon>居家养老.cs</DependentUpon>
+    <EmbeddedResource Include="UC\事务科\居家养老\居家养老服务补贴.resx">
+      <DependentUpon>居家养老服务补贴.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\优抚科\优抚资金发放\Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
@@ -645,6 +675,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\民管局\登记_民非\Left.resx">
       <DependentUpon>Left.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Left1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\民管局\登记_民非\Right.resx">
       <DependentUpon>Right.cs</DependentUpon>
@@ -660,6 +692,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\民管局\登记_民非\民管局登记_民非.resx">
       <DependentUpon>民管局登记_民非.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\民管局\登记_民非\机构信息.resx">
+      <DependentUpon>机构信息.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\民管局\登记_民非\法定代表人.resx">
       <DependentUpon>法定代表人.cs</DependentUpon>
@@ -714,6 +749,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\民管局\登记_社团\民管局登记_社团.resx">
       <DependentUpon>民管局登记_社团.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\福利中心\老人入住管理\老人入住管理_监护人.resx">
+      <DependentUpon>老人入住管理_监护人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\福利中心\老人入住管理\老人入住管理_担保人.resx">
+      <DependentUpon>老人入住管理_担保人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\福利中心\老人入住管理\老人入住管理.resx">
+      <DependentUpon>老人入住管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\福利中心\老人退住管理\老人退住管理.resx">
+      <DependentUpon>老人退住管理.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\老龄办\优待证.resx">
       <DependentUpon>优待证.cs</DependentUpon>

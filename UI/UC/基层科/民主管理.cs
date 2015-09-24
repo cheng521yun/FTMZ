@@ -11,7 +11,7 @@ namespace UI.UC.基层科
 {
     public partial class 民主管理 : UserControl
     {
-        DB.Stru.老龄办.发放老龄津贴 _stru = new DB.Stru.老龄办.发放老龄津贴();  //todo
+        DB.Stru.基层科.民主管理信息管理 _stru = new DB.Stru.基层科.民主管理信息管理();  //todo
 
         public 民主管理()
         {
@@ -20,7 +20,7 @@ namespace UI.UC.基层科
 
         #region 属性
 
-        public DB.Stru.老龄办.发放老龄津贴 stru
+        public DB.Stru.基层科.民主管理信息管理 stru
         {
             set
             {
@@ -43,28 +43,28 @@ namespace UI.UC.基层科
 
         void SetData()
         {
-            //txt姓名.Text = _stru.姓名;
-            //txt身份证号码.Text = _stru.身份证;
-            //dat领取时间.strDate = _stru.领取时间;
-            ////cmb所属街道.Text = _stru.街道;
-            //uc街道办.str街道办 = _stru.街道;
-            //FF.Ctrl.Combo.SetSelectText( cmb类别, _stru.类别 );
-            //txt银行账号.Text = _stru.银行账号;
+            txt办公电话.Text = _stru.办公电话;
+            txt面积.Text = _stru.面积;
+            txt人口数.Text = _stru.人口数;
+            txt委员会地址.Text = _stru.委员会地址;
+            txt委员会名称.Text = _stru.委员会名称;
+            txt辖区范围.Text = _stru.辖区范围;
+            txt住址机构代码.Text = _stru.组织机构代码;
+            uc街道办.str街道办 = _stru.所属街道1;
+            uc街道办.str工作站 = _stru.所属街道2;
         }
 
         public void GetData()
         {
-            //if ( String.IsNullOrEmpty( _stru.Creator.Trim() ) )
-            //    _stru.Creator = GL.User.Name;
-
-            //_stru.姓名 = txt姓名.Text.Trim();
-            //_stru.身份证 = txt身份证号码.Text.Trim();
-            //_stru.dat出生日期 = FF.Fun.Date.身份证2生日( _stru.身份证 );
-            //_stru.领取时间 = dat领取时间.strDate;
-            ////_stru.街道 = cmb所属街道.Text.Trim();
-            //_stru.街道 = uc街道办.str街道办;
-            //_stru.类别 = cmb类别.Text.Trim();
-            //_stru.银行账号 = txt银行账号.Text.Trim();
+            _stru.办公电话 = txt办公电话.Text;
+           _stru.面积 = txt面积.Text ;
+            _stru.人口数 = txt人口数.Text ;
+            _stru.委员会地址 =txt委员会地址.Text;
+            _stru.委员会名称 =txt委员会名称.Text ;
+           _stru.辖区范围 =  txt辖区范围.Text ;
+           _stru.组织机构代码 = txt住址机构代码.Text;
+            _stru.所属街道1 = uc街道办.str街道办 ;
+            _stru.所属街道2 = uc街道办.str工作站 ;
         }
 
 

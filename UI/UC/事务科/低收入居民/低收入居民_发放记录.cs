@@ -47,7 +47,7 @@ namespace UI.UC.事务科.低收入居民
         private void DB2Dlg()
         {
             dat审批时间.strDate = _stru.审批时间;
-            dat待遇截止日期.Text = _stru.待遇截止日期;
+            dat待遇截止日期.strDate = _stru.待遇截止日期;
             txt接收人.Text = _stru.接收人;
             txt低保证号.Text = _stru.低保证号 ;
             txt低保证号.Text = _stru.低保证号;
@@ -57,7 +57,7 @@ namespace UI.UC.事务科.低收入居民
         private void Dlg2DB()
         {
             _stru.审批时间 = dat审批时间.strDate  ;
-            _stru.待遇截止日期 = dat待遇截止日期.Text ;
+            _stru.待遇截止日期 = dat待遇截止日期.strDate ;
             _stru.接收人 = txt接收人.Text.Trim();
             _stru.低保证号 = txt低保证号.Text.Trim();
             _stru.发放年月 = dat发放年月.strDate  ;

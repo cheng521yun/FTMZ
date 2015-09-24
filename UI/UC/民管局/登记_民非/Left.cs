@@ -21,6 +21,7 @@ namespace UI.UC.民管局.登记_民非
 
         private void Left_Load( object sender, EventArgs e )
         {
+            btn机构信息.dlgtRun = Run;
             btn法定代表人.dlgtRun = Run;
             btn联系信息.dlgtRun = Run;
             btn组织管理架构.dlgtRun = Run;

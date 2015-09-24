@@ -30,19 +30,19 @@
         {
             this.uc街道办 = new UI.Ctrl.Cmb.街道办();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt姓名 = new System.Windows.Forms.TextBox();
+            this.txt委员会名称 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.txt身份证号码 = new System.Windows.Forms.TextBox();
+            this.txt办公电话 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt委员会地址 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt人口数 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt面积 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt辖区范围 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt住址机构代码 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -64,12 +64,12 @@
             this.label5.TabIndex = 186;
             this.label5.Text = "所属街道：";
             // 
-            // txt姓名
+            // txt委员会名称
             // 
-            this.txt姓名.Location = new System.Drawing.Point(132, 17);
-            this.txt姓名.Name = "txt姓名";
-            this.txt姓名.Size = new System.Drawing.Size(120, 21);
-            this.txt姓名.TabIndex = 183;
+            this.txt委员会名称.Location = new System.Drawing.Point(132, 17);
+            this.txt委员会名称.Name = "txt委员会名称";
+            this.txt委员会名称.Size = new System.Drawing.Size(120, 21);
+            this.txt委员会名称.TabIndex = 183;
             // 
             // label20
             // 
@@ -80,12 +80,12 @@
             this.label20.TabIndex = 182;
             this.label20.Text = "委员会名称：";
             // 
-            // txt身份证号码
+            // txt办公电话
             // 
-            this.txt身份证号码.Location = new System.Drawing.Point(132, 72);
-            this.txt身份证号码.Name = "txt身份证号码";
-            this.txt身份证号码.Size = new System.Drawing.Size(120, 21);
-            this.txt身份证号码.TabIndex = 181;
+            this.txt办公电话.Location = new System.Drawing.Point(132, 72);
+            this.txt办公电话.Name = "txt办公电话";
+            this.txt办公电话.Size = new System.Drawing.Size(120, 21);
+            this.txt办公电话.TabIndex = 181;
             // 
             // label2
             // 
@@ -96,12 +96,12 @@
             this.label2.TabIndex = 180;
             this.label2.Text = "办公电话：";
             // 
-            // textBox1
+            // txt委员会地址
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 21);
-            this.textBox1.TabIndex = 193;
+            this.txt委员会地址.Location = new System.Drawing.Point(132, 99);
+            this.txt委员会地址.Name = "txt委员会地址";
+            this.txt委员会地址.Size = new System.Drawing.Size(120, 21);
+            this.txt委员会地址.TabIndex = 193;
             // 
             // label1
             // 
@@ -112,12 +112,12 @@
             this.label1.TabIndex = 192;
             this.label1.Text = "委员会地址：";
             // 
-            // textBox2
+            // txt人口数
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 21);
-            this.textBox2.TabIndex = 195;
+            this.txt人口数.Location = new System.Drawing.Point(132, 126);
+            this.txt人口数.Name = "txt人口数";
+            this.txt人口数.Size = new System.Drawing.Size(120, 21);
+            this.txt人口数.TabIndex = 195;
             // 
             // label3
             // 
@@ -128,12 +128,12 @@
             this.label3.TabIndex = 194;
             this.label3.Text = "人口数：";
             // 
-            // textBox3
+            // txt面积
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 153);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 21);
-            this.textBox3.TabIndex = 197;
+            this.txt面积.Location = new System.Drawing.Point(132, 153);
+            this.txt面积.Name = "txt面积";
+            this.txt面积.Size = new System.Drawing.Size(120, 21);
+            this.txt面积.TabIndex = 197;
             // 
             // label4
             // 
@@ -144,12 +144,12 @@
             this.label4.TabIndex = 196;
             this.label4.Text = "面积：";
             // 
-            // textBox4
+            // txt辖区范围
             // 
-            this.textBox4.Location = new System.Drawing.Point(132, 180);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 21);
-            this.textBox4.TabIndex = 199;
+            this.txt辖区范围.Location = new System.Drawing.Point(132, 180);
+            this.txt辖区范围.Name = "txt辖区范围";
+            this.txt辖区范围.Size = new System.Drawing.Size(120, 21);
+            this.txt辖区范围.TabIndex = 199;
             // 
             // label6
             // 
@@ -160,12 +160,12 @@
             this.label6.TabIndex = 198;
             this.label6.Text = "辖区范围：";
             // 
-            // textBox5
+            // txt住址机构爱吗
             // 
-            this.textBox5.Location = new System.Drawing.Point(132, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 21);
-            this.textBox5.TabIndex = 201;
+            this.txt住址机构代码.Location = new System.Drawing.Point(132, 207);
+            this.txt住址机构代码.Name = "txt住址机构代码";
+            this.txt住址机构代码.Size = new System.Drawing.Size(120, 21);
+            this.txt住址机构代码.TabIndex = 201;
             // 
             // label7
             // 
@@ -180,21 +180,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txt住址机构代码);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt辖区范围);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt面积);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt人口数);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt委员会地址);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.uc街道办);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt姓名);
+            this.Controls.Add(this.txt委员会名称);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.txt身份证号码);
+            this.Controls.Add(this.txt办公电话);
             this.Controls.Add(this.label2);
             this.Name = "民主管理";
             this.Size = new System.Drawing.Size(416, 258);
@@ -208,19 +208,19 @@
 
         private Ctrl.Cmb.街道办 uc街道办;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt姓名;
+        private System.Windows.Forms.TextBox txt委员会名称;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txt身份证号码;
+        private System.Windows.Forms.TextBox txt办公电话;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt委员会地址;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt人口数;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt面积;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt辖区范围;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt住址机构代码;
         private System.Windows.Forms.Label label7;
     }
 }

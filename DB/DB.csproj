@@ -44,6 +44,7 @@
     <Compile Include="DA\事务科\低收入居民.cs" />
     <Compile Include="DA\事务科\低收入居民_发放记录.cs" />
     <Compile Include="DA\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="DA\事务科\居家养老服务补贴.cs" />
     <Compile Include="DA\优抚科\优抚对象\三属\基本信息.cs" />
     <Compile Include="DA\优抚科\优抚对象\三属\生活费来源.cs" />
     <Compile Include="DA\优抚科\优抚对象\三属\类别信息.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="DA\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
     <Compile Include="DA\优抚科\伤残物品登记.cs" />
     <Compile Include="DA\优抚科\抚恤标准.cs" />
+    <Compile Include="DA\基层科\民主管理信息管理.cs" />
     <Compile Include="DA\系统\SysParam.cs" />
     <Compile Include="DA\老龄办\敬老优待证.cs" />
     <Compile Include="DA\老龄办\停发老龄津贴.cs" />
@@ -118,7 +120,9 @@
     <Compile Include="ORM\优抚科\伤残物品发放.cs" />
     <Compile Include="ORM\优抚科\伤残物品登记.cs" />
     <Compile Include="ORM\优抚科\抚恤标准.cs" />
+    <Compile Include="ORM\基层科\民主管理信息管理.cs" />
     <Compile Include="ORM\系统\SysParam.cs" />
+    <Compile Include="ORM\老龄办\居家养老服务补贴.cs" />
     <Compile Include="ORM\老龄办\敬老优待证.cs" />
     <Compile Include="ORM\老龄办\停发老龄津贴.cs" />
     <Compile Include="ORM\老龄办\发放老龄津贴.cs" />
@@ -145,6 +149,7 @@
     <Compile Include="Stru\事务科\低收入居民.cs" />
     <Compile Include="Stru\事务科\低收入居民_发放记录.cs" />
     <Compile Include="Stru\事务科\低收入居民_成员信息.cs" />
+    <Compile Include="Stru\事务科\居家养老服务补贴.cs" />
     <Compile Include="Stru\优抚科\优抚对象\三属\基本信息.cs" />
     <Compile Include="Stru\优抚科\优抚对象\三属\生活费来源.cs" />
     <Compile Include="Stru\优抚科\优抚对象\三属\类别信息.cs" />
@@ -173,6 +178,8 @@
     <Compile Include="Stru\优抚科\伤残物品发放.cs" />
     <Compile Include="Stru\优抚科\伤残物品登记.cs" />
     <Compile Include="Stru\优抚科\抚恤标准.cs" />
+    <Compile Include="Stru\基层科\民主管理信息管理.cs" />
+    <Compile Include="Stru\福利中心\老人入住管理.cs" />
     <Compile Include="Stru\系统\SysParam.cs" />
     <Compile Include="Stru\老龄办\发放老龄津贴2.cs" />
     <Compile Include="Stru\老龄办\敬老优待证.cs" />
@@ -192,6 +199,7 @@
     <Compile Include="Tab\事务科\专项救助_低保边缘户.cs" />
     <Compile Include="Tab\事务科\专项救助_疾病救助.cs" />
     <Compile Include="Tab\事务科\专项救助_意外救助.cs" />
+    <Compile Include="Tab\事务科\居家养老服务补贴.cs" />
     <Compile Include="Tab\事务科\低收入居民.cs" />
     <Compile Include="Tab\事务科\低收入居民_发放记录.cs" />
     <Compile Include="Tab\事务科\低收入居民_成员信息.cs" />
@@ -223,6 +231,7 @@
     <Compile Include="Tab\优抚科\优抚对象\铀矿开采军队退役人员\生活费来源.cs" />
     <Compile Include="Tab\优抚科\伤残物品登记.cs" />
     <Compile Include="Tab\优抚科\抚恤标准.cs" />
+    <Compile Include="Tab\基层科\民主管理信息管理.cs" />
     <Compile Include="Tab\系统\SysParam.cs" />
     <Compile Include="Tab\老龄办\敬老优待证.cs" />
     <Compile Include="Tab\老龄办\停发老龄津贴.cs" />
@@ -244,6 +253,11 @@
       <Project>{40e5d6d3-0acc-46d1-9a4a-8818df3756ce}</Project>
       <Name>FrontFlag</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DA\福利中心\" />
+    <Folder Include="ORM\福利中心\" />
+    <Folder Include="Tab\福利中心\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

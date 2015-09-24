@@ -36,19 +36,19 @@ namespace UI.UC.事务科.专项救助
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt低保证号 = new System.Windows.Forms.TextBox();
+            this.txt联系电话 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt发放类型 = new System.Windows.Forms.TextBox();
+            this.txt金额 = new NumberTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dat发放年月 = new FrontFlag.Control.PickerDate.XDatePicker();
+            this.txt救助原因 = new FrontFlag.Control.PickerDate.XDatePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dat审批时间 = new FrontFlag.Control.PickerDate.XDatePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dat救助时间 = new FrontFlag.Control.PickerDate.XDatePicker();
+            this.txt所属街道 = new System.Windows.Forms.TextBox();
+            this.txt姓名 = new System.Windows.Forms.TextBox();
+            this.txt类别 = new System.Windows.Forms.TextBox();
+            this.txt备注 = new System.Windows.Forms.TextBox();
             this.cmb性别 = new UI.Ctrl.Cmb.性别();
             this.SuspendLayout();
             // 
@@ -88,12 +88,12 @@ namespace UI.UC.事务科.专项救助
             this.label6.TabIndex = 12;
             this.label6.Text = "救助原因：";
             // 
-            // txt低保证号
+            // txt联系电话
             // 
-            this.txt低保证号.Location = new System.Drawing.Point(144, 112);
-            this.txt低保证号.Name = "txt低保证号";
-            this.txt低保证号.Size = new System.Drawing.Size(100, 21);
-            this.txt低保证号.TabIndex = 11;
+            this.txt联系电话.Location = new System.Drawing.Point(144, 112);
+            this.txt联系电话.Name = "txt联系电话";
+            this.txt联系电话.Size = new System.Drawing.Size(100, 21);
+            this.txt联系电话.TabIndex = 11;
             // 
             // label7
             // 
@@ -104,12 +104,12 @@ namespace UI.UC.事务科.专项救助
             this.label7.TabIndex = 10;
             this.label7.Text = "联系电话：";
             // 
-            // txt发放类型
+            // txt金额
             // 
-            this.txt发放类型.Location = new System.Drawing.Point(144, 175);
-            this.txt发放类型.Name = "txt发放类型";
-            this.txt发放类型.Size = new System.Drawing.Size(100, 21);
-            this.txt发放类型.TabIndex = 15;
+            this.txt金额.Location = new System.Drawing.Point(144, 175);
+            this.txt金额.Name = "txt金额";
+            this.txt金额.Size = new System.Drawing.Size(100, 21);
+            this.txt金额.TabIndex = 15;
             // 
             // label9
             // 
@@ -120,21 +120,21 @@ namespace UI.UC.事务科.专项救助
             this.label9.TabIndex = 14;
             this.label9.Text = "金额：";
             // 
-            // dat发放年月
+            // txt救助原因
             // 
-            this.dat发放年月.bShowTime = false;
-            this.dat发放年月.Location = new System.Drawing.Point(144, 144);
-            this.dat发放年月.Name = "dat发放年月";
+            this.txt救助原因.bShowTime = false;
+            this.txt救助原因.Location = new System.Drawing.Point(144, 144);
+            this.txt救助原因.Name = "txt救助原因";
             popedombyte1.CanAll = false;
             popedombyte1.CanCreate = false;
             popedombyte1.CanDelete = false;
             popedombyte1.CanModify = false;
             popedombyte1.CanRead = false;
             popedombyte1.p = ((byte)(0));
-            this.dat发放年月.PopedomByte = popedombyte1;
-            this.dat发放年月.Size = new System.Drawing.Size(100, 20);
-            this.dat发放年月.strDate = "";
-            this.dat发放年月.TabIndex = 18;
+            this.txt救助原因.PopedomByte = popedombyte1;
+            this.txt救助原因.Size = new System.Drawing.Size(100, 20);
+            this.txt救助原因.strDate = "";
+            this.txt救助原因.TabIndex = 18;
             // 
             // label2
             // 
@@ -163,49 +163,49 @@ namespace UI.UC.事务科.专项救助
             this.label8.TabIndex = 21;
             this.label8.Text = "备注：";
             // 
-            // dat审批时间
+            // dat救助时间
             // 
-            this.dat审批时间.bShowTime = false;
-            this.dat审批时间.Location = new System.Drawing.Point(144, 207);
-            this.dat审批时间.Name = "dat审批时间";
+            this.dat救助时间.bShowTime = false;
+            this.dat救助时间.Location = new System.Drawing.Point(144, 207);
+            this.dat救助时间.Name = "dat救助时间";
             popedombyte2.CanAll = false;
             popedombyte2.CanCreate = false;
             popedombyte2.CanDelete = false;
             popedombyte2.CanModify = false;
             popedombyte2.CanRead = false;
             popedombyte2.p = ((byte)(0));
-            this.dat审批时间.PopedomByte = popedombyte2;
-            this.dat审批时间.Size = new System.Drawing.Size(100, 20);
-            this.dat审批时间.strDate = "";
-            this.dat审批时间.TabIndex = 22;
+            this.dat救助时间.PopedomByte = popedombyte2;
+            this.dat救助时间.Size = new System.Drawing.Size(100, 20);
+            this.dat救助时间.strDate = "";
+            this.dat救助时间.TabIndex = 22;
             // 
-            // textBox1
+            // txt所属街道
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 23;
+            this.txt所属街道.Location = new System.Drawing.Point(145, 17);
+            this.txt所属街道.Name = "txt所属街道";
+            this.txt所属街道.Size = new System.Drawing.Size(100, 21);
+            this.txt所属街道.TabIndex = 23;
             // 
-            // textBox2
+            // txt姓名
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 24;
+            this.txt姓名.Location = new System.Drawing.Point(144, 49);
+            this.txt姓名.Name = "txt姓名";
+            this.txt姓名.Size = new System.Drawing.Size(100, 21);
+            this.txt姓名.TabIndex = 24;
             // 
-            // textBox3
+            // txt类别
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 238);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 25;
+            this.txt类别.Location = new System.Drawing.Point(144, 238);
+            this.txt类别.Name = "txt类别";
+            this.txt类别.Size = new System.Drawing.Size(100, 21);
+            this.txt类别.TabIndex = 25;
             // 
-            // textBox4
+            // txt备注
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 270);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 26;
+            this.txt备注.Location = new System.Drawing.Point(144, 270);
+            this.txt备注.Name = "txt备注";
+            this.txt备注.Size = new System.Drawing.Size(100, 21);
+            this.txt备注.TabIndex = 26;
             // 
             // cmb性别
             // 
@@ -213,6 +213,9 @@ namespace UI.UC.事务科.专项救助
             this.cmb性别.DropDownWidth = 80;
             this.cmb性别.FormattingEnabled = true;
             this.cmb性别.Items.AddRange(new object[] {
+            " ",
+            "男",
+            "女",
             " ",
             "男",
             "女",
@@ -240,26 +243,26 @@ namespace UI.UC.事务科.专项救助
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cmb性别);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dat审批时间);
+            this.Controls.Add(this.txt备注);
+            this.Controls.Add(this.txt类别);
+            this.Controls.Add(this.txt姓名);
+            this.Controls.Add(this.txt所属街道);
+            this.Controls.Add(this.dat救助时间);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dat发放年月);
-            this.Controls.Add(this.txt发放类型);
+            this.Controls.Add(this.txt救助原因);
+            this.Controls.Add(this.txt金额);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt低保证号);
+            this.Controls.Add(this.txt联系电话);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "意外救助";
             this.Size = new System.Drawing.Size(369, 330);
-            this.Load += new System.EventHandler(this.低收入居民_Load);
+            this.Load += new System.EventHandler(this.意外救助_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,19 +274,19 @@ namespace UI.UC.事务科.专项救助
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt低保证号;
+        private System.Windows.Forms.TextBox txt联系电话;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt发放类型;
+        private NumberTextBox txt金额;
         private System.Windows.Forms.Label label9;
-        private FrontFlag.Control.PickerDate.XDatePicker dat发放年月;
+        private FrontFlag.Control.PickerDate.XDatePicker txt救助原因;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private FrontFlag.Control.PickerDate.XDatePicker dat审批时间;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private FrontFlag.Control.PickerDate.XDatePicker dat救助时间;
+        private System.Windows.Forms.TextBox txt所属街道;
+        private System.Windows.Forms.TextBox txt姓名;
+        private System.Windows.Forms.TextBox txt类别;
+        private System.Windows.Forms.TextBox txt备注;
         private Ctrl.Cmb.性别 cmb性别;
     }
 }

@@ -32,7 +32,7 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
         private void Find()
         {
             List<string> lst = new List<string>();
-            string str;
+            //string str;
 
             //str = txt姓名.Text.Trim();
             //if ( !String.IsNullOrEmpty( str ) )
@@ -42,8 +42,8 @@ namespace 福田民政.Forms.Work.数据管理.基层科.民主管理
             //if ( !String.IsNullOrEmpty( str ) )
             //    lst.Add( String.Format( "{0} like '%{1}%'", DB.Tab.老龄办.发放老龄津贴.身份证, str ) );
 
-            string strWhere = FF.Str.Where.GetWhereByList( lst );
-
+            //string strWhere = FF.Str.Where.GetWhereByList( lst );
+            string strWhere ="";
             if ( dlgtFind != null )
                 dlgtFind( strWhere );
         }

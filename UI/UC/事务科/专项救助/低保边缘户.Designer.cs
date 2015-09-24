@@ -35,15 +35,15 @@ namespace UI.UC.事务科.专项救助
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt低保证号 = new System.Windows.Forms.TextBox();
+            this.txt联系电话 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dat有效期 = new FrontFlag.Control.PickerDate.XDatePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt所属街道 = new System.Windows.Forms.TextBox();
+            this.txt姓名 = new System.Windows.Forms.TextBox();
             this.txt家庭成员 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt备注 = new System.Windows.Forms.TextBox();
             this.cmb性别 = new UI.Ctrl.Cmb.性别();
             this.txt身份证 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -87,12 +87,12 @@ namespace UI.UC.事务科.专项救助
             this.label6.TabIndex = 12;
             this.label6.Text = "家庭成员：";
             // 
-            // txt低保证号
+            // txt联系电话
             // 
-            this.txt低保证号.Location = new System.Drawing.Point(99, 116);
-            this.txt低保证号.Name = "txt低保证号";
-            this.txt低保证号.Size = new System.Drawing.Size(100, 21);
-            this.txt低保证号.TabIndex = 11;
+            this.txt联系电话.Location = new System.Drawing.Point(99, 116);
+            this.txt联系电话.Name = "txt联系电话";
+            this.txt联系电话.Size = new System.Drawing.Size(100, 21);
+            this.txt联系电话.TabIndex = 11;
             // 
             // label7
             // 
@@ -137,19 +137,19 @@ namespace UI.UC.事务科.专项救助
             this.dat有效期.strDate = "";
             this.dat有效期.TabIndex = 22;
             // 
-            // textBox1
+            // txt所属街道
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 23;
+            this.txt所属街道.Location = new System.Drawing.Point(100, 17);
+            this.txt所属街道.Name = "txt所属街道";
+            this.txt所属街道.Size = new System.Drawing.Size(100, 21);
+            this.txt所属街道.TabIndex = 23;
             // 
-            // textBox2
+            // txt姓名
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 24;
+            this.txt姓名.Location = new System.Drawing.Point(99, 50);
+            this.txt姓名.Name = "txt姓名";
+            this.txt姓名.Size = new System.Drawing.Size(100, 21);
+            this.txt姓名.TabIndex = 24;
             // 
             // txt家庭成员
             // 
@@ -158,12 +158,12 @@ namespace UI.UC.事务科.专项救助
             this.txt家庭成员.Size = new System.Drawing.Size(100, 21);
             this.txt家庭成员.TabIndex = 25;
             // 
-            // textBox4
+            // txt备注
             // 
-            this.textBox4.Location = new System.Drawing.Point(99, 247);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 26;
+            this.txt备注.Location = new System.Drawing.Point(99, 247);
+            this.txt备注.Name = "txt备注";
+            this.txt备注.Size = new System.Drawing.Size(100, 21);
+            this.txt备注.TabIndex = 26;
             // 
             // cmb性别
             // 
@@ -171,6 +171,9 @@ namespace UI.UC.事务科.专项救助
             this.cmb性别.DropDownWidth = 80;
             this.cmb性别.FormattingEnabled = true;
             this.cmb性别.Items.AddRange(new object[] {
+            " ",
+            "男",
+            "女",
             " ",
             "男",
             "女",
@@ -237,22 +240,22 @@ namespace UI.UC.事务科.专项救助
             this.Controls.Add(this.txt身份证);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cmb性别);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt备注);
             this.Controls.Add(this.txt家庭成员);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt姓名);
+            this.Controls.Add(this.txt所属街道);
             this.Controls.Add(this.dat有效期);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt低保证号);
+            this.Controls.Add(this.txt联系电话);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "低保边缘户";
             this.Size = new System.Drawing.Size(404, 330);
-            this.Load += new System.EventHandler(this.低收入居民_Load);
+            this.Load += new System.EventHandler(this.低保边缘户_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,15 +267,15 @@ namespace UI.UC.事务科.专项救助
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt低保证号;
+        private System.Windows.Forms.TextBox txt联系电话;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private FrontFlag.Control.PickerDate.XDatePicker dat有效期;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt所属街道;
+        private System.Windows.Forms.TextBox txt姓名;
         private System.Windows.Forms.TextBox txt家庭成员;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt备注;
         private Ctrl.Cmb.性别 cmb性别;
         private System.Windows.Forms.TextBox txt身份证;
         private System.Windows.Forms.Label label10;

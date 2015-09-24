@@ -26,7 +26,7 @@ namespace 福田民政.Forms.数据管理.基层科
 
         protected override void Init()
         {
-            strCaption = "民主管理信息管理";
+            strCaption = "民主管理";
             Def.Act.Menu.Entry_数据管理_基层科_民主管理信息管理 += Call;
 
             InitForm();
@@ -39,7 +39,7 @@ namespace 福田民政.Forms.数据管理.基层科
             fFind.SetParent( pnlTop );
             fFind.SetParent( pnlTop );
             fFind.dlgtFind = Find;
-            fFind.dlgtAdd = 发放老龄津贴;
+            fFind.dlgtAdd = 民主信息管理;
             fFind.dlgtExcelIn = ExcelIn;
             fFind.dlgtExcelOut = ExcelOut;
             
@@ -61,10 +61,10 @@ namespace 福田民政.Forms.数据管理.基层科
 
         private void Find( string strWhere )
         {
-            //fList.Find( strWhere );
+            fList.Find( strWhere );
         }
 
-        private void 发放老龄津贴()
+        private void 民主信息管理()
         {
             FEdit fm = new FEdit();
             if ( fm.ShowDialog() != DialogResult.OK )

@@ -29,7 +29,7 @@ namespace 福田民政.Forms.Work.数据管理.老龄办.老龄津贴_发放
             ucListTool.dlgtExcelOut = ExcelOut;
         }
 
-        private void Find()
+        public void Find()
         {
             List<string> lst = new List<string>();
             string str;

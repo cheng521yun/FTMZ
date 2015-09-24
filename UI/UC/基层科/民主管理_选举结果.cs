@@ -43,6 +43,8 @@ namespace UI.UC.基层科
 
         void SetData()
         {
+           
+
             //txt姓名.Text = _stru.姓名;
             //txt身份证号码.Text = _stru.身份证;
             //dat领取时间.strDate = _stru.领取时间;

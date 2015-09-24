@@ -53,7 +53,7 @@ namespace 福田民政.Forms.Work.数据管理.事务科.社会救助
 
             fl.OnShowPage = ShowPage;
             fl.OnDBClickCell = Modify;
-            //fl.OnSelectionChanged = SelectChange;
+            fl.OnSelectionChanged = SelectChange;
 
             Fun.List.SetCommStyle( fl, "数据管理_事务科_社会救助_列表" );
         }
@@ -109,7 +109,18 @@ namespace 福田民政.Forms.Work.数据管理.事务科.社会救助
             Fill();
         }
 
+        void SelectChange(int nRow)
+        {
+            DB.Stru.事务科.低收入居民 rowobject = fl.GetSelected(nRow) as DB.Stru.事务科.低收入居民;
+            string id = rowobject.ID;
 
+            if (string.IsNullOrEmpty(id))
+                return;
+
+            Tab.家庭成员 家庭成员 = new Tab.家庭成员();
+            家庭成员.Find("父ID=" + id);
+
+        }
 
     }
 }

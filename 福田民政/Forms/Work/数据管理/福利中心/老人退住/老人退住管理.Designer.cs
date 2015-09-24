@@ -67,7 +67,7 @@
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlBottom);
             this.Name = "老人退住管理";
-            this.Text = "老人入住管理";
+            this.Text = "老人退住管理";
             this.ResumeLayout(false);
 
         }

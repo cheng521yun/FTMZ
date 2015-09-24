@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt姓名 = new System.Windows.Forms.TextBox();
+            this.txt街道办事处 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.txt身份证号码 = new System.Windows.Forms.TextBox();
+            this.txt本级社区委员会数 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt需要换届委员会数 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt社区综合班子总职数 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt社区委员会班子总职数 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt总数 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txt姓名
+            // txt街道办事处
             // 
-            this.txt姓名.Location = new System.Drawing.Point(222, 17);
-            this.txt姓名.Name = "txt姓名";
-            this.txt姓名.Size = new System.Drawing.Size(120, 21);
-            this.txt姓名.TabIndex = 183;
+            this.txt街道办事处.Location = new System.Drawing.Point(222, 17);
+            this.txt街道办事处.Name = "txt街道办事处";
+            this.txt街道办事处.Size = new System.Drawing.Size(120, 21);
+            this.txt街道办事处.TabIndex = 183;
             // 
             // label20
             // 
@@ -58,12 +58,12 @@
             this.label20.TabIndex = 182;
             this.label20.Text = "街道办事处：";
             // 
-            // txt身份证号码
+            // txt本级社区委员会数
             // 
-            this.txt身份证号码.Location = new System.Drawing.Point(222, 44);
-            this.txt身份证号码.Name = "txt身份证号码";
-            this.txt身份证号码.Size = new System.Drawing.Size(120, 21);
-            this.txt身份证号码.TabIndex = 181;
+            this.txt本级社区委员会数.Location = new System.Drawing.Point(222, 44);
+            this.txt本级社区委员会数.Name = "txt本级社区委员会数";
+            this.txt本级社区委员会数.Size = new System.Drawing.Size(120, 21);
+            this.txt本级社区委员会数.TabIndex = 181;
             // 
             // label2
             // 
@@ -74,12 +74,12 @@
             this.label2.TabIndex = 180;
             this.label2.Text = "本级社区委员会数：";
             // 
-            // textBox1
+            // txt需要换届委员会数
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 21);
-            this.textBox1.TabIndex = 193;
+            this.txt需要换届委员会数.Location = new System.Drawing.Point(222, 71);
+            this.txt需要换届委员会数.Name = "txt需要换届委员会数";
+            this.txt需要换届委员会数.Size = new System.Drawing.Size(120, 21);
+            this.txt需要换届委员会数.TabIndex = 193;
             // 
             // label1
             // 
@@ -90,12 +90,12 @@
             this.label1.TabIndex = 192;
             this.label1.Text = "需要换届选举的社区委员会数：";
             // 
-            // textBox2
+            // txt社区综合班子总职数
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 21);
-            this.textBox2.TabIndex = 195;
+            this.txt社区综合班子总职数.Location = new System.Drawing.Point(222, 98);
+            this.txt社区综合班子总职数.Name = "txt社区综合班子总职数";
+            this.txt社区综合班子总职数.Size = new System.Drawing.Size(120, 21);
+            this.txt社区综合班子总职数.TabIndex = 195;
             // 
             // label3
             // 
@@ -106,12 +106,12 @@
             this.label3.TabIndex = 194;
             this.label3.Text = "社区综合当组织班子总职数：";
             // 
-            // textBox3
+            // txt社区委员会班子总职数
             // 
-            this.textBox3.Location = new System.Drawing.Point(222, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 21);
-            this.textBox3.TabIndex = 197;
+            this.txt社区委员会班子总职数.Location = new System.Drawing.Point(222, 125);
+            this.txt社区委员会班子总职数.Name = "txt社区委员会班子总职数";
+            this.txt社区委员会班子总职数.Size = new System.Drawing.Size(120, 21);
+            this.txt社区委员会班子总职数.TabIndex = 197;
             // 
             // label4
             // 
@@ -122,12 +122,12 @@
             this.label4.TabIndex = 196;
             this.label4.Text = "社区委员会班子总职数：";
             // 
-            // textBox4
+            // txt总数
             // 
-            this.textBox4.Location = new System.Drawing.Point(222, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 21);
-            this.textBox4.TabIndex = 199;
+            this.txt总数.Location = new System.Drawing.Point(222, 152);
+            this.txt总数.Name = "txt总数";
+            this.txt总数.Size = new System.Drawing.Size(120, 21);
+            this.txt总数.TabIndex = 199;
             // 
             // label6
             // 
@@ -142,17 +142,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt总数);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt社区委员会班子总职数);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt社区综合班子总职数);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt需要换届委员会数);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt姓名);
+            this.Controls.Add(this.txt街道办事处);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.txt身份证号码);
+            this.Controls.Add(this.txt本级社区委员会数);
             this.Controls.Add(this.label2);
             this.Name = "民主管理_选举结果";
             this.Size = new System.Drawing.Size(416, 258);
@@ -164,17 +164,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txt姓名;
+        private System.Windows.Forms.TextBox txt街道办事处;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txt身份证号码;
+        private System.Windows.Forms.TextBox txt本级社区委员会数;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt需要换届委员会数;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt社区综合班子总职数;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt社区委员会班子总职数;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt总数;
         private System.Windows.Forms.Label label6;
     }
 }

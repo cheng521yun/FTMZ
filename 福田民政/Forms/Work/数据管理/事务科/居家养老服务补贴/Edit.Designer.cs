@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uc = new UI.UC.事务科.居家养老.居家养老();
+            this.uc = new UI.UC.事务科.居家养老服务补贴.居家养老服务补贴();
             this.SuspendLayout();
             // 
             // uc
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private UI.UC.事务科.居家养老.居家养老 uc;
+        private UI.UC.事务科.居家养老服务补贴.居家养老服务补贴 uc;
     }
 }

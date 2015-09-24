@@ -39,30 +39,35 @@ namespace UI.UC.事务科.专项救助
         #endregion
 
 
-        private void 低收入居民_Load( object sender, EventArgs e )
+        private void 意外救助_Load(object sender, EventArgs e)
         {
             //DB2Dlg();
         }
 
         private void DB2Dlg()
         {
-            //dat审批时间.strDate = _stru.审批时间;
-            //dat待遇截止日期.Text = _stru.待遇截止日期;
-            //txt接收人.Text = _stru.接收人;
-            //txt低保证号.Text = _stru.低保证号 ;
-            //txt低保证号.Text = _stru.低保证号;
-            //txt发放类型.Text = _stru.发放类型;
+            txt所属街道.Text = _stru.所属街道;
+            txt姓名.Text = _stru.姓名;
+            cmb性别.Value = _stru.性别;
+            txt联系电话.Text = _stru.联系电话;
+            txt救助原因.Text = _stru.救助原因;
+            txt金额.Text = _stru.金额;
+            dat救助时间.strDate = _stru.救助时间Str;
+            txt类别.Text = _stru.类别;
+            txt备注.Text = _stru.备注;
         }
 
         private void Dlg2DB()
         {
-            //_stru.审批时间 = dat审批时间.strDate  ;
-            //_stru.待遇截止日期 = dat待遇截止日期.Text ;
-            //_stru.接收人 = txt接收人.Text.Trim();
-            //_stru.低保证号 = txt低保证号.Text.Trim();
-            //_stru.发放年月 = dat发放年月.strDate  ;
-            //_stru.发放类型 = txt发放类型.Text.Trim();
-
+            _stru.所属街道 = txt所属街道.Text.Trim();
+            _stru.姓名 = txt姓名.Text.Trim();
+            _stru.性别 = cmb性别.Value.Trim() ;
+            _stru.联系电话 = txt联系电话.Text.Trim();
+            _stru.救助原因 = txt救助原因.Text.Trim();
+            _stru.金额 = txt金额.Text.Trim();
+            _stru.救助时间= dat救助时间.strDate;
+            _stru.类别 = txt类别.Text.Trim();
+            _stru.备注 = txt备注.Text.Trim();
         }
 
 

@@ -1,6 +1,7 @@
-﻿namespace UI.UC.事务科.居家养老
+﻿using UI.Ctrl.TextBox;
+namespace UI.UC.事务科.居家养老服务补贴
 {
-    partial class 居家养老
+    partial class 居家养老服务补贴
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -28,45 +29,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            FrontFlag.FUN.POPEDOMBYTE popedombyte1 = new FrontFlag.FUN.POPEDOMBYTE();
+            FrontFlag.FUN.POPEDOMBYTE popedombyte2 = new FrontFlag.FUN.POPEDOMBYTE();
             this.txt身份证 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cmb性别 = new UI.Ctrl.Cmb.性别();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt备注 = new System.Windows.Forms.TextBox();
+            this.txt姓名 = new System.Windows.Forms.TextBox();
+            this.txt所属街道 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt低保证号 = new System.Windows.Forms.TextBox();
+            this.txt居住地址 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt社区 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt年龄 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt享受金额 = new NumberTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt享受类别 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt居住状况 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt服务机构 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt紧急联系人 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txt紧急联系人电话 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dat有效期 = new FrontFlag.Control.PickerDate.XDatePicker();
-            this.txt家庭成员 = new System.Windows.Forms.TextBox();
+            this.dat填表日期 = new FrontFlag.Control.PickerDate.XDatePicker();
+            this.txt填表人 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt边缘证号 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt填表人联系电话 = new System.Windows.Forms.TextBox();
+            this.txt联系电话 = new System.Windows.Forms.TextBox();
+            this.txt批准时间 = new FrontFlag.Control.PickerDate.XDatePicker();
             this.SuspendLayout();
             // 
             // txt身份证
@@ -109,6 +110,9 @@
             " ",
             "男",
             "女",
+            " ",
+            "男",
+            "女",
             "",
             "男",
             "女"});
@@ -118,26 +122,26 @@
             this.cmb性别.TabIndex = 45;
             this.cmb性别.Value = "False";
             // 
-            // textBox4
+            // txt备注
             // 
-            this.textBox4.Location = new System.Drawing.Point(98, 298);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(323, 21);
-            this.textBox4.TabIndex = 44;
+            this.txt备注.Location = new System.Drawing.Point(98, 298);
+            this.txt备注.Name = "txt备注";
+            this.txt备注.Size = new System.Drawing.Size(323, 21);
+            this.txt备注.TabIndex = 44;
             // 
-            // textBox2
+            // txt姓名
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 42;
+            this.txt姓名.Location = new System.Drawing.Point(98, 77);
+            this.txt姓名.Name = "txt姓名";
+            this.txt姓名.Size = new System.Drawing.Size(100, 21);
+            this.txt姓名.TabIndex = 42;
             // 
-            // textBox1
+            // txt所属街道
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 41;
+            this.txt所属街道.Location = new System.Drawing.Point(98, 15);
+            this.txt所属街道.Name = "txt所属街道";
+            this.txt所属街道.Size = new System.Drawing.Size(100, 21);
+            this.txt所属街道.TabIndex = 41;
             // 
             // label8
             // 
@@ -148,12 +152,12 @@
             this.label8.TabIndex = 39;
             this.label8.Text = "备注：";
             // 
-            // txt低保证号
+            // txt居住地址
             // 
-            this.txt低保证号.Location = new System.Drawing.Point(98, 201);
-            this.txt低保证号.Name = "txt低保证号";
-            this.txt低保证号.Size = new System.Drawing.Size(100, 21);
-            this.txt低保证号.TabIndex = 36;
+            this.txt居住地址.Location = new System.Drawing.Point(98, 201);
+            this.txt居住地址.Name = "txt居住地址";
+            this.txt居住地址.Size = new System.Drawing.Size(100, 21);
+            this.txt居住地址.TabIndex = 36;
             // 
             // label7
             // 
@@ -207,12 +211,12 @@
             this.label9.TabIndex = 50;
             this.label9.Text = "社区：";
             // 
-            // textBox3
+            // txt年龄
             // 
-            this.textBox3.Location = new System.Drawing.Point(321, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 53;
+            this.txt年龄.Location = new System.Drawing.Point(321, 108);
+            this.txt年龄.Name = "txt年龄";
+            this.txt年龄.Size = new System.Drawing.Size(100, 21);
+            this.txt年龄.TabIndex = 53;
             // 
             // label11
             // 
@@ -230,14 +234,14 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 12);
             this.label12.TabIndex = 54;
-            this.label12.Text = "销售类别：";
+            this.label12.Text = "享受类别：";
             // 
-            // textBox6
+            // txt享受金额
             // 
-            this.textBox6.Location = new System.Drawing.Point(321, 134);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 57;
+            this.txt享受金额.Location = new System.Drawing.Point(321, 134);
+            this.txt享受金额.Name = "txt享受金额";
+            this.txt享受金额.Size = new System.Drawing.Size(100, 21);
+            this.txt享受金额.TabIndex = 57;
             // 
             // label13
             // 
@@ -248,13 +252,6 @@
             this.label13.TabIndex = 56;
             this.label13.Text = "享受金额：";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(321, 170);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 61;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -264,12 +261,12 @@
             this.label14.TabIndex = 60;
             this.label14.Text = "批准时间：";
             // 
-            // textBox8
+            // txt享受类别
             // 
-            this.textBox8.Location = new System.Drawing.Point(98, 139);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 59;
+            this.txt享受类别.Location = new System.Drawing.Point(98, 139);
+            this.txt享受类别.Name = "txt享受类别";
+            this.txt享受类别.Size = new System.Drawing.Size(100, 21);
+            this.txt享受类别.TabIndex = 59;
             // 
             // label15
             // 
@@ -280,12 +277,12 @@
             this.label15.TabIndex = 58;
             this.label15.Text = "服务机构：";
             // 
-            // textBox9
+            // txt居住状况
             // 
-            this.textBox9.Location = new System.Drawing.Point(321, 201);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
-            this.textBox9.TabIndex = 65;
+            this.txt居住状况.Location = new System.Drawing.Point(321, 201);
+            this.txt居住状况.Name = "txt居住状况";
+            this.txt居住状况.Size = new System.Drawing.Size(100, 21);
+            this.txt居住状况.TabIndex = 65;
             // 
             // label16
             // 
@@ -296,12 +293,12 @@
             this.label16.TabIndex = 64;
             this.label16.Text = "居住状况：";
             // 
-            // textBox10
+            // txt服务机构
             // 
-            this.textBox10.Location = new System.Drawing.Point(98, 170);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 21);
-            this.textBox10.TabIndex = 63;
+            this.txt服务机构.Location = new System.Drawing.Point(98, 170);
+            this.txt服务机构.Name = "txt服务机构";
+            this.txt服务机构.Size = new System.Drawing.Size(100, 21);
+            this.txt服务机构.TabIndex = 63;
             // 
             // label17
             // 
@@ -312,12 +309,12 @@
             this.label17.TabIndex = 62;
             this.label17.Text = "居住地址：";
             // 
-            // textBox11
+            // txt紧急联系人
             // 
-            this.textBox11.Location = new System.Drawing.Point(98, 267);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 21);
-            this.textBox11.TabIndex = 67;
+            this.txt紧急联系人.Location = new System.Drawing.Point(98, 267);
+            this.txt紧急联系人.Name = "txt紧急联系人";
+            this.txt紧急联系人.Size = new System.Drawing.Size(100, 21);
+            this.txt紧急联系人.TabIndex = 67;
             // 
             // label18
             // 
@@ -328,12 +325,12 @@
             this.label18.TabIndex = 66;
             this.label18.Text = "紧急联系人：";
             // 
-            // textBox12
+            // txt紧急联系人电话
             // 
-            this.textBox12.Location = new System.Drawing.Point(321, 267);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 21);
-            this.textBox12.TabIndex = 69;
+            this.txt紧急联系人电话.Location = new System.Drawing.Point(321, 267);
+            this.txt紧急联系人电话.Name = "txt紧急联系人电话";
+            this.txt紧急联系人电话.Size = new System.Drawing.Size(100, 21);
+            this.txt紧急联系人电话.TabIndex = 69;
             // 
             // label19
             // 
@@ -362,28 +359,28 @@
             this.label2.TabIndex = 38;
             this.label2.Text = "填表日期：";
             // 
-            // dat有效期
+            // dat填表日期
             // 
-            this.dat有效期.bShowTime = false;
-            this.dat有效期.Location = new System.Drawing.Point(98, 391);
-            this.dat有效期.Name = "dat有效期";
-            popedombyte1.CanAll = false;
-            popedombyte1.CanCreate = false;
-            popedombyte1.CanDelete = false;
-            popedombyte1.CanModify = false;
-            popedombyte1.CanRead = false;
-            popedombyte1.p = ((byte)(0));
-            this.dat有效期.PopedomByte = popedombyte1;
-            this.dat有效期.Size = new System.Drawing.Size(100, 20);
-            this.dat有效期.strDate = "";
-            this.dat有效期.TabIndex = 40;
+            this.dat填表日期.bShowTime = false;
+            this.dat填表日期.Location = new System.Drawing.Point(98, 391);
+            this.dat填表日期.Name = "dat填表日期";
+            popedombyte2.CanAll = false;
+            popedombyte2.CanCreate = false;
+            popedombyte2.CanDelete = false;
+            popedombyte2.CanModify = false;
+            popedombyte2.CanRead = false;
+            popedombyte2.p = ((byte)(0));
+            this.dat填表日期.PopedomByte = popedombyte2;
+            this.dat填表日期.Size = new System.Drawing.Size(100, 20);
+            this.dat填表日期.strDate = "";
+            this.dat填表日期.TabIndex = 40;
             // 
-            // txt家庭成员
+            // txt填表人
             // 
-            this.txt家庭成员.Location = new System.Drawing.Point(98, 329);
-            this.txt家庭成员.Name = "txt家庭成员";
-            this.txt家庭成员.Size = new System.Drawing.Size(100, 21);
-            this.txt家庭成员.TabIndex = 43;
+            this.txt填表人.Location = new System.Drawing.Point(98, 329);
+            this.txt填表人.Name = "txt填表人";
+            this.txt填表人.Size = new System.Drawing.Size(100, 21);
+            this.txt填表人.TabIndex = 43;
             // 
             // label5
             // 
@@ -394,64 +391,71 @@
             this.label5.TabIndex = 48;
             this.label5.Text = "联系电话：";
             // 
-            // txt边缘证号
+            // txt填表人联系电话
             // 
-            this.txt边缘证号.Location = new System.Drawing.Point(98, 360);
-            this.txt边缘证号.Name = "txt边缘证号";
-            this.txt边缘证号.Size = new System.Drawing.Size(100, 21);
-            this.txt边缘证号.TabIndex = 49;
+            this.txt填表人联系电话.Location = new System.Drawing.Point(98, 360);
+            this.txt填表人联系电话.Name = "txt填表人联系电话";
+            this.txt填表人联系电话.Size = new System.Drawing.Size(100, 21);
+            this.txt填表人联系电话.TabIndex = 49;
             // 
-            // textBox5
+            // txt联系电话
             // 
-            this.textBox5.Location = new System.Drawing.Point(98, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 70;
+            this.txt联系电话.Location = new System.Drawing.Point(98, 234);
+            this.txt联系电话.Name = "txt联系电话";
+            this.txt联系电话.Size = new System.Drawing.Size(100, 21);
+            this.txt联系电话.TabIndex = 70;
             // 
-            // 居家养老
+            // txt批准时间
+            // 
+            this.txt批准时间.Location = new System.Drawing.Point(321, 170);
+            this.txt批准时间.Name = "txt批准时间";
+            this.txt批准时间.Size = new System.Drawing.Size(100, 21);
+            this.txt批准时间.TabIndex = 61;
+            // 
+            // 居家养老服务补贴
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.txt联系电话);
+            this.Controls.Add(this.txt紧急联系人电话);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txt紧急联系人);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txt居住状况);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txt服务机构);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txt批准时间);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txt享受类别);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt享受金额);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt年龄);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txt社区);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txt边缘证号);
+            this.Controls.Add(this.txt填表人联系电话);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt身份证);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cmb性别);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.txt家庭成员);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dat有效期);
+            this.Controls.Add(this.txt备注);
+            this.Controls.Add(this.txt填表人);
+            this.Controls.Add(this.txt姓名);
+            this.Controls.Add(this.txt所属街道);
+            this.Controls.Add(this.dat填表日期);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt低保证号);
+            this.Controls.Add(this.txt居住地址);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "居家养老";
+            this.Name = "居家养老服务补贴";
             this.Size = new System.Drawing.Size(481, 464);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -463,40 +467,40 @@
         private System.Windows.Forms.TextBox txt身份证;
         private System.Windows.Forms.Label label10;
         private Ctrl.Cmb.性别 cmb性别;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt备注;
+        private System.Windows.Forms.TextBox txt姓名;
+        private System.Windows.Forms.TextBox txt所属街道;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt低保证号;
+        private System.Windows.Forms.TextBox txt居住地址;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt社区;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt年龄;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private NumberTextBox txt享受金额;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt享受类别;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt居住状况;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txt服务机构;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt紧急联系人;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txt紧急联系人电话;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private FrontFlag.Control.PickerDate.XDatePicker dat有效期;
-        private System.Windows.Forms.TextBox txt家庭成员;
+        private FrontFlag.Control.PickerDate.XDatePicker dat填表日期;
+        private System.Windows.Forms.TextBox txt填表人;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt边缘证号;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt填表人联系电话;
+        private System.Windows.Forms.TextBox txt联系电话;
+        private FrontFlag.Control.PickerDate.XDatePicker txt批准时间;
     }
 }

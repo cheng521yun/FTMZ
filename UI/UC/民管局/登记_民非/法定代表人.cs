@@ -31,16 +31,16 @@ namespace UI.UC.民管局.登记_民非
         {
             fl.SetGrdFld( new COLHEAD[] 
                 { 
-                    new COLHEAD("姓名",""),
-                    new COLHEAD("性别",""),
-                    new COLHEAD("身份证",""),
-                    new COLHEAD("年龄",""),
-                    new COLHEAD("学历",""),
-                    new COLHEAD("户口",""),
-                    new COLHEAD("住址",""),
-                    new COLHEAD("手机",""),
-                    new COLHEAD("电话",""),
-                    new COLHEAD("邮箱",""),
+                    new COLHEAD("姓名","姓名"),
+                    new COLHEAD("性别","性别"),
+                    new COLHEAD("身份证","身份证"),
+                    new COLHEAD("年龄","年龄"),
+                    new COLHEAD("学历","学历"),
+                    new COLHEAD("户口","户口"),
+                    new COLHEAD("住址","住址"),
+                    new COLHEAD("手机","手机"),
+                    new COLHEAD("电话","电话"),
+                    new COLHEAD("邮箱","邮箱")
                 } );
         }
     }
