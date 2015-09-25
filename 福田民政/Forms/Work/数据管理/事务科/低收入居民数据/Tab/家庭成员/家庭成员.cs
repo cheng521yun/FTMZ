@@ -63,6 +63,9 @@ namespace 福田民政.Forms.Work.数据管理.事务科.社会救助.Tab
         private void Add()
         {
             //MessageBox.Show("Add");
+
+            福田民政.Forms.Work.数据管理.事务科.社会救助.列表 列表 = new 列表();
+            
             Edit fm = new Edit();
             fm.ShowDialog();
         }

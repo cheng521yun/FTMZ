@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using FrontFlag.Control;
 
-namespace 福田民政.Forms.数据管理.福利中心.老人费用_登记
+namespace 福田民政.Forms.数据管理.福利中心.老人费用登记管理
 {
     public partial class 列表 : XForm
     {

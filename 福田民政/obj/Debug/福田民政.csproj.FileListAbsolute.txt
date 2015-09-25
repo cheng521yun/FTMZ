@@ -455,8 +455,6 @@ E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福�
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人入住.Tab.担保人.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人入住.Tab.监护人.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人入住.列表.resources
-E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用_登记.Find.resources
-E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用_登记.列表.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用_退费.Find.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用_退费.列表.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用管理_退费登记.resources
@@ -969,3 +967,8 @@ E:\yun\mail+project\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据�
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.担保人.Edit.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.Tab.监护人.Edit.resources
 E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人入住.FEdit.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人退住管理.FEdit.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人费用登记管理.FEdit.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用登记管理.Find.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.数据管理.福利中心.老人费用登记管理.列表.resources
+E:\yun\GitCode\FTMZ\福田民政\obj\Debug\福田民政.Forms.Work.数据管理.福利中心.老人费用退费管理.FEdit.resources

@@ -66,8 +66,8 @@
             this.Controls.Add(this.pnlList);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlBottom);
-            this.Name = "老人费用管理_费用登记";
-            this.Text = "老人费用管理_费用登记";
+            this.Name = "老人费用登记管理";
+            this.Text = "老人费用登记管理";
             this.ResumeLayout(false);
 
         }

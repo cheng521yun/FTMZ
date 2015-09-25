@@ -78,6 +78,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Find";
             this.Text = "Find";
+            this.Load += new System.EventHandler(this.Find_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

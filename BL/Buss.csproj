@@ -64,6 +64,9 @@
     <Compile Include="基层科\民主管理信息管理.cs" />
     <Compile Include="基层科\基层科.cs" />
     <Compile Include="福利中心\福利中心.cs" />
+    <Compile Include="福利中心\老人费用登记管理.cs" />
+    <Compile Include="福利中心\老人费用退费管理.cs" />
+    <Compile Include="福利中心\老人退住管理.cs" />
     <Compile Include="福利中心\老人入住管理_担保人.cs" />
     <Compile Include="福利中心\老人入住管理.cs" />
     <Compile Include="福利中心\老人入住管理_监护人.cs" />

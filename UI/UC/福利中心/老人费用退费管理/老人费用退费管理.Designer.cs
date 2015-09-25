@@ -56,7 +56,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 39);
+            this.label1.Location = new System.Drawing.Point(54, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt姓名
             // 
-            this.txt姓名.Location = new System.Drawing.Point(101, 36);
+            this.txt姓名.Location = new System.Drawing.Point(101, 10);
             this.txt姓名.Name = "txt姓名";
             this.txt姓名.Size = new System.Drawing.Size(100, 21);
             this.txt姓名.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 71);
+            this.label3.Location = new System.Drawing.Point(31, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 4;
@@ -80,7 +80,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt医疗保证金
             // 
-            this.txt医疗保证金.Location = new System.Drawing.Point(101, 100);
+            this.txt医疗保证金.Location = new System.Drawing.Point(101, 74);
             this.txt医疗保证金.Name = "txt医疗保证金";
             this.txt医疗保证金.Size = new System.Drawing.Size(100, 21);
             this.txt医疗保证金.TabIndex = 7;
@@ -88,7 +88,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 103);
+            this.label4.Location = new System.Drawing.Point(19, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 6;
@@ -96,7 +96,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt伙食费
             // 
-            this.txt伙食费.Location = new System.Drawing.Point(101, 164);
+            this.txt伙食费.Location = new System.Drawing.Point(101, 138);
             this.txt伙食费.Name = "txt伙食费";
             this.txt伙食费.Size = new System.Drawing.Size(100, 21);
             this.txt伙食费.TabIndex = 13;
@@ -104,7 +104,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(42, 167);
+            this.label6.Location = new System.Drawing.Point(42, 141);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 12;
@@ -112,7 +112,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt老人服务费
             // 
-            this.txt老人服务费.Location = new System.Drawing.Point(101, 132);
+            this.txt老人服务费.Location = new System.Drawing.Point(101, 106);
             this.txt老人服务费.Name = "txt老人服务费";
             this.txt老人服务费.Size = new System.Drawing.Size(100, 21);
             this.txt老人服务费.TabIndex = 11;
@@ -120,7 +120,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 135);
+            this.label7.Location = new System.Drawing.Point(18, 109);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 10;
@@ -128,7 +128,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt药费
             // 
-            this.txt药费.Location = new System.Drawing.Point(101, 196);
+            this.txt药费.Location = new System.Drawing.Point(101, 170);
             this.txt药费.Name = "txt药费";
             this.txt药费.Size = new System.Drawing.Size(100, 21);
             this.txt药费.TabIndex = 15;
@@ -136,7 +136,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(53, 200);
+            this.label9.Location = new System.Drawing.Point(53, 174);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 12);
             this.label9.TabIndex = 14;
@@ -144,14 +144,14 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt入住押金
             // 
-            this.txt入住押金.Location = new System.Drawing.Point(101, 68);
+            this.txt入住押金.Location = new System.Drawing.Point(101, 42);
             this.txt入住押金.Name = "txt入住押金";
             this.txt入住押金.Size = new System.Drawing.Size(100, 21);
             this.txt入住押金.TabIndex = 5;
             // 
             // txt电费
             // 
-            this.txt电费.Location = new System.Drawing.Point(101, 227);
+            this.txt电费.Location = new System.Drawing.Point(101, 201);
             this.txt电费.Name = "txt电费";
             this.txt电费.Size = new System.Drawing.Size(100, 21);
             this.txt电费.TabIndex = 17;
@@ -159,7 +159,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 231);
+            this.label2.Location = new System.Drawing.Point(53, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 16;
@@ -167,7 +167,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt银行账号
             // 
-            this.txt银行账号.Location = new System.Drawing.Point(101, 256);
+            this.txt银行账号.Location = new System.Drawing.Point(101, 230);
             this.txt银行账号.Name = "txt银行账号";
             this.txt银行账号.Size = new System.Drawing.Size(100, 21);
             this.txt银行账号.TabIndex = 19;
@@ -175,7 +175,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 261);
+            this.label5.Location = new System.Drawing.Point(27, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 18;
@@ -183,7 +183,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // 
             // txt备注
             // 
-            this.txt备注.Location = new System.Drawing.Point(101, 283);
+            this.txt备注.Location = new System.Drawing.Point(101, 257);
             this.txt备注.Name = "txt备注";
             this.txt备注.Size = new System.Drawing.Size(100, 21);
             this.txt备注.TabIndex = 21;
@@ -191,7 +191,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(53, 287);
+            this.label8.Location = new System.Drawing.Point(53, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 12);
             this.label8.TabIndex = 20;
@@ -200,7 +200,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(53, 314);
+            this.label10.Location = new System.Drawing.Point(53, 288);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 12);
             this.label10.TabIndex = 22;
@@ -209,7 +209,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             // dat时间
             // 
             this.dat时间.bShowTime = false;
-            this.dat时间.Location = new System.Drawing.Point(100, 310);
+            this.dat时间.Location = new System.Drawing.Point(100, 284);
             this.dat时间.Name = "dat时间";
             popedombyte1.CanAll = false;
             popedombyte1.CanCreate = false;
@@ -222,7 +222,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             this.dat时间.strDate = "";
             this.dat时间.TabIndex = 167;
             // 
-            // 老人费用登记管理
+            // 老人费用退费管理
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,7 +247,7 @@ namespace UI.UC.福利中心.老人费用退费管理
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt姓名);
             this.Controls.Add(this.label1);
-            this.Name = "老人费用登记管理";
+            this.Name = "老人费用退费管理";
             this.Size = new System.Drawing.Size(398, 352);
             this.Load += new System.EventHandler(this.老人费用退费管理_Load);
             this.ResumeLayout(false);

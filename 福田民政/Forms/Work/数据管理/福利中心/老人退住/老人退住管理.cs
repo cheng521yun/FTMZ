@@ -14,6 +14,9 @@ namespace 福田民政.Forms.数据管理.福利中心
 {
     public partial class 老人退住管理 : WorkForm
     {
+        Find fFind = new Find();
+        列表 fList = new 列表();
+
         public 老人退住管理()
         {
             InitializeComponent();
@@ -30,16 +33,22 @@ namespace 福田民政.Forms.数据管理.福利中心
 
         private void InitForm()
         {
-            Find fFind = new Find();
-            fFind.SetParent( pnlTop );
+            fFind.SetParent(pnlTop);
+            fFind.dlgtAddNew = AddNew;
 
-            列表 fList = new 列表();
-            fList.SetParent( pnlList );
-
-            //TabWnd fTab = new TabWnd();
-            //fTab.SetParent( pnlBottom );
+            fList.SetParent(pnlList);
         }
 
+        public override void ShowWnd()
+        {
+            Show();
+        }
+
+        private void AddNew()
+        {
+            福田民政.Forms.Work.数据管理.福利中心.老人退住管理.FEdit fm = new Work.数据管理.福利中心.老人退住管理.FEdit();
+            fm.ShowDialog();
+        }
         private void InitAction()
         {
             //Def.Act.数据管理.老龄办.老龄津贴_发放 += Call老龄津贴_发放;

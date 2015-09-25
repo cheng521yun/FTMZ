@@ -74,6 +74,6 @@
 
         #endregion
 
-        private FrontFlag.Control.FindList2 fl;
+        public FrontFlag.Control.FindList2 fl;
     }
 }

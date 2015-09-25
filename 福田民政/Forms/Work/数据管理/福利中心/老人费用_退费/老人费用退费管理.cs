@@ -21,7 +21,7 @@ namespace 福田民政.Forms.数据管理.福利中心
 
         protected override void Init()
         {
-            strCaption = "老人费用管理 退费登记";
+            strCaption = "老人费用退费管理";
             Def.Act.Menu.Entry_数据管理_福利中心_老人费用管理_退费登记 += Call;
 
             InitForm();
@@ -31,15 +31,23 @@ namespace 福田民政.Forms.数据管理.福利中心
         private void InitForm()
         {
             Find fFind = new Find();
-            fFind.SetParent( pnlTop );
+            fFind.SetParent(pnlTop);
 
             列表 fList = new 列表();
-            fList.SetParent( pnlList );
+            fList.SetParent(pnlList);
 
-            //TabWnd fTab = new TabWnd();
-            //fTab.SetParent( pnlBottom );
+            fFind.dlgtAddNew = AddNew;
+        }
+        public override void ShowWnd()
+        {
+            Show();
         }
 
+        private void AddNew()
+        {
+            福田民政.Forms.Work.数据管理.福利中心.老人费用退费管理.FEdit fm = new Work.数据管理.福利中心.老人费用退费管理.FEdit();
+            fm.ShowDialog();
+        }
         private void InitAction()
         {
             //Def.Act.数据管理.老龄办.老龄津贴_发放 += Call老龄津贴_发放;

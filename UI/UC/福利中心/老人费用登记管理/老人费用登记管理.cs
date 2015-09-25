@@ -13,7 +13,7 @@ namespace UI.UC.福利中心.老人费用登记管理
 {
     public partial class 老人费用登记管理 : UserControl
     {
-        //DB.Stru.事务科.低收入居民 _stru = new DB.Stru.事务科.低收入居民();
+        DB.Stru.福利中心.老人费用登记管理 _stru = new DB.Stru.福利中心.老人费用登记管理();
 
         public 老人费用登记管理()
         {
@@ -21,8 +21,7 @@ namespace UI.UC.福利中心.老人费用登记管理
         }
 
         #region 属性
-        /*
-        public DB.Stru.事务科.低收入居民 stru
+        public DB.Stru.福利中心.老人费用登记管理 stru
         {
             set 
             { 
@@ -35,45 +34,39 @@ namespace UI.UC.福利中心.老人费用登记管理
                 return _stru;
             }
         }
-        */
         #endregion
 
 
         private void 老人费用登记管理_Load(object sender, EventArgs e)
         {
-            //DB2Dlg();
+            DB2Dlg();
         }
 
         private void DB2Dlg()
         {
-            /*
-            FF.Ctrl.Combo.SetSelectText( cmbType, _stru.类别 );
-            txt姓名.Text = _stru.户主姓名;
-            cmb性别.Value = _stru.性别;
-            txt年龄.Text = _stru.年龄;
-            txt身份证.Text = _stru.身份证;
-            txt通讯住址.Text = _stru.通讯住址;
-            txt所属社区.Text = _stru.所属社区;
-            txt电话号码.Text = _stru.电话号码;
-            txt银行帐号.Text = _stru.银行帐号;
-            */
-
-
+            txt老人电费.Text = _stru.老人电费;
+            txt老人伙食费.Text = _stru.老人伙食费;
+            txt老人名称.Text = _stru.老人名称;
+            txt老人药费.Text = _stru.老人药费;
+            txt养老服务费.Text = _stru.养老服务费;
+            txt银行账号.Text = _stru.银行账号;
+            txt应收金额.Text = _stru.应收金额;
+            txt用户代码.Text = _stru.用户代码;
+            dat时间.strDate = _stru.时间Str;
+            
         }
 
         private void Dlg2DB()
         {
-            /*
-            _stru.类别 = cmbType.Text;
-            _stru.户主姓名 = txt姓名.Text.Trim();
-            _stru.性别 = cmb性别.Value;
-            _stru.年龄 = txt年龄.Text.Trim();
-            _stru.身份证 = txt身份证.Text.Trim();
-            _stru.通讯住址 = txt通讯住址.Text.Trim();
-            _stru.所属社区 = txt所属社区.Text.Trim();
-            _stru.电话号码 = txt电话号码.Text.Trim();
-            _stru.银行帐号 = txt银行帐号.Text.Trim();
-             * */
+            _stru.老人电费 = txt老人电费.Text;
+            _stru.老人伙食费 = txt老人伙食费.Text;
+            _stru.老人名称 = txt老人名称.Text;
+            _stru.老人药费 = txt老人药费.Text;
+            _stru.养老服务费 = txt养老服务费.Text;
+            _stru.银行账号 = txt银行账号.Text;
+            _stru.应收金额 = txt应收金额.Text;
+            _stru.用户代码 = txt用户代码.Text;
+            _stru.时间 = dat时间.strDate;
         }
 
 

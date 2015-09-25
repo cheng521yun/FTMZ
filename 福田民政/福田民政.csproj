@@ -920,6 +920,12 @@
     <Compile Include="Forms\Work\数据管理\福利中心\老人入住\列表.Designer.cs">
       <DependentUpon>列表.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\Find.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -931,6 +937,18 @@
     </Compile>
     <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\列表.Designer.cs">
       <DependentUpon>列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人退住\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\Find.cs">
       <SubType>Form</SubType>
@@ -944,17 +962,17 @@
     <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\列表.Designer.cs">
       <DependentUpon>列表.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.cs">
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用退费管理.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.Designer.cs">
-      <DependentUpon>老人费用管理_退费登记.cs</DependentUpon>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用退费管理.Designer.cs">
+      <DependentUpon>老人费用退费管理.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.cs">
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用登记管理.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.Designer.cs">
-      <DependentUpon>老人费用管理_费用登记.cs</DependentUpon>
+    <Compile Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用登记管理.Designer.cs">
+      <DependentUpon>老人费用登记管理.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Work\数据管理\福利中心\费用统计\Tab\TabWnd.cs">
       <SubType>Form</SubType>
@@ -1760,11 +1778,20 @@
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人入住\列表.resx">
       <DependentUpon>列表.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\Find.resx">
       <DependentUpon>Find.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\列表.resx">
       <DependentUpon>列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人退住\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\Find.resx">
       <DependentUpon>Find.cs</DependentUpon>
@@ -1772,11 +1799,11 @@
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\列表.resx">
       <DependentUpon>列表.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用管理_退费登记.resx">
-      <DependentUpon>老人费用管理_退费登记.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_退费\老人费用退费管理.resx">
+      <DependentUpon>老人费用退费管理.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用管理_费用登记.resx">
-      <DependentUpon>老人费用管理_费用登记.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Work\数据管理\福利中心\老人费用_登记\老人费用登记管理.resx">
+      <DependentUpon>老人费用登记管理.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Work\数据管理\福利中心\费用统计\Tab\TabWnd.resx">
       <DependentUpon>TabWnd.cs</DependentUpon>

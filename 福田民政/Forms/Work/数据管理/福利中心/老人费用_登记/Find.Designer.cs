@@ -1,4 +1,4 @@
-﻿namespace 福田民政.Forms.数据管理.福利中心.老人费用_登记
+﻿namespace 福田民政.Forms.数据管理.福利中心.老人费用登记管理
 {
     partial class Find
     {
@@ -78,6 +78,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Find";
             this.Text = "Find";
+            this.Load += new System.EventHandler(this.Find_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

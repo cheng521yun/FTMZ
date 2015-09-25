@@ -17,7 +17,7 @@ namespace 福田民政.Forms.数据管理.事务科
     public partial class 社会救助 : WorkForm
     {
         Find fFind = new Find();
-        列表 fList = new 列表();
+        public 列表 fList = new 列表();
         TabWnd fTab = new TabWnd();
 
         public 社会救助()
