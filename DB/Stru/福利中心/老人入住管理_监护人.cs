@@ -200,8 +200,8 @@ namespace DB.Stru.福利中心
                 dr[DB.Tab.福利中心.老人入住管理_监护人.ID] = ID;
 				
 			CheckData();
-			
-			dr[DB.Tab.福利中心.老人入住管理_监护人.父ID] = 父ID;
+
+            dr[DB.Tab.福利中心.老人入住管理_监护人.父ID] = string.IsNullOrEmpty(父ID) ? "0" : 父ID;
 			if ( CreateDate != String.Empty )
 			dr[DB.Tab.福利中心.老人入住管理_监护人.CreateDate] = CreateDate;
 			dr[DB.Tab.福利中心.老人入住管理_监护人.Creator] = Creator;

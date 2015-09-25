@@ -31,13 +31,13 @@ namespace 福田民政.Forms.数据管理.福利中心.老人退住
         {
             fl.SetGrdFld( new COLHEAD[] 
                 { 
-                    new COLHEAD("姓名",""),
-                    new COLHEAD("性别",""),
-                    new COLHEAD("身份证",""),
-                    new COLHEAD("入住时间",""),
-                    new COLHEAD("申请时间",""),
-                    new COLHEAD("入住级别",""),
-                    new COLHEAD("退住级别",""),
+                    new COLHEAD("姓名","姓名"),
+                    new COLHEAD("性别","性别"),
+                    new COLHEAD("身份证","身份证"),
+                    new COLHEAD("入住时间","入住时间"),
+                    new COLHEAD("申请时间","申请时间"),
+                    new COLHEAD("入住级别","入住级别"),
+                    new COLHEAD("退住级别","退住级别")
 
                 } );
 

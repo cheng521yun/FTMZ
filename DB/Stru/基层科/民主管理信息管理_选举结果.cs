@@ -218,8 +218,8 @@ namespace DB.Stru.基层科
                 dr[DB.Tab.基层科.民主管理信息管理_选举结果.ID] = ID;
 				
 			CheckData();
-			
-			dr[DB.Tab.基层科.民主管理信息管理_选举结果.父ID] = 父ID;
+
+            dr[DB.Tab.基层科.民主管理信息管理_选举结果.父ID] = string.IsNullOrEmpty(父ID) ? "0" : 父ID;
 			if ( CreateDate != String.Empty )
 			dr[DB.Tab.基层科.民主管理信息管理_选举结果.CreateDate] = CreateDate;
 			dr[DB.Tab.基层科.民主管理信息管理_选举结果.Creator] = Creator;

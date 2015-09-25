@@ -35,16 +35,16 @@ namespace 福田民政.Forms.数据管理.福利中心.老人费用_退费
         {
             fl.SetGrdFld( new COLHEAD[] 
                 { 
-                    new COLHEAD("姓名",""),
-                    new COLHEAD("入住押金",""),
-                    new COLHEAD("医疗保证金",""),
-                    new COLHEAD("老人服务费",""),
-                    new COLHEAD("伙食费",""),
-                    new COLHEAD("药费",""),
-                    new COLHEAD("电费",""),
-                    new COLHEAD("银行帐号",""),
-                    new COLHEAD("备注",""),
-                    new COLHEAD("时间",""),
+                    new COLHEAD("姓名","姓名"),
+                    new COLHEAD("入住押金","入住押金"),
+                    new COLHEAD("医疗保证金","医疗保证金"),
+                    new COLHEAD("老人服务费","老人服务费"),
+                    new COLHEAD("伙食费","伙食费"),
+                    new COLHEAD("药费","药费"),
+                    new COLHEAD("电费","电费"),
+                    new COLHEAD("银行帐号","银行帐号"),
+                    new COLHEAD("备注","备注"),
+                    new COLHEAD("时间","时间")
 
                 } );
 

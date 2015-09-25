@@ -31,17 +31,16 @@ namespace 福田民政.Forms.数据管理.福利中心.老人费用登记管理
         {
             fl.SetGrdFld( new COLHEAD[] 
                 { 
-                    new COLHEAD("序号",""),
-                    new COLHEAD("用户代码",""),
-                    new COLHEAD("老人名称",""),
-                    new COLHEAD("银行帐号",""),
-                    new COLHEAD("养老服务费",""),
-                    new COLHEAD("老人伙食费	",""),
-                    new COLHEAD("老人药费",""),
-                    new COLHEAD("老人电费",""),
-                    new COLHEAD("应收金额",""),
-                    new COLHEAD("时间",""),
-
+                    new COLHEAD("序号","序号"),
+                    new COLHEAD("用户代码","用户代码"),
+                    new COLHEAD("老人名称","老人名称"),
+                    new COLHEAD("银行帐号","银行帐号"),
+                    new COLHEAD("养老服务费","养老服务费"),
+                    new COLHEAD("老人伙食费","老人伙食费"),
+                    new COLHEAD("老人药费","老人药费"),
+                    new COLHEAD("老人电费","老人电费"),
+                    new COLHEAD("应收金额","应收金额"),
+                    new COLHEAD("时间","时间")
                 } );
 
             fl.strIDCol = "ID";
